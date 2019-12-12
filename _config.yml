@@ -39,7 +39,7 @@ twitter: https://twitter.com/harryjwang
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: https://www.linkedin.com/in/harryjwang/
 # youtube: myyoutube
 # spotify: myspotify
 github: https://github.com/harrywang
@@ -74,7 +74,7 @@ width: normal
 projects: false
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
