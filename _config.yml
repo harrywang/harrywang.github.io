@@ -1,6 +1,6 @@
 # main text of home
 name: Harry Wang
-bio:
+bio: professor, entrepreneur, maker
 
 # twitter summary info
 description: technology, art, design, etc...
@@ -48,7 +48,7 @@ github: harrywang
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: HarryWang
+medium: harrywang
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: harryjwang@gmail.com
