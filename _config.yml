@@ -1,6 +1,6 @@
 # main text of home
 name: Harry Wang
-bio: professor/entrepreneur/developer/maker
+bio: professor / entrepreneur / developer / maker
 
 # twitter summary info
 description: technology, art, design, etc...
@@ -56,7 +56,7 @@ email: harryjwang@gmail.com
 authors:
     harrywang:
         name: Harry Wang
-        bio: professor/entrepreneur/developer/maker
+        bio: professor / entrepreneur / developer / maker
         external-image: false
         picture: assets/images/harrywang.jpg
         twitter: harrywang
