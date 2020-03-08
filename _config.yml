@@ -1,6 +1,6 @@
 # main text of home
 name: Harry Wang
-bio: professor, entrepreneur, developer, maker
+bio: professor/entrepreneur/developer/maker
 
 # twitter summary info
 description: technology, art, design, etc...
@@ -13,7 +13,7 @@ picture: assets/images/harrywang.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: false
-resume-external: true
+resume-external: false
 resume-url: https://google.com/?q=my+resume
 
 url: http://harrywang.github.io
@@ -56,7 +56,7 @@ email: harryjwang@gmail.com
 authors:
     harrywang:
         name: Harry Wang
-        bio: professor@udel, founder@conferency, maker@heart
+        bio: professor/entrepreneur/developer/maker
         external-image: false
         picture: assets/images/harrywang.jpg
         twitter: harrywang

@@ -3,19 +3,7 @@ title: About
 layout: page
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Professor Harry Jiannan Wang has more than 15 years' research and teaching experience in AI, business intelligence and analytics, business process management, and enterprise systems. He has collaborated and  with many industry partners on  research projects. He was the founding director of OneConnect (NYSE: OCFT) US Research Institute based in New York City and the VP of Technology for the Associati He is passionate about entrepreneurship and founded Conferency, an open-source academic conference management system. He enjoys coding, music, reading, design and art, sports, crafts, and traveling. 
 
 <h2>Skills</h2>
 
