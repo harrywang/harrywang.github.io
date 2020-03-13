@@ -4,7 +4,7 @@ layout: page
 ---
 ## About
 
-Professor Harry Jiannan Wang has more than 15 years' research and teaching experience in AI, business intelligence and analytics, business process management, and enterprise systems. He is the chief scientist of [Tezign](https://www.tezign.com) He was the founding director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City and the VP of Technology for the [Association for Information Systems](https://aisnet.org/). He is passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/), an open-source academic conference management system. He enjoys coding, music, reading, design and art, sports, crafts, and traveling.
+Dr. Harry Jiannan Wang is a Full Professor of Management Information Systems at the University of Delaware, who has more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. He serves as the chief scientist of [Tezign](https://www.tezign.com) based in Shanghai, China. Dr. Wang was the founding director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City and the VP of Technology for the [Association for Information Systems](https://aisnet.org/). He is passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/), an open-source academic conference management system. He enjoys coding, music, reading, design and art, sports, crafts, and traveling.
 
 ## Selected Publications
 
