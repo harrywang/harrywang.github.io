@@ -52,7 +52,8 @@ medium: harrywang
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: harryjwang@gmail.com
-resume: resume.md
+resume: resume
+projects: projects
 
 authors:
     harrywang:
