@@ -5,9 +5,9 @@ layout: page
 # About Fred
 **FRED** (**F**lask + **RE**act + **D**ocker): An End-to-End Boilerplate for Full Stack Development
 
-**Github**: https://github.com/harrywang/fred
+**Github**: [https://github.com/harrywang/fred](https://github.com/harrywang/fred)
 
-**Heroku Demo**: https://getfred.herokuapp.com (I am using the [free dyno](https://devcenter.heroku.com/articles/free-dyno-hours), which may take a few seconds to start and load)
+**Heroku Demo**: [https://getfred.herokuapp.com](https://github.com/harrywang/fred) (I am using the [free dyno](https://devcenter.heroku.com/articles/free-dyno-hours), which may take a few seconds to start and load)
 
 <img width="1013" alt="Screen Shot 2020-04-10 at 8 46 58 PM" src="https://user-images.githubusercontent.com/595772/79031413-7b16d600-7b6c-11ea-9799-9fce00453290.png">
 
