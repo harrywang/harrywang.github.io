@@ -8,7 +8,7 @@ Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Managem
 
 ## Projects
 
-- [FRED (Flask + REact + Docker): An End-to-End Boilerplate for Full Stack Development](http://harrywang.me/fred)
+- [FRED (Flask + REact + Docker)](http://harrywang.me/fred): An End-to-End Boilerplate for Full Stack Development
 - [Conferency](https://www.conferency.com/): an open-source academic conference management system
 
 ## Selected Publications
