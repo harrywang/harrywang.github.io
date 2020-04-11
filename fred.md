@@ -29,7 +29,7 @@ Tools and packages used in this project:
 - Illustrations from [UnDraw.co](https://undraw.co/)
 - Images from [Unsplash](https://unsplash.com/)
 - [Heroku](https://www.heroku.com/): a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
-- CircleCI
+- [CircleCI](https://circleci.com/): a continuous integration and delivery platform
 - AWS (TODO)
 
 Check [Github](https://github.com/harrywang/fred) for more details.
