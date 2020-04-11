@@ -11,7 +11,7 @@ layout: page
 
 <img width="1013" alt="Screen Shot 2020-04-10 at 8 46 58 PM" src="https://user-images.githubusercontent.com/595772/79031413-7b16d600-7b6c-11ea-9799-9fce00453290.png">
 
-Tools and packages used in this repo:
+Tools and packages used in this project:
 
 - [Flask](https://flask.palletsprojects.com/): a micro web framework written in Python
 - [React](https://reactjs.org/): a JavaScript library for building user interfaces
