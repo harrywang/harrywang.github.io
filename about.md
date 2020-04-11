@@ -1,10 +1,15 @@
 ---
-title: About
+title: About Me
 layout: page
 ---
-## About
+# About Me
 
-Dr. Harry Jiannan Wang is a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/), who has more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. He serves as the chief scientist of [Tezign](https://www.tezign.com) based in Shanghai, China. Dr. Wang was the founding director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City and the VP of Technology for the [Association for Information Systems](https://aisnet.org/). He is passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/), an open-source academic conference management system. He enjoys coding, music, reading, design and art, sports, crafts, and traveling.
+Hi, my name is Harry Wang (Chinese: 王建楠) and I am a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/), who has more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I currently also serves as the chief scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital and Hearst Ventures). I was the founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I founded [Conferency](https://www.conferency.com/) - an open-source academic conference management system in 2015. I enjoy coding, sports, music, design and art, crafts, and traveling :).
+
+## Projects
+
+- [FRED (Flask + REact + Docker): An End-to-End Boilerplate for Full Stack Development](harrywang.me/fred)
+- [Conferency](https://www.conferency.com/): an open-source academic conference management system
 
 ## Selected Publications
 

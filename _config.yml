@@ -3,7 +3,7 @@ name: Harry Wang
 bio: professor / entrepreneur / developer / maker
 
 # twitter summary info
-description: technology, art, design, etc...
+description: technology, entrepreneurship, art, design, etc...
 
 # if it's an external image, update below for true
 # better with square images
@@ -14,7 +14,7 @@ picture: assets/images/harrywang.jpg
 # and specify source (external or local).
 resume: false
 resume-external: false
-resume-url: https://google.com/?q=my+resume
+resume-url: http://harrywang.me/about
 
 url: http://harrywang.github.io
 # your url: http://USERNAME.github.io
