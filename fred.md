@@ -18,7 +18,7 @@ Tools and packages used in this project:
 - [Docker](https://www.docker.com/): a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers
 - [Postgres](https://www.postgresql.org/): a free and open-source relational database management system
 - [SQLAlchemy](https://www.sqlalchemy.org/): an open-source SQL toolkit and object-relational mapper for Python
-- [Flask-RESTX](https://flask-restx.readthedocs.io/): an Flask extension for building REST APIs
+- [Flask-RESTX](https://flask-restx.readthedocs.io/): a Flask extension for building REST APIs
 - [PyTest](https://docs.pytest.org/en/latest/): a Python testing framework
 - [Jest](https://jestjs.io/): a JavaScript testing framework
 - Python Linting and Formatting: flake8, black, isort
