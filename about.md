@@ -11,6 +11,7 @@ Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Managem
 - [Calligraphy.AI](http://harrywang.me/calligraphy): Generative Art using Calligraphy + GAN & NLP
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): An End-to-End Boilerplate for Full Stack Development
 - [Conferency](https://www.conferency.com/): an open-source academic conference management system
+- [The Cube of Changes](http://cube2020.art/): an art installation I designed for Burning Man 2020 (Unfortunately, my design did not pass the first round review for the Black Rock City Art Honorarium program and Burning Man 2020 has also been canceled due to COVID-19 pandemic) 
 
 ## Selected Publications
 
