@@ -1,4 +1,11 @@
 <div class="social-links">
+
+    {% if site.info %}
+    <a class="link" data-title="{{ site.info }}" href="/about">
+        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+    </a>
+    {% endif %}
+    
     {% if site.facebook %}
         <a class="link" data-title="facebook.com/{{ site.facebook }}" href="http://facebook.com/{{ site.facebook }}" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
@@ -109,9 +116,4 @@
         </a>
     {% endif %}
 
-    {% if site.info %}
-        <a class="link" data-title="{{ site.info }}" href="/about">
-            <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-        </a>
-    {% endif %}
 </div>
