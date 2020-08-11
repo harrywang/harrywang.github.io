@@ -4,11 +4,12 @@ layout: page
 ---
 # About Me
 
-Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I currently also serve as the chief scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital and Hearst Ventures). I was the founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I founded [Conferency](https://www.conferency.com/) (an open-source academic conference management system) in 2015 and enjoy coding, sports, music, design and art, and woodworking :).
+Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I currently also serve as the chief scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital and Hearst Ventures) and an independent director for [So-Young International Inc.](https://www.soyoung.com) (NASDAQ: SY - the largest and most vibrant social community in China for consumers, professionals, and service providers in the medical aesthetics industry). I was the founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I founded [Conferency](https://www.conferency.com/) (an open-source academic conference management system) in 2015 and enjoy coding, sports, music, design, art, and woodworking :).
 
 ## Projects
 
 - [Calligraphy.AI](http://harrywang.me/calligraphy): generative art using calligraphy + GAN & NLP
+- [DesignNet](https://design-net.org/): an on-going project to build a graphic design image dataset
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
 - [Conferency](https://www.conferency.com/): an open-source academic conference management system
 - [The Cube of Changes](http://harrywang.me/cube): an art installation I designed for Burning Man 2020
