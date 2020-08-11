@@ -1,0 +1,32 @@
+---
+title: A Shed
+layout: page
+---
+# A Shed
+As a summer project during the COVID-19 pandemic, I designed and built a minimalist and modern shed, which is 8' x 10' with a slanted roof (8' tall wall and 7' short wall).
+
+## Video and Photos
+
+I recorded the project using time lapse. The 5-minute video can be viewed at: [Youtube](https://youtu.be/aA54O99xAwA) and [Meipai](http://www.meipai.com/media/1225115152).
+
+
+Side View
+<img src="https://user-images.githubusercontent.com/595772/89822114-abbc4b80-db1d-11ea-80cb-999a4c5c1871.JPG" style="display: block; margin-left: none; margin-right: auto; width: 40%;">
+
+Front View:
+
+<img src="https://user-images.githubusercontent.com/595772/89822122-ae1ea580-db1d-11ea-9d17-34d480287bdd.JPG" style="display: block; margin-left: none; margin-right: auto; width: 40%;">
+
+Motorcycle Ramp:
+
+<img src="https://user-images.githubusercontent.com/595772/89822130-b1b22c80-db1d-11ea-9e74-e7f2798433de.jpg" style="display: block; margin-left: none; margin-right: auto; width: 40%;">
+
+## Material List
+I bought all materials from Home Depot (Note: I am not affiliated or compensated by Home Depot) and the list with price and links can be accessed at: [Google Sheets](https://docs.google.com/spreadsheets/d/1kPYw973_FTWuDx_93nR5niIjpOo8YiPVQ8gnI7YFOHI), [Excel](/shed/shed-materials.xlsx), [PDF](/shed/shed-materials.pdf).
+
+## References
+
+I watched lots of videos on YouTube and the followings helped me the most:
+- [HOW TO BUILD A SHED BY YOURSELF](https://youtu.be/qA3OdThfzVE)
+- [How to build a shed DOORS](https://youtu.be/_sH6v5B76Mg)
+
