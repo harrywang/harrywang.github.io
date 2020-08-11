@@ -22,11 +22,12 @@ Motorcycle Ramp:
 <img src="https://user-images.githubusercontent.com/595772/89822130-b1b22c80-db1d-11ea-9e74-e7f2798433de.jpg" style="display: block; margin-left: none; margin-right: auto; width: 40%;">
 
 ## Material List
-I bought all materials from Home Depot (Note: I am not affiliated or compensated by Home Depot) and the list with price and links can be accessed at: [Google Sheets](https://docs.google.com/spreadsheets/d/1kPYw973_FTWuDx_93nR5niIjpOo8YiPVQ8gnI7YFOHI), [Excel](/shed/shed-materials.xlsx), [PDF](/shed/shed-materials.pdf).
+I bought all materials from Home Depot (Note: I am not affiliated or compensated by Home Depot) and the list with price and links can be accessed at: [Google Sheets](https://docs.google.com/spreadsheets/d/1kPYw973_FTWuDx_93nR5niIjpOo8YiPVQ8gnI7YFOHI), [Excel](/docs/shed-materials.xlsx), [PDF](/docs/shed-materials.pdf).
 
 ## References
 
 I watched lots of videos on YouTube and the followings helped me the most:
-- [HOW TO BUILD A SHED BY YOURSELF](https://youtu.be/qA3OdThfzVE)
-- [How to build a shed DOORS](https://youtu.be/_sH6v5B76Mg)
+- [How to build a shed by yourself](https://youtu.be/qA3OdThfzVE)
+- [How to build a lean-to shed](https://youtu.be/7DvniCXrWtA)
+- [How to build shed doors](https://youtu.be/_sH6v5B76Mg)
 
