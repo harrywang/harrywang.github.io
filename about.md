@@ -4,9 +4,11 @@ layout: page
 ---
 # About Me
 
-Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I currently also serve as the chief scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital and Hearst Ventures) and an independent director for [So-Young International Inc.](https://www.soyoung.com) (NASDAQ: SY - the largest and most vibrant social community in China for consumers, professionals, and service providers in the medical aesthetics industry). 
+Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://www.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I currently also serve as the chief scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital and Hearst Ventures) and an independent director for [So-Young International Inc.](https://www.soyoung.com) (NASDAQ: SY - the largest social community in China for consumers, professionals, and service providers in the medical aesthetics industry). 
 
-I was the founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I also founded an open-source academic conference management system [Conferency](https://www.conferency.com/) in 2015. 
+I was the founding director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members for the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/) at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. 
+
+I am very passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
 
 In my spare time, I enjoy coding, sports, music, design, art, and woodworking :).
 
