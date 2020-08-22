@@ -10,7 +10,7 @@ I was the founding director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) 
 
 I am very passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
 
-In my spare time, I enjoy coding, sports, music, design, art, and woodworking :).
+In my spare time, I enjoy coding, sports, music, design, art, and woodworking.
 
 ## Projects
 
