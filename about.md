@@ -21,6 +21,11 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
  - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with ~50K views since posted in September 2019.
 
+ ## Recent Teaching
+
+ - [Machine Learning for Business](http://harrywang.me/misy331/)
+ - [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
+
 ## Selected Publications
 
 - “**Unifying Online and Offline Preference for Social Link Prediction**” (with Fan Zhou, Bangying Wu, Kunpeng Zhang, and Yi Yang), *INFORMS Journal on Computing*, 2020, forthcoming.
