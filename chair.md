@@ -16,7 +16,7 @@ I built the Lounge Chair designed by [George Nakashima](https://en.wikipedia.org
 I visited the [George Nakashima Studio](https://nakashimawoodworkers.com/) in Hope, PA (September 2019) - highly recommend the studio tour: beautiful furniture and architecture. I was lucky enough to meet with George Nakashima's daughter Mira Nakashima and got her autograph for his father's book ["The Soul of a Tree"](https://www.amazon.com/Soul-Tree-Master-Woodworkers-Reflections/dp/1568363958).
 
 ![IMG_7378](https://user-images.githubusercontent.com/595772/94876632-405c6f00-0426-11eb-8db8-58cc8e4e2834.JPG)
-![IMG_1369](https://user-images.githubusercontent.com/595772/94876635-42bec900-0426-11eb-9446-ccf6834d3b4a.JPG)
+![IMG_1369 2](https://user-images.githubusercontent.com/595772/94877100-9b429600-0427-11eb-83af-0353b7335d6c.JPG)
 ![IMG_8947](https://user-images.githubusercontent.com/595772/94876663-58cc8980-0426-11eb-94d5-8feabccd1d41.JPG)
 ![IMG_3137](https://user-images.githubusercontent.com/595772/94876644-49e5d700-0426-11eb-9baf-40cd796b14c6.JPG)
 ![IMG_9715](https://user-images.githubusercontent.com/595772/94876648-4baf9a80-0426-11eb-93b8-1e64e1f72f30.JPG)
