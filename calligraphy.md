@@ -21,4 +21,4 @@ Our idea was inspired by paintings by Franz Kline, such as Painting Number 2 (19
 
 This is a collaborative project with the AI Design Lab directed by Dr. Ling Fan at the [College of Design and Innovation](https://tjdi.tongji.edu.cn/?lang=en), Tongji University.
 
-Students: Jinggang Zhuo, Weiwei Bai
+Master Student: Jinggang Zhuo
