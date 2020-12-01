@@ -31,6 +31,6 @@ You can access the source code for this project [here](https://github.com/harryw
 
 ## Team
 
-This is a collaborative project with the AI Design Lab directed by Dr. Ling Fan at the [College of Design and Innovation](https://tjdi.tongji.edu.cn/?lang=en), Tongji University.
+This is a collaborative project with the Design AI Lab directed by Dr. [Ling Fan](https://www.linkedin.com/in/fatflatfloat/) at the [College of Design and Innovation](https://tjdi.tongji.edu.cn/?lang=en), Tongji University.
 
 Master Student: [Jinggang Zhuo](https://github.com/zhuojg)
