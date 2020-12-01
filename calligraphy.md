@@ -12,6 +12,12 @@ Our idea was inspired by paintings by Franz Kline, such as Painting Number 2 (19
 
 <img src="https://user-images.githubusercontent.com/595772/81478786-830a7a00-91ed-11ea-9014-57a10be30aa7.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
 
+## Paper
+
+"**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**", Jinggang Zhuo, Ling Fan, and Harry Jiannan Wang, NeurIPS Workshop on Machine Learning for Creativity and Design, 2020. 
+
+Check out the workshop program [here](https://neurips2020creativity.github.io/)
+
 ## Dataset
 
 We collected 138,499 images of Chinese calligraphy characters written by 19 calligraphers from the Internet, which cover 7328 different characters in total. You can access the dataset [here](https://github.com/zhuojg/chinese-calligraphy-dataset).
@@ -21,7 +27,7 @@ We collected 138,499 images of Chinese calligraphy characters written by 19 call
 You can access the source code for this project [here](https://github.com/harrywang/CalligraphyGAN). We built our system based on many other open source projects - many thanks to those authors. We have also included the docker scripts and Streamlit demo code to make this project more accessible. 
 
 ## Demo
-[calligraphy.ai](http://54.223.165.220:8501/): hosted on a small server located in China without much model tuning, so please expect slow loading and surprising results, which is part of the fun, right? :)
+[Calligraphy.AI](http://54.223.165.220:8501/): hosted on a small server located in China without much model tuning, so please expect slow loading and surprising results, which is part of the fun, right? :)
 
 ## Team
 
