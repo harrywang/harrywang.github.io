@@ -16,10 +16,10 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 
 ## Recent Projects
 
-- [Calligraphy.AI](http://harrywang.me/calligraphy): generative art using calligraphy + GAN & NLP
+- [Calligraphy.AI](http://harrywang.me/calligraphy): abstract art generation based on Chinese calligraphy, GAN, and NLP
 - [DesignNet](https://design-net.org/): an on-going project to build a graphic design image dataset
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
- - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with ~50K views since posted in September 2019.
+ - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >50K views since posted in September 2019.
 
 ## Recent Teaching
 
@@ -27,6 +27,10 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
  - [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
 
 ## Selected Publications
+
+- "**A Two-Phase Approach for Abstractive Podcast Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Text REtrieval Conference (TREC) Podcasts Track*, 2020. [(arXiv link)](https://arxiv.org/abs/2011.08291) 
+- "**A Baseline Analysis for Podcast Abstractive Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Workshop on Podcast Recommendations*, ACM Recommender Systems Conference (RecSys), 2020. [(arXiv link)](https://arxiv.org/abs/2008)
+- “**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**” (with Jinggang Zhuo and Ling Fan), *NeurIPS Workshop on Machine Learning for Creativity and Design*, Vancouver, Canada, 2020. [(arXiv link)](https://arxiv.org/abs/2012.00744)
 
 - “**Unifying Online and Offline Preference for Social Link Prediction**” (with Fan Zhou, Bangying Wu, Kunpeng Zhang, and Yi Yang), *INFORMS Journal on Computing*, 2020, forthcoming.
 - “**Peer Effects in Competitive Environments: Field Experiments on Information Provision and Interventions**” (with Zhuoxin Li and Gang Wang), *MIS Quarterly*, 2020, forthcoming.
