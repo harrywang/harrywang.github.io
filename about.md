@@ -28,10 +28,9 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 
 ## Selected Publications
 
-- "**A Two-Phase Approach for Abstractive Podcast Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Text REtrieval Conference (TREC) Podcasts Track*, 2020. [(arXiv link)](https://arxiv.org/abs/2011.08291) 
-- "**A Baseline Analysis for Podcast Abstractive Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Workshop on Podcast Recommendations*, ACM Recommender Systems Conference (RecSys), 2020. [(arXiv link)](https://arxiv.org/abs/2008)
-- “**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**” (with Jinggang Zhuo and Ling Fan), *NeurIPS Workshop on Machine Learning for Creativity and Design*, Vancouver, Canada, 2020. [(arXiv link)](https://arxiv.org/abs/2012.00744)
-
+- "**A Two-Phase Approach for Abstractive Podcast Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Text REtrieval Conference (TREC) Podcasts Track*, 2020 [(arXiv link)](https://arxiv.org/abs/2011.08291).
+- "**A Baseline Analysis for Podcast Abstractive Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Workshop on Podcast Recommendations*, ACM Recommender Systems Conference (RecSys), 2020 [(arXiv link)](https://arxiv.org/abs/2008).
+- “**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**” (with Jinggang Zhuo and Ling Fan), *NeurIPS Workshop on Machine Learning for Creativity and Design*, Vancouver, Canada, 2020 [(arXiv link)](https://arxiv.org/abs/2012.00744).
 - “**Unifying Online and Offline Preference for Social Link Prediction**” (with Fan Zhou, Bangying Wu, Kunpeng Zhang, and Yi Yang), *INFORMS Journal on Computing*, 2020, forthcoming.
 - “**Peer Effects in Competitive Environments: Field Experiments on Information Provision and Interventions**” (with Zhuoxin Li and Gang Wang), *MIS Quarterly*, 2020, forthcoming.
 - “**Recommendation with diversity: an adaptive trust-aware model**” (with Ting Yu, Wenhua Li, Junpeng Guo, and Ling Fan), *Decision Support Systems*, 2019.
