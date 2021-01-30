@@ -3,7 +3,7 @@ title: A Shed
 layout: page
 ---
 # A Shed
-As a summer project during the COVID-19 pandemic, I designed and built a minimalist and modern shed, which is 8' x 10' with a slanted roof (8' tall wall and 7' short wall).
+As a summer project during the COVID-19 pandemic, I designed and built a minimalist modern shed, which is 8' x 10' with a slanted roof (8' tall wall and 7' short wall).
 
 ## Video and Photos
 
