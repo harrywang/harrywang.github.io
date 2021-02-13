@@ -4,8 +4,8 @@ layout: page
 ---
 # Color + Culture + AI
 
-> ## "In art and anthropology, color symbolism refers to color’s ability to signify meaning to a viewer...the symbology is often societally ingrained...Color meanings thus differ dramatically from culture to culture."
-[(Source)](https://www.shutterstock.com/blog/color-symbolism-and-meanings-around-the-world)
+> ### "In art and anthropology, color symbolism refers to color’s ability to signify meaning to a viewer...the symbology is often societally ingrained...Color meanings thus differ dramatically from culture to culture."
+[- Shutterstock.com](https://www.shutterstock.com/blog/color-symbolism-and-meanings-around-the-world)
 
 An interesting example: the money color is Red in China but Green in USA, e.g., red signifies a rise/green signifies a fall in East Asian stock markets, which is exactly the opposite in North American markets.
 
@@ -19,12 +19,12 @@ Existing research on algorithmic color palette generation and colorization large
 
 Subcultural youth groups in China have their own unique color styles. For example, the combination of red and green is not aesthetically pleasant according to traditional Chinese color theory. However, this same color combination represents a cool and rebellious style for Chinese Youth Subculture (CYS) groups as illustrated by a number of posters found in popular CYS websites.
 
-<img src="https://user-images.githubusercontent.com/65735363/107142022-3663f300-6967-11eb-9d77-7c178c0c3f4f.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<img src="https://user-images.githubusercontent.com/65735363/107142022-3663f300-6967-11eb-9d77-7c178c0c3f4f.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
 
 
 We manually collected 1263 images with CYS color style. Each image is annotated with 5-color palette, descriptive text (keywords that are important for the style), and categories (hiphop, techno, indie, etc.). 
 
-<img src="https://user-images.githubusercontent.com/65735363/107141933-c6556d00-6966-11eb-8bb5-d733c10f5d65.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
+<img src="https://user-images.githubusercontent.com/65735363/107141933-c6556d00-6966-11eb-8bb5-d733c10f5d65.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
 
 You can access the dataset and source code [here](https://github.com/tezignlab/subculture-colorization).
 
