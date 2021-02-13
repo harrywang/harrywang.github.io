@@ -26,9 +26,14 @@ We manually collected 1263 images with CYS color style. Each image is annotated 
 
 <img src="https://user-images.githubusercontent.com/65735363/107141933-c6556d00-6966-11eb-8bb5-d733c10f5d65.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
 
+Our framework includes two separately trained networks, i.e., the color palette generation network and the colorization network:
+
+<img src="https://user-images.githubusercontent.com/65735363/107142441-ee929b00-6969-11eb-8f1d-999048a9b902.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+
 You can access the dataset and source code [here](https://github.com/tezignlab/subculture-colorization).
 
 ## Demo
+
 Demo System Video: [[Youtube]](https://www.youtube.com/watch?v=fLPwr-oX0ds), [[Bilibili]](https://www.bilibili.com/video/BV1Hy4y1Y7oa)
 
 ## Team
