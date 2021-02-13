@@ -14,7 +14,7 @@ Our idea was inspired by paintings by Franz Kline, such as Painting Number 2 (19
 
 ## Paper
 
-"A Framework and Dataset for Abstract Art Generation via CalligraphyGAN", Jinggang Zhuo, Ling Fan, and Harry Jiannan Wang, [Workshop on Machine Learning for Creativity and Design at NeurIPS 2020](https://neurips2020creativity.github.io/), Vancouver, Canada. [(arXiv link)](https://arxiv.org/abs/2012.00744)
+"A Framework and Dataset for Abstract Art Generation via CalligraphyGAN", with Jinggang Zhuo and Ling Fan, [Workshop on Machine Learning for Creativity and Design at NeurIPS 2020](https://neurips2020creativity.github.io/), Vancouver, Canada. [(arXiv link)](https://arxiv.org/abs/2012.00744)
 
 ## Dataset
 

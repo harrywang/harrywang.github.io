@@ -1,0 +1,40 @@
+---
+title: Culture Color Palette Generation and Colorization
+layout: page
+---
+# Color + Culture + AI
+
+> ## "In art and anthropology, color symbolism refers to color’s ability to signify meaning to a viewer...the symbology is often societally ingrained...Color meanings thus differ dramatically from culture to culture."
+[(Source)](https://www.shutterstock.com/blog/color-symbolism-and-meanings-around-the-world)
+
+An interesting example: the money color is Red in China but Green in USA, e.g., red signifies a rise/green signifies a fall in East Asian stock markets, which is exactly the opposite in North American markets.
+
+Existing research on algorithmic color palette generation and colorization largely ignores the cultural aspect. In this project, we contribute to this line of research by first constructing a unique color dataset inspired by a specific culture, i.e., Chinese Youth Subculture (CYS), which is an vibrant and trending cultural group especially for the Gen Z population. We show that the colors used in CYS have special aesthetic and semantic characteristics that are different from generic color theory. We then develop an interactive multi-modal generative framework to create CYS-styled color palettes, which can be used to put a CYS twist on images using our automatic colorization model. Our framework is illustrated via a demo system designed with the human-in-the-loop principle that constantly provides feedback to our algorithms. User studies are also conducted to evaluate our generation results. (Patent Pending, 2021)
+
+## Paper
+
+"Culture-inspired Multi-modal Color Palette Generation and Colorization: A Chinese Youth Subculture Case", with Yufan Li, Jinggang Zhuo, and Ling Fan, [3rd IEEE Workshop on Artificial Intelligence for Art Creation](https://aiart2021.github.io/), Tokyo, Japan, 2021. [(arXiv link)](https://arxiv.org/abs/2102.05231)
+
+## Dataset and Source Code
+
+Subcultural youth groups in China have their own unique color styles. For example, the combination of red and green is not aesthetically pleasant according to traditional Chinese color theory. However, this same color combination represents a cool and rebellious style for Chinese Youth Subculture (CYS) groups as illustrated by a number of posters found in popular CYS websites.
+
+<img src="https://user-images.githubusercontent.com/65735363/107142022-3663f300-6967-11eb-9d77-7c178c0c3f4f.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+
+
+We manually collected 1263 images with CYS color style. Each image is annotated with 5-color palette, descriptive text (keywords that are important for the style), and categories (hiphop, techno, indie, etc.). 
+
+<img src="https://user-images.githubusercontent.com/65735363/107141933-c6556d00-6966-11eb-8bb5-d733c10f5d65.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
+
+You can access the dataset and source code [here](https://github.com/tezignlab/subculture-colorization).
+
+## Demo
+Demo System Video: [[Youtube]](https://www.youtube.com/watch?v=fLPwr-oX0ds), [[Bilibili]](https://www.bilibili.com/video/BV1Hy4y1Y7oa)
+
+## Team
+
+This is a collaborative project with the Design AI Lab directed by Dr. [Ling Fan](https://www.linkedin.com/in/fatflatfloat/) at the [College of Design and Innovation](https://tjdi.tongji.edu.cn/?lang=en), Tongji University.
+
+Master Students: 
+- [Yufan Li](https://www.behance.net/1bowlLIYUFAN)
+- [Jinggang Zhuo](https://github.com/zhuojg)
