@@ -14,11 +14,12 @@ I am very passionate about entrepreneurship and founded [Conferency](https://www
 
 In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([check out some of my hobby projects](hobby.md)).
 
-## Recent Projects
+## Recent Projects and Tutorials
 
+- [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/mini-ml): a set of notebooks covering key basic components of real-world machine learning projects
+- [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
 - [Color + Culture + AI](http://harrywang.me/color): culture-inspired multi-modal color palette generation and colorization
 - [Calligraphy + AI](http://harrywang.me/calligraphy): abstract art generation based on Chinese calligraphy
-- [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/mini-ml): a set of notebooks covering key basic components of real-world machine learning projects
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
 - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >90K views since posted in September 2019.
 
