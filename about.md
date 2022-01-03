@@ -30,6 +30,13 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 
 ## Selected Publications
 
+
+
+- "**Enhanced Seq2Seq Autoencoder via Contrastive Learning for Abstractive Text Summarization**" (with Rachel Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), IEEE Big Data 2021 [(arXiv link)](https://arxiv.org/abs/2108.11992).
+
+- "**Topic-Guided Abstractive Text Summarization: a Joint Learning Approach**" (with Chujie Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), 2021 
+[(arXiv link)](https://arxiv.org/abs/2010.10323).
+
 - "**A Two-Phase Approach for Abstractive Podcast Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Text REtrieval Conference (TREC) Podcasts Track*, 2020 [(arXiv link)](https://arxiv.org/abs/2011.08291).
 - "**A Baseline Analysis for Podcast Abstractive Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Workshop on Podcast Recommendations*, ACM Recommender Systems Conference (RecSys), 2020 [(arXiv link)](https://arxiv.org/abs/2008).
 - “**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**” (with Jinggang Zhuo and Ling Fan), *NeurIPS Workshop on Machine Learning for Creativity and Design*, Vancouver, Canada, 2020 [(arXiv link)](https://arxiv.org/abs/2012.00744).
