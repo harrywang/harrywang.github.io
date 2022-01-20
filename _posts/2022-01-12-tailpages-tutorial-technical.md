@@ -4,7 +4,7 @@ title: Tailpages Technical Tutorial
 tags: tutorial open-source
 ---
 
-Tailpages (Tailwind + Github Pages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at https://harrywang.me/tailpages/.
+Tailpages (Tailwind + Github Pages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at [https://harrywang.me/tailpages/](https://harrywang.me/tailpages/).
 
 Key features are:
 
