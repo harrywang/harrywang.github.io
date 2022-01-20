@@ -1,3 +1,3 @@
-Please visit: [harrywang.me](http://harrywang.me)
+# About
 
-The site template is based on [indigo](https://github.com/sergiokopplin/indigo)
+Harry Wang's Personal Website

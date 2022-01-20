@@ -1,115 +1,44 @@
-# main text of home
-name: Harry Wang
-bio: professor / entrepreneur / maker
+# change the followings to match your Github username and repo name
+baseurl: "" # the name of your github repo
+url: "https://harrywang.github.io" # the url of your github pages
 
-# twitter summary info
-description: technology, entrepreneurship, art, design, woodworking, etc...
+# site information used in page title, meta data etc.
+title: "Harry Wang"
+description: Harry Wang's Personal Website
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/harrywang.jpg
+# color theme for links
+theme-color: indigo # indigo|yellow|pink|green|stone|
 
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: false
-resume-external: false
-resume-url: http://harrywang.me/about
+# homepage information
+author: Harry Wang
+author-bio: professor / entrepreneur / maker  # change to false to hide
+author-image: harrywang.jpg  # file must be in the /assets/img/ folder
 
-url: http://harrywang.github.io
-# your url: http://USERNAME.github.io
+# navigation menu
+show-nav-menu: true
 
-permalink: /:title/
+nav-menu:
+- text: About
+  permalink: about
+- text: Blog
+  permalink: blog
 
-# To enable google analytics, supply your token below
-analytics-google: 'UA-154507291-1'
+# use false to turn off any social media links
+twitter: https://twitter.com/harryjwang
+facebook: false
+instagram: false
+github: https://github.com/harrywang
+linkedin: https://www.linkedin.com/in/harryjwang/
+medium: https://harrywang.medium.com/
+email: false
 
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
+# footer information
+footer-msg: "Powered by Tailpages"
+footer-msg-link: https://github.com/harrywang/tailpages
 
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: #mydisqus # enter this from your disqus account
-  categories: #[blog, project] # only show disqus for posts that have these categories
+# google analytics
+google-analytics: G-QWDZHEK3XK
 
-# if you don't have any of social below, comment the line
-facebook: #myfacebook
-twitter: harryjwang
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-linkedin: harryjwang
-# youtube: myyoutube
-# spotify: myspotify
-github: harrywang
-# gitlab: mygitlab
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-medium: harrywang
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-# email: harryjwang@gmail.com
-info: about
-
-authors:
-    harrywang:
-        name: Harry Wang
-        bio: professor / entrepreneur / developer / maker
-        external-image: false
-        picture: assets/images/harrywang.jpg
-        twitter: harrywang
-
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: large
-
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
-
-# if you don't need projects, comment the *projects* configs below
-projects: false
-
-# if you don't need "about" or "blog", comment them out below
-about: false
-blog: false
-
-# do you want to show the "read time" of the posts?
-read-time: true
-
-# do you want to show the "tags" inside the posts?
-show-tags: false
-
-# related posts inside a post?
-related: false
-
-# Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
-
-# show author block at the end of a post ?
-show-author: false
-
-# do you want some animations?
-animation: false
-
+# jekyll plugins - no need to change
 plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-admin
-
-jekyll-mentions:
-    base_url: https://github.com
-
-compress_html:
-    ignore:
-        envs:
-        - development
-        - stage
-
-exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
+    - jekyll-seo-tag

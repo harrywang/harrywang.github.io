@@ -1,54 +1,67 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: " en-US" }}">
+
 <head>
 
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
-    {% endif %}
+  <!-- google analytics -->
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 
-    <meta charset="utf-8">
-    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+  <!-- Jekyll SEO plugin -->
+  {% seo %}
 
-    <meta name=description content="{{ site.bio }}">
-    <meta name=author content="{{ site.name }}">
-    <meta property="og:image" content="{{ site.url }}/{{ site.picture }}">
-    <meta property="og:type" content="profile">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <!-- TailwindCSS and Inter Font-->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    {% seo %}
-    
-    {% include favicon.html %}
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+    <!-- highlight.js -->
+   <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark-dimmed.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
+ </head>
 
-    <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
-    </style>
-
-</head>
-<body>
-
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
-            {% else %}
-                <div class="{{ page.title | downcase }}">
-            {% endif %}
-        {% endif %}
-
-            {{ content }}
-        </div>
-    </div>
-
-    {% include icons.html %}
-
+<body class="font-sans mx-auto max-w-prose">
+  <div class="pt-12 pb-4">
+    {{ content }}
+  </div>
 </body>
+
+<script>
+  /* Funtion for getting the current year in the footer */
+  (function () {
+    if (document.getElementById("get-current-year")) {
+      document.getElementById(
+        "get-current-year"
+      ).innerHTML = new Date().getFullYear();
+    }
+  })();
+
+  /* Function for opning navbar on mobile */
+  function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+    /* Function for dropdowns */
+    function openDropdown(event, dropdownID) {
+      let element = event.target;
+      while (element.nodeName !== "A") {
+        element = element.parentNode;
+      }
+      document.getElementById(dropdownID).classList.toggle("hidden");
+      document.getElementById(dropdownID).classList.toggle("block");
+    }
+
+</script>
+
 </html>

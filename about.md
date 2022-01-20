@@ -1,8 +1,8 @@
 ---
-title: About Me
 layout: page
+title: About Me
+permalink: about
 ---
-# About Me
 
 Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://lerner.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I am also an affiliated faculty at the [Data Science Institute](https://dsi.udel.edu/) and the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/).
 
@@ -12,15 +12,15 @@ I was the Founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) 
 
 I am very passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
 
-In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([check out some of my hobby projects](hobby.md)).
+In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([check out some of my hobby projects](http://harrywang.me/tag#hobby)).
 
 ## Recent Projects and Tutorials
 
 - [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/mini-ml): a set of notebooks covering key basic components of real-world machine learning projects
 - [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
-- [Color + Culture + AI](http://harrywang.me/color): culture-inspired multi-modal color palette generation and colorization
-- [Calligraphy + AI](http://harrywang.me/calligraphy): abstract art generation based on Chinese calligraphy
-- [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
+- [Color + Culture + AI](http://harrywang.me/2021/02/13/color.html): culture-inspired multi-modal color palette generation and colorization
+- [Calligraphy + AI](http://harrywang.me/2020/05/09/calligraphy.html): abstract art generation based on Chinese calligraphy
+- [FRED (Flask + REact + Docker)](http://harrywang.me/2020/04/10/fred.html): an end-to-end boilerplate for full stack development
 - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >130K views since posted in September 2019.
 
 ## Recent Teaching
@@ -29,8 +29,6 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
  - [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
 
 ## Selected Publications
-
-
 
 - "**Enhanced Seq2Seq Autoencoder via Contrastive Learning for Abstractive Text Summarization**" (with Rachel Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), IEEE Big Data 2021 [(arXiv link)](https://arxiv.org/abs/2108.11992).
 - "**Topic-Guided Abstractive Text Summarization: a Joint Learning Approach**" (with Chujie Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), 2021 
