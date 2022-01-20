@@ -14,7 +14,7 @@ Key features are:
 - Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see [code example](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html))
 
 
-This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](https://harrywang.medium.com/developing-tailpages-a-jekyll-template-based-on-tailwind-css-b8b51e60e25b) or [blog](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html). 
+This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](https://harrywang.medium.com/developing-tailpages-a-jekyll-template-based-on-tailwind-css-b8b51e60e25b) or [blog](http://harrywang.me/2022/01/12/tailpages-tutorial-technical.html). 
 
 You only need a Github account to go over this tutorial, which has the following key steps using Github web interface (if you know Git, you can do all these by cloning the repo, making changes locally, and pushing the updates to Github): 
 

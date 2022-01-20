@@ -13,7 +13,7 @@ Key features are:
 - Markdown support for content authoring (static pages and blogs)
 - Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see examples below)
 
-This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](https://harrywang.medium.com/introducing-tailpages-tailwind-github-pages-89903c52d3ec) or [blog](http://harrywang.me/tailpages/2022/01/11/tailpages-tutorial-nocode.html).
+This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](https://harrywang.medium.com/introducing-tailpages-tailwind-github-pages-89903c52d3ec) or [blog](http://harrywang.me/2022/01/11/tailpages-tutorial-nocode.html).
 
 Let's get started by creating an empty Github repo: 
 
