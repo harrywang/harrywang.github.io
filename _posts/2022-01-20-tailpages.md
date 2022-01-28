@@ -8,7 +8,7 @@ My team started to use Tailwind CSS a few months ago and I want to learn a littl
 
 Tailpages (Tailwind + Github Pages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at [https://harrywang.me/tailpages/](https://harrywang.me/tailpages/).
 
-<img width="879" alt="Screen Shot 2022-01-19 at 6 46 58 PM" src="https://user-images.githubusercontent.com/595772/150410338-6efaaf76-cd2a-470e-82fa-d1f89aacf702.png">
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/150410338-6efaaf76-cd2a-470e-82fa-d1f89aacf702.png">
 
 Key features are:
 
