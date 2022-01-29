@@ -33,11 +33,11 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 - "**Enhanced Seq2Seq Autoencoder via Contrastive Learning for Abstractive Text Summarization**" (with Rachel Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), IEEE Big Data 2021 [(arXiv link)](https://arxiv.org/abs/2108.11992).
 - "**Topic-Guided Abstractive Text Summarization: a Joint Learning Approach**" (with Chujie Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), 2021 
 [(arXiv link)](https://arxiv.org/abs/2010.10323).
+- “**Unifying Online and Offline Preference for Social Link Prediction**” (with Fan Zhou, Bangying Wu, Kunpeng Zhang, and Yi Yang), *INFORMS Journal on Computing*, Volume 33, Issue 4, 2021.
+- “**Peer Effects in Competitive Environments: Field Experiments on Information Provision and Interventions**” (with Zhuoxin Li and Gang Wang), *MIS Quarterly*, Vol. 45 Issue 1, p163-191, 2021.
 - "**A Two-Phase Approach for Abstractive Podcast Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Text REtrieval Conference (TREC) Podcasts Track*, 2020 [(arXiv link)](https://arxiv.org/abs/2011.08291).
 - "**A Baseline Analysis for Podcast Abstractive Summarization**" (with Chujie Zheng, Kunpeng Zhang, and Ling Fan), *Workshop on Podcast Recommendations*, ACM Recommender Systems Conference (RecSys), 2020 [(arXiv link)](https://arxiv.org/abs/2008).
 - “**A Framework and Dataset for Abstract Art Generation via CalligraphyGAN**” (with Jinggang Zhuo and Ling Fan), *NeurIPS Workshop on Machine Learning for Creativity and Design*, Vancouver, Canada, 2020 [(arXiv link)](https://arxiv.org/abs/2012.00744).
-- “**Unifying Online and Offline Preference for Social Link Prediction**” (with Fan Zhou, Bangying Wu, Kunpeng Zhang, and Yi Yang), *INFORMS Journal on Computing*, 2020, forthcoming.
-- “**Peer Effects in Competitive Environments: Field Experiments on Information Provision and Interventions**” (with Zhuoxin Li and Gang Wang), *MIS Quarterly*, 2020, forthcoming.
 - “**Recommendation with diversity: an adaptive trust-aware model**” (with Ting Yu, Wenhua Li, Junpeng Guo, and Ling Fan), *Decision Support Systems*, 2019.
 - “**An intelligent conversation engineering framework for developing dialogue systems**,” Winter Conference on Business Analytics, March 7-9, Snowbird, Utah, 2019.
 - “**The OneConn-MemNN System for Knowledge-Grounded Conversation Modeling**,” (with Junyuan Zheng, Surya Kasturi, Mason Lin, Xin Chen, and Onkar Salvi), *The Thirty-Third AAAI Conference on Artificial Intelligence (AAAI-19)*, January 27-February 1, Honolulu, Hawaii, USA, 2019.

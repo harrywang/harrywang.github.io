@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tailpages (Tailwind + Github Pages)
-tags: open-source
+tags: tutorial open-source
 ---
 
 My team started to use Tailwind CSS a few months ago and I want to learn a little bit more about it so that I don't feel like a complete idiot in some technical discussions :). So, I started a small project to design a Jekyll template using TailwindCSS.
