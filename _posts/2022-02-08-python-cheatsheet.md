@@ -1,10 +1,10 @@
 ---
 layout: post-toc
 title: Python Cheatsheet
-tags: tutorial open-source
+tags: tutorial coding
 ---
 
-This Python Cheatsheet is from [https://www.pythoncheatsheet.org/](https://www.pythoncheatsheet.org/).
+This Python Cheatsheet is revised based on [this one](https://www.pythoncheatsheet.org/).
 
 ## Python Basics
 
@@ -133,17 +133,6 @@ a = 1  # initialization
 ```
 
 Please note the two spaces in front of the comment.
-
-Function docstring:
-
-```python
-def foo():
-    """
-    This is a function docstring
-    You can also use:
-    ''' Function Docstring '''
-    """
-```
 
 [_Return to the Top_](#title)
 
@@ -521,19 +510,6 @@ You can even use a negative number for the step argument to make the for loop co
 0
 ```
 
-### For else statement
-
-This allows to specify a statement to execute in case of the full loop has been executed. Only
-useful when a `break` condition can occur in the loop:
-
-```python
->>> for i in [1, 2, 3, 4, 5]:
->>>    if i == 3:
->>>        break
->>> else:
->>>    print("only executed when no item of the list is equal to 3")
-```
-
 [_Return to the Top_](#title)
 
 ### Importing Modules
@@ -565,185 +541,6 @@ while True:
     if response == 'exit':
         sys.exit()
     print('You typed {}.'.format(response))
-```
-
-[_Return to the Top_](#title)
-
-## Functions
-
-```python
->>> def hello(name):
->>>     print('Hello {}'.format(name))
->>>
->>> hello('Alice')
->>> hello('Bob')
-Hello Alice
-Hello Bob
-```
-[_Return to the Top_](#title)
-
-### Return Values and return Statements
-
-When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
-
-- The return keyword.
-
-- The value or expression that the function should return.
-
-```python
-import random
-def getAnswer(answerNumber):
-    if answerNumber == 1:
-        return 'It is certain'
-    elif answerNumber == 2:
-        return 'It is decidedly so'
-    elif answerNumber == 3:
-        return 'Yes'
-    elif answerNumber == 4:
-        return 'Reply hazy try again'
-    elif answerNumber == 5:
-        return 'Ask again later'
-    elif answerNumber == 6:
-        return 'Concentrate and ask again'
-    elif answerNumber == 7:
-        return 'My reply is no'
-    elif answerNumber == 8:
-        return 'Outlook not so good'
-    elif answerNumber == 9:
-        return 'Very doubtful'
-
-r = random.randint(1, 9)
-fortune = getAnswer(r)
-print(fortune)
-```
-
-[_Return to the Top_](#title)
-
-### The None Value
-
-```python
->>> spam = print('Hello!')
-Hello!
-```
-
-```python
->>> spam is None
-True
-```
-
-Note: never compare to `None` with the `==` operator. Always use `is`.
-
-[_Return to the Top_](#title)
-
-### Keyword Arguments and print()
-
-```python
->>> print('Hello', end='')
->>> print('World')
-HelloWorld
-```
-
-```python
->>> print('cats', 'dogs', 'mice')
-cats dogs mice
-```
-
-```python
->>> print('cats', 'dogs', 'mice', sep=',')
-cats,dogs,mice
-```
-
-[_Return to the Top_](#title)
-
-### Local and Global Scope
-
-- Code in the global scope cannot use any local variables.
-
-- However, a local scope can access global variables.
-
-- Code in a function’s local scope cannot use variables in any other local scope.
-
-- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
-
-[_Return to the Top_](#title)
-
-### The global Statement
-
-If you need to modify a global variable from within a function, use the global statement:
-
-```python
->>> def spam():
->>>     global eggs
->>>     eggs = 'spam'
->>>
->>> eggs = 'global'
->>> spam()
->>> print(eggs)
-spam
-```
-
-There are four rules to tell whether a variable is in a local scope or global scope:
-
-1. If a variable is being used in the global scope (that is, outside of all functions), then it is always a global variable.
-
-1. If there is a global statement for that variable in a function, it is a global variable.
-
-1. Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.
-
-1. But if the variable is not used in an assignment statement, it is a global variable.
-
-[_Return to the Top_](#title)
-
-## Exception Handling
-
-### Basic exception handling
-
-```python
->>> def spam(divideBy):
->>>     try:
->>>         return 42 / divideBy
->>>     except ZeroDivisionError as e:
->>>         print('Error: Invalid argument: {}'.format(e))
->>>
->>> print(spam(2))
->>> print(spam(12))
->>> print(spam(0))
->>> print(spam(1))
-21.0
-3.5
-Error: Invalid argument: division by zero
-None
-42.0
-```
-
-[_Return to the Top_](#title)
-
-### Final code in exception handling
-
-Code inside the `finally` section is always executed, no matter if an exception has been raised or
-not, and even if an exception is not caught.
-
-```python
->>> def spam(divideBy):
->>>     try:
->>>         return 42 / divideBy
->>>     except ZeroDivisionError as e:
->>>         print('Error: Invalid argument: {}'.format(e))
->>>     finally:
->>>         print("-- division finished --")
->>> print(spam(2))
--- division finished --
-21.0
->>> print(spam(12))
--- division finished --
-3.5
->>> print(spam(0))
-Error: Invalid Argument division by zero
--- division finished --
-None
->>> print(spam(1))
--- division finished --
-42.0
 ```
 
 [_Return to the Top_](#title)
@@ -1186,7 +983,7 @@ The main way that tuples are different from lists is that tuples, like strings, 
 
 [_Return to the Top_](#title)
 
-## Dictionaries and Structuring Data
+## Dictionaries
 
 Example Dictionary:
 
@@ -1380,7 +1177,7 @@ Using `setdefault` we could write the same code more succinctly:
 {'c': 4, 'a': 1, 'b': 3}
 ```
 
-## sets
+## Sets
 
 From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -1519,43 +1316,50 @@ KeyError: 3
 
 [_Return to the Top_](#title)
 
+## List/Dict/Set Comprehensions
+
+### List comprehension
+
+```python
+>>> a = [1, 3, 5, 7, 9, 11]
+
+>>> [i - 1 for i in a]
+[0, 2, 4, 6, 8, 10]
+```
+
+### Set comprehension
+
+```python
+>>> b = {"abc", "def"}
+>>> {s.upper() for s in b}
+{"ABC", "DEF"}
+```
+
+### Dict comprehension
+
+```python
+>>> c = {'name': 'Pooka', 'age': 5}
+>>> {v: k for k, v in c.items()}
+{'Pooka': 'name', 5: 'age'}
+```
+
+A List comprehension can be generated from a dictionary:
+
+```python
+>>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
+>>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
+['NAME:POOKA', 'FIRST_NAME:OOOKA']
+```
+
 ## itertools Module
 
-The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The [itertools](https://docs.python.org/3/library/itertools.html) module includes functions creating iterators for efficient looping
 
-From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
+The itertools module comes in the standard library and must be imported: `import itertools`
 
-> The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+The [operator](https://docs.python.org/3/library/operator.html) module will also be used, which you have to import first: `import operator`
 
-The _itertools_ module comes in the standard library and must be imported.
-
-The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
-
-[_Return to the Top_](#title)
-
-### accumulate()
-
-Makes an iterator that returns the results of a function.
-
-```python
-itertools.accumulate(iterable[, func])
-```
-
-Example:
-
-```python
->>> data = [1, 2, 3, 4, 5]
->>> result = itertools.accumulate(data, operator.mul)
->>> for each in result:
->>>    print(each)
-1
-2
-6
-24
-120
-```
-
-The operator.mul takes two numbers and multiplies them:
+The `operator.mul` takes two numbers and multiplies them:
 
 ```python
 operator.mul(1, 2)
@@ -1568,7 +1372,11 @@ operator.mul(24, 5)
 120
 ```
 
-Passing a function is optional:
+[_Return to the Top_](#title)
+
+### accumulate()
+
+Makes an iterator that returns the results of accumulated sum.
 
 ```python
 >>> data = [5, 2, 6, 4, 5, 9, 1]
@@ -1584,16 +1392,18 @@ Passing a function is optional:
 32
 ```
 
-If no function is designated the items will be summed:
+You can also pass a function:
 
 ```python
-5
-5 + 2 = 7
-7 + 6 = 13
-13 + 4 = 17
-17 + 5 = 22
-22 + 9 = 31
-31 + 1 = 32
+>>> data = [1, 2, 3, 4, 5]
+>>> result = itertools.accumulate(data, operator.mul)
+>>> for each in result:
+>>>    print(each)
+1
+2
+6
+24
+120
 ```
 
 [_Return to the Top_](#title)
@@ -2041,40 +1851,250 @@ Example:
 
 [_Return to the Top_](#title)
 
-## Comprehensions
-
-### List comprehension
+## Functions
 
 ```python
->>> a = [1, 3, 5, 7, 9, 11]
-
->>> [i - 1 for i in a]
-[0, 2, 4, 6, 8, 10]
+>>> def hello(name):
+>>>     print('Hello {}'.format(name))
+>>>
+>>> hello('Alice')
+>>> hello('Bob')
+Hello Alice
+Hello Bob
 ```
 
-### Set comprehension
+Function docstring is where you can put description about the function, which you can access using `.__doc__`
 
 ```python
->>> b = {"abc", "def"}
->>> {s.upper() for s in b}
-{"ABC", "DEF"}
+def foo():
+    """
+    this function print out 'foo'
+    """
+    print('foo')
 ```
-
-### Dict comprehension
+then, you can access doctring:
 
 ```python
->>> c = {'name': 'Pooka', 'age': 5}
->>> {v: k for k, v in c.items()}
-{'Pooka': 'name', 5: 'age'}
+>>> foo.__doc__
+"\n    this function print out 'foo'\n    "
+>>> 
 ```
 
-A List comprehension can be generated from a dictionary:
+[_Return to the Top_](#title)
+
+### Return Values and return Statements
+
+When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
+
+- The return keyword.
+
+- The value or expression that the function should return.
 
 ```python
->>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
->>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
-['NAME:POOKA', 'FIRST_NAME:OOOKA']
+import random
+def getAnswer(answerNumber):
+    if answerNumber == 1:
+        return 'It is certain'
+    elif answerNumber == 2:
+        return 'It is decidedly so'
+    elif answerNumber == 3:
+        return 'Yes'
+    elif answerNumber == 4:
+        return 'Reply hazy try again'
+    elif answerNumber == 5:
+        return 'Ask again later'
+    elif answerNumber == 6:
+        return 'Concentrate and ask again'
+    elif answerNumber == 7:
+        return 'My reply is no'
+    elif answerNumber == 8:
+        return 'Outlook not so good'
+    elif answerNumber == 9:
+        return 'Very doubtful'
+
+r = random.randint(1, 9)
+fortune = getAnswer(r)
+print(fortune)
 ```
+
+[_Return to the Top_](#title)
+
+### The None Value
+
+```python
+>>> spam = print('Hello!')
+Hello!
+```
+
+```python
+>>> spam is None
+True
+```
+
+Note: never compare to `None` with the `==` operator. Always use `is`.
+
+[_Return to the Top_](#title)
+
+### Keyword Arguments and print()
+
+```python
+>>> print('Hello', end='')
+>>> print('World')
+HelloWorld
+```
+
+```python
+>>> print('cats', 'dogs', 'mice')
+cats dogs mice
+```
+
+```python
+>>> print('cats', 'dogs', 'mice', sep=',')
+cats,dogs,mice
+```
+
+[_Return to the Top_](#title)
+
+### Local and Global Scope
+
+- Code in the global scope cannot use any local variables.
+
+- However, a local scope can access global variables.
+
+- Code in a function’s local scope cannot use variables in any other local scope.
+
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+
+[_Return to the Top_](#title)
+
+### The global Statement
+
+If you need to modify a global variable from within a function, use the global statement:
+
+```python
+>>> def spam():
+>>>     global eggs
+>>>     eggs = 'spam'
+>>>
+>>> eggs = 'global'
+>>> spam()
+>>> print(eggs)
+spam
+```
+
+There are four rules to tell whether a variable is in a local scope or global scope:
+
+1. If a variable is being used in the global scope (that is, outside of all functions), then it is always a global variable.
+
+1. If there is a global statement for that variable in a function, it is a global variable.
+
+1. Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.
+
+1. But if the variable is not used in an assignment statement, it is a global variable.
+
+[_Return to the Top_](#title)
+
+## Lambda Functions
+
+This function:
+
+```python
+>>> def add(x, y):
+        return x + y
+
+>>> add(5, 3)
+8
+```
+
+Is equivalent to the _lambda_ function:
+
+```python
+>>> add = lambda x, y: x + y
+>>> add(5, 3)
+8
+```
+
+It's not even need to bind it to a name like add before:
+
+```python
+>>> (lambda x, y: x + y)(5, 3)
+8
+```
+
+Like regular nested functions, lambdas also work as lexical closures:
+
+```python
+>>> def make_adder(n):
+        return lambda x: x + n
+
+>>> plus_3 = make_adder(3)
+>>> plus_5 = make_adder(5)
+
+>>> plus_3(4)
+7
+>>> plus_5(4)
+9
+```
+
+Note: lambda can only evaluate an expression, like a single line of code.
+
+[_Return to the Top_](#title)
+
+
+## Exception Handling
+
+### Basic exception handling
+
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>>
+>>> print(spam(2))
+>>> print(spam(12))
+>>> print(spam(0))
+>>> print(spam(1))
+21.0
+3.5
+Error: Invalid argument: division by zero
+None
+42.0
+```
+
+[_Return to the Top_](#title)
+
+### Final code in exception handling
+
+Code inside the `finally` section is always executed, no matter if an exception has been raised or
+not, and even if an exception is not caught.
+
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>>     finally:
+>>>         print("-- division finished --")
+>>> print(spam(2))
+-- division finished --
+21.0
+>>> print(spam(12))
+-- division finished --
+3.5
+>>> print(spam(0))
+Error: Invalid Argument division by zero
+-- division finished --
+None
+>>> print(spam(1))
+-- division finished --
+42.0
+```
+
+[_Return to the Top_](#title)
+
 
 ## Manipulating Strings
 
@@ -2483,6 +2503,26 @@ center():
 
 ## String Formatting
 
+### Formatted String Literals or f-strings (Python 3.6+)
+
+
+```python
+>>> name = 'Elizabeth'
+>>> f'Hello {name}!'
+'Hello Elizabeth!
+```
+
+It is even possible to do inline arithmetic with it:
+
+```python
+>>> a = 5
+>>> b = 10
+>>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
+'Five plus ten is 15 and not 30.'
+```
+
+[_Return to the Top_](#title)
+
 ### % operator
 
 ```python
@@ -2548,25 +2588,6 @@ Or:
 
 ```python
 >>> logging.debug("User name: " + name)
-```
-
-[_Return to the Top_](#title)
-
-### Formatted String Literals or f-strings (Python 3.6+)
-
-```python
->>> name = 'Elizabeth'
->>> f'Hello {name}!'
-'Hello Elizabeth!
-```
-
-It is even possible to do inline arithmetic with it:
-
-```python
->>> a = 5
->>> b = 10
->>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
-'Five plus ten is 15 and not 30.'
 ```
 
 [_Return to the Top_](#title)
@@ -3980,51 +4001,7 @@ logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(
 
 [_Return to the Top_](#title)
 
-## Lambda Functions
 
-This function:
-
-```python
->>> def add(x, y):
-        return x + y
-
->>> add(5, 3)
-8
-```
-
-Is equivalent to the _lambda_ function:
-
-```python
->>> add = lambda x, y: x + y
->>> add(5, 3)
-8
-```
-
-It's not even need to bind it to a name like add before:
-
-```python
->>> (lambda x, y: x + y)(5, 3)
-8
-```
-
-Like regular nested functions, lambdas also work as lexical closures:
-
-```python
->>> def make_adder(n):
-        return lambda x: x + n
-
->>> plus_3 = make_adder(3)
->>> plus_5 = make_adder(5)
-
->>> plus_3(4)
-7
->>> plus_5(4)
-9
-```
-
-Note: lambda can only evaluate an expression, like a single line of code.
-
-[_Return to the Top_](#title)
 
 ## Ternary Conditional Operator
 
