@@ -6,7 +6,7 @@ tags: tutorial open-source
 
 My team started to use Tailwind CSS a few months ago and I want to learn a little bit more about it so that I don't feel like a complete idiot in some technical discussions :). So, I started a small project to design a Jekyll template using TailwindCSS.
 
-Tailpages (Tailwind + Github Pages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at [https://harrywang.me/tailpages/](https://harrywang.me/tailpages/).
+[Tailpages (Tailwind + Github Pages)](https://github.com/harrywang/tailpages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at [https://harrywang.me/tailpages/](https://harrywang.me/tailpages/).
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/150410338-6efaaf76-cd2a-470e-82fa-d1f89aacf702.png">
 
