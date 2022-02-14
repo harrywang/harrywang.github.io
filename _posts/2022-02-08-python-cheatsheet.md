@@ -2505,11 +2505,11 @@ center():
 
 ### Formatted String Literals or f-strings (Python 3.6+)
 
-
 ```python
->>> name = 'Elizabeth'
->>> f'Hello {name}!'
-'Hello Elizabeth!
+>>> name = 'Stephen Curry'
+>>> born = 1988
+>>> print(f"{name} is born in {born}.")
+Stephen Curry is born in 1988.
 ```
 
 It is even possible to do inline arithmetic with it:
@@ -2519,6 +2519,21 @@ It is even possible to do inline arithmetic with it:
 >>> b = 10
 >>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
 'Five plus ten is 15 and not 30.'
+```
+
+Format decimals:
+
+```python
+>>> pi = 3.1415926
+>>> print(f'pi with two decimal places is {pi:.2f}')
+pi with two decimal places is 3.14
+```
+
+Format a number as percentage:
+
+```
+churn_rate = 0.0325
+print(f'the churn rate this month is {churn_rate:.3%}')
 ```
 
 [_Return to the Top_](#title)
