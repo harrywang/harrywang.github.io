@@ -2040,62 +2040,6 @@ Note: lambda can only evaluate an expression, like a single line of code.
 
 [_Return to the Top_](#title)
 
-
-## Exception Handling
-
-### Basic exception handling
-
-```python
->>> def spam(divideBy):
->>>     try:
->>>         return 42 / divideBy
->>>     except ZeroDivisionError as e:
->>>         print('Error: Invalid argument: {}'.format(e))
->>>
->>> print(spam(2))
->>> print(spam(12))
->>> print(spam(0))
->>> print(spam(1))
-21.0
-3.5
-Error: Invalid argument: division by zero
-None
-42.0
-```
-
-[_Return to the Top_](#title)
-
-### Final code in exception handling
-
-Code inside the `finally` section is always executed, no matter if an exception has been raised or
-not, and even if an exception is not caught.
-
-```python
->>> def spam(divideBy):
->>>     try:
->>>         return 42 / divideBy
->>>     except ZeroDivisionError as e:
->>>         print('Error: Invalid argument: {}'.format(e))
->>>     finally:
->>>         print("-- division finished --")
->>> print(spam(2))
--- division finished --
-21.0
->>> print(spam(12))
--- division finished --
-3.5
->>> print(spam(0))
-Error: Invalid Argument division by zero
--- division finished --
-None
->>> print(spam(1))
--- division finished --
-42.0
-```
-
-[_Return to the Top_](#title)
-
-
 ## Manipulating Strings
 
 ### Escape Characters
@@ -2620,6 +2564,61 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 ```
 
 [_Return to the Top_](#title)
+
+## Exception Handling
+
+### Basic exception handling
+
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>>
+>>> print(spam(2))
+>>> print(spam(12))
+>>> print(spam(0))
+>>> print(spam(1))
+21.0
+3.5
+Error: Invalid argument: division by zero
+None
+42.0
+```
+
+[_Return to the Top_](#title)
+
+### Final code in exception handling
+
+Code inside the `finally` section is always executed, no matter if an exception has been raised or
+not, and even if an exception is not caught.
+
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>>     finally:
+>>>         print("-- division finished --")
+>>> print(spam(2))
+-- division finished --
+21.0
+>>> print(spam(12))
+-- division finished --
+3.5
+>>> print(spam(0))
+Error: Invalid Argument division by zero
+-- division finished --
+None
+>>> print(spam(1))
+-- division finished --
+42.0
+```
+
+[_Return to the Top_](#title)
+
 
 ## Regular Expressions
 
@@ -4174,31 +4173,6 @@ For example, file objects are context managers. When a context ends, the file ob
 
 Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
 
-### Writing your own contextmanager using generator syntax
-
-It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
-
-```python
->>> import contextlib
->>> @contextlib.contextmanager
-... def context_manager(num):
-...     print('Enter')
-...     yield num + 1
-...     print('Exit')
->>> with context_manager(2) as cm:
-...     # the following instructions are run when the 'yield' point of the context
-...     # manager is reached.
-...     # 'cm' will have the value that was yielded
-...     print('Right in the middle with cm = {}'.format(cm))
-Enter
-Right in the middle with cm = 3
-Exit
-
->>>
-```
-
-[_Return to the Top_](#title)
-
 ## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
@@ -4242,112 +4216,6 @@ For example we are developing script which is designed to be used as module, we 
 
 [_Return to the Top_](#title)
 
-## setup.py
-
-The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
-
-The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
-
-This allows you to easily install Python packages. Often it's enough to write:
-
-```bash
-python setup.py install
-```
-
-and module will install itself.
-
-Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
-
-```python
->>> from distutils.core import setup
->>> setup(
-...    name='pythonCheatsheet',
-...    version='0.1',
-...    packages=['pipenv',],
-...    license='MIT',
-...    long_description=open('README.txt').read(),
-... )
-```
-
-Find more information visit [http://docs.python.org/install/index.html](http://docs.python.org/install/index.html).
-
-[_Return to the Top_](#title)
-
-## Dataclasses
-
-`Dataclasses` are python classes but are suited for storing data objects.
-This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
-
-### Features
-
-1. They store data and represent a certain data type. Ex: A number. For people familiar with ORMs, a model instance is a data object. It represents a specific kind of entity. It holds attributes that define or represent the entity.
-
-2. They can be compared to other objects of the same type. Ex: A number can be greater than, less than, or equal to another number.
-
-Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.
-
-python 2.7
-
-```python
->>> class Number:
-...     def __init__(self, val):
-...         self.val = val
-...
->>> obj = Number(2)
->>> obj.val
-2
-```
-
-with dataclass
-
-```python
->>> @dataclass
-... class Number:
-...     val: int
-...
->>> obj = Number(2)
->>> obj.val
-2
-```
-
-[_Return to the Top_](#title)
-
-### Default values
-
-It is easy to add default values to the fields of your data class.
-
-```python
->>> @dataclass
-... class Product:
-...     name: str
-...     count: int = 0
-...     price: float = 0.0
-...
->>> obj = Product("Python")
->>> obj.name
-Python
->>> obj.count
-0
->>> obj.price
-0.0
-```
-
-### Type hints
-
-It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
-
-```python
->>> from dataclasses import dataclass
->>> from typing import Any
-
->>> @dataclass
-... class WithoutExplicitTypes:
-...    name: Any
-...    value: Any = 42
-...
-```
-
-[_Return to the Top_](#title)
 
 ## Virtual Environment
 
@@ -4357,132 +4225,22 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 ### virtualenv
 
-1.  Install virtualenv
+Python 3.6+ has this build-in:
 
-        pip install virtualenv
+- Make a Virtual Environment with name `venv`
 
-1.  Install virtualenvwrapper-win (Windows)
+        python -m venv venv
 
-        pip install virtualenvwrapper-win
+Anything we install now will be specific to this project. And available to the projects we connect to this environment.
 
-Usage:
+- Activate the virtual environment
 
-1.  Make a Virtual Environment
+        source venv/bin/activate
 
-        mkvirtualenv HelloWold
-
-    Anything we install now will be specific to this project. And available to the projects we connect to this environment.
-
-1.  Set Project Directory
-
-    To bind our virtualenv with our current working directory we simply enter:
-
-        setprojectdir .
-
-1.  Deactivate
-
-    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+- Deactivate
 
         deactivate
 
-    Notice how the parenthesis disappear.
-
-1.  Workon
-
-    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
-
-        workon HelloWold
-
-[_Return to the Top_](#title)
-
-### poetry
-
-> [Poetry](https://poetry.eustace.io/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
-
-1.  Install Poetry
-
-        pip install --user poetry
-
-2.  Create a new project
-
-        poetry new my-project
-
-    This will create a my-project directory:
-
-        my-project
-        ├── pyproject.toml
-        ├── README.rst
-        ├── poetry_demo
-        │   └── __init__.py
-        └── tests
-            ├── __init__.py
-            └── test_poetry_demo.py
-
-    The pyproject.toml file will orchestrate your project and its dependencies:
-
-        [tool.poetry]
-        name = "my-project"
-        version = "0.1.0"
-        description = ""
-        authors = ["your name <your@mail.com>"]
-
-        [tool.poetry.dependencies]
-        python = "*"
-
-        [tool.poetry.dev-dependencies]
-        pytest = "^3.4"
-
-3.  Packages
-
-    To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
-
-        [tool.poetry.dependencies]
-        pendulum = "^1.4"
-
-    Also, instead of modifying the pyproject.toml file by hand, you can use the add command and it will automatically find a suitable version constraint.
-
-        $ poetry add pendulum
-
-    To install the dependencies listed in the pyproject.toml:
-
-        poetry install
-
-    To remove dependencies:
-
-        poetry remove pendulum
-
-For more information, check the [documentation](https://poetry.eustace.io/docs/).
-
-[_Return to the Top_](#title)
-
-### pipenv
-
-> [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
-
-1.  Install pipenv
-
-        pip install pipenv
-
-1.  Enter your Project directory and install the Packages for your project
-
-        cd my_project
-        pipenv install <package>
-
-    Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
-
-1.  Uninstall Packages
-
-        pipenv uninstall <package>
-
-1.  Activate the Virtual Environment associated with your Python project
-
-        pipenv shell
-
-1.  Exit the Virtual Environment
-
-        exit
-
-Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
 [_Return to the Top_](#title)
 
@@ -4495,13 +4253,13 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 Usage:
 
-1.  Make a Virtual Environment
+1.  Make a Virtual Environment with name `datascience`
 
-        conda create -n HelloWorld
+        conda create -n datascience
 
 2.  To use the Virtual Environment, activate it by:
 
-        conda activate HelloWorld
+        conda activate datascience
 
     Anything installed now will be specific to the project HelloWorld
 
