@@ -4,7 +4,7 @@ title: Python Cheatsheet
 tags: tutorial coding
 ---
 
-This Python Cheatsheet is revised based on many references.
+This Python Cheatsheet is revised based on [this one](https://www.pythoncheatsheet.org/).
 
 ## Python Basics
 
@@ -546,10 +546,10 @@ while True:
 ## Lists
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
 
->>> animals
-['cat', 'dog', 'fish', 'elephant']
+>>> spam
+['cat', 'bat', 'rat', 'elephant']
 ```
 
 [_Return to the Top_](#title)
@@ -557,14 +557,24 @@ while True:
 ### Getting Individual Values in a List with Indexes
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals[0]
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0]
 'cat'
 ```
 
 ```python
->>> animals[1]
-'dog'
+>>> spam[1]
+'bat'
+```
+
+```python
+>>> spam[2]
+'rat'
+```
+
+```python
+>>> spam[3]
+'elephant'
 ```
 
 [_Return to the Top_](#title)
@@ -572,19 +582,19 @@ while True:
 ### Negative Indexes
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals[-1]
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[-1]
 'elephant'
 ```
 
 ```python
->>> animals[-3]
-'dog'
+>>> spam[-3]
+'bat'
 ```
 
 ```python
->>> f'I have one {animals[0]} and no {animals[-3]}.'
-'I have one cat and no dog.'
+>>> 'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
+'The elephant is afraid of the bat.'
 ```
 
 [_Return to the Top_](#title)
@@ -592,42 +602,42 @@ while True:
 ### Getting Sublists with Slices
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals[0:4]
-['cat', 'dog', 'fish', 'elephant']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0:4]
+['cat', 'bat', 'rat', 'elephant']
 ```
 
 ```python
->>> animals[1:3]
+>>> spam[1:3]
 ['bat', 'rat']
 ```
 
 ```python
->>> animals[0:-1]
-['cat', 'dog', 'fish']
+>>> spam[0:-1]
+['cat', 'bat', 'rat']
 ```
 
 ```python
->>> animals[:2]
-['cat', 'dog']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[:2]
+['cat', 'bat']
 ```
 
 ```python
->>> animals[1:]
-['dog', 'fish', 'elephant']
+>>> spam[1:]
+['bat', 'rat', 'elephant']
 ```
 
 Slicing the complete list will perform a copy:
 
 ```python
->>> animals2 = animals[:]  # this is making a copy
->>> animals2
-['cat', 'dog', 'fish', 'elephant']
->>> animals.append('bird')
->>> animals
-['cat', 'dog', 'fish', 'elephant', 'bird']
->>> animals2
-['cat', 'dog', 'fish', 'elephant']
+>>> spam2 = spam[:]
+['cat', 'bat', 'rat', 'elephant']
+>>> spam.append('dog')
+>>> spam
+['cat', 'bat', 'rat', 'elephant', 'dog']
+>>> spam2
+['cat', 'bat', 'rat', 'elephant']
 ```
 
 [_Return to the Top_](#title)
@@ -635,8 +645,8 @@ Slicing the complete list will perform a copy:
 ### Getting a List’s Length with len()
 
 ```python
->>> animals = ['cat', 'dog', 'moose']
->>> len(animals)
+>>> spam = ['cat', 'dog', 'moose']
+>>> len(spam)
 3
 ```
 
@@ -645,17 +655,21 @@ Slicing the complete list will perform a copy:
 ### Changing Values in a List with Indexes
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals[1] = 'bird'
->>> animals
-['cat', 'bird', 'fish', 'elephant']
->>> animals[2] = animals[0]
->>> animals
-['cat', 'bird', 'cat', 'elephant']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[1] = 'aardvark'
 
->>> animals[-1] = 12345
->>> animals
-['cat', 'bird', 'cat', 12345]
+>>> spam
+['cat', 'aardvark', 'rat', 'elephant']
+
+>>> spam[2] = spam[1]
+
+>>> spam
+['cat', 'aardvark', 'aardvark', 'elephant']
+
+>>> spam[-1] = 12345
+
+>>> spam
+['cat', 'aardvark', 'aardvark', 12345]
 ```
 
 [_Return to the Top_](#title)
@@ -669,6 +683,29 @@ Slicing the complete list will perform a copy:
 >>> ['X', 'Y', 'Z'] * 3
 ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
 
+>>> spam = [1, 2, 3]
+
+>>> spam = spam + ['A', 'B', 'C']
+
+>>> spam
+[1, 2, 3, 'A', 'B', 'C']
+```
+
+[_Return to the Top_](#title)
+
+### Removing Values from Lists with del Statements
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> del spam[2]
+>>> spam
+['cat', 'bat', 'elephant']
+```
+
+```python
+>>> del spam[2]
+>>> spam
+['cat', 'bat']
 ```
 
 [_Return to the Top_](#title)
@@ -676,14 +713,13 @@ Slicing the complete list will perform a copy:
 ### Using for Loops with Lists
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> for i, animal in enumerate(animals):
-...     print(f'Index {i} in animals list is: {animal}')
-... 
-Index 0 in animals list is: cat
-Index 1 in animals list is: dog
-Index 2 in animals list is: fish
-Index 3 in animals list is: elephant
+>>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+>>> for i, supply in enumerate(supplies):
+>>>     print('Index {} in supplies is: {}'.format(str(i), supply))
+Index 0 in supplies is: pens
+Index 1 in supplies is: staplers
+Index 2 in supplies is: flame-throwers
+Index 3 in supplies is: binders
 ```
 
 [_Return to the Top_](#title)
@@ -694,7 +730,7 @@ Index 3 in animals list is: elephant
 >>> name = ['Pete', 'John', 'Elizabeth']
 >>> age = [6, 23, 44]
 >>> for n, a in zip(name, age):
->>>     print(f'{n} is {a} years old')
+>>>     print('{} is {} years old'.format(n, a))
 Pete is 6 years old
 John is 23 years old
 Elizabeth is 44 years old
@@ -703,18 +739,25 @@ Elizabeth is 44 years old
 ### The in and not in Operators
 
 ```python
->>> 'cat' in ['cat', 'dog', 'fish', 'elephant']
+>>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
 True
 ```
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> 'bird' in animals
+>>> spam = ['hello', 'hi', 'howdy', 'heyas']
+>>> 'cat' in spam
 False
->>> 'bird' not in animals
-True
 ```
 
+```python
+>>> 'howdy' not in spam
+False
+```
+
+```python
+>>> 'cat' not in spam
+True
+```
 
 [_Return to the Top_](#title)
 
@@ -723,30 +766,35 @@ True
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
 ```python
->>> customer = ['John', 'Male', 25]
->>> name = customer[0]
->>> gender = customer[1]
->>> age = customer[2]
+>>> cat = ['fat', 'orange', 'loud']
+
+>>> size = cat[0]
+
+>>> color = cat[1]
+
+>>> disposition = cat[2]
 ```
 
 You could type this line of code:
 
 ```python
->>> customer = ['John', 'Male', 25]
->>> name, gender, age = customer
+>>> cat = ['fat', 'orange', 'loud']
+
+>>> size, color, disposition = cat
 ```
-You will get an error if the number of variables does not match the elements in the list:
+
+The multiple assignment trick can also be used to swap the values in two variables:
 
 ```python
->>> customer = ['John', 'Male', 25]
->>> name, gender  = customer
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: too many values to unpack (expected 2)
->>> name, gender, age, address  = customer
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: not enough values to unpack (expected 4, got 3)
+>>> a, b = 'Alice', 'Bob'
+>>> a, b = b, a
+>>> print(a)
+'Bob'
+```
+
+```python
+>>> print(b)
+'Alice'
 ```
 
 [_Return to the Top_](#title)
@@ -755,24 +803,24 @@ ValueError: not enough values to unpack (expected 4, got 3)
 
 | Operator    | Equivalent        |
 | ----------- | ----------------- |
-| `x += 1` | `x = x + 1` |
-| `x -= 1` | `x = x - 1` |
-| `x *= 1` | `x = x * 1` |
-| `x /= 1` | `x = x / 1` |
-| `x %= 1` | `x = x % 1` |
+| `spam += 1` | `spam = spam + 1` |
+| `spam -= 1` | `spam = spam - 1` |
+| `spam *= 1` | `spam = spam * 1` |
+| `spam /= 1` | `spam = spam / 1` |
+| `spam %= 1` | `spam = spam % 1` |
 
 Examples:
 
 ```python
->>> a = 'Hello'
->>> a += ' world!'
->>> a
+>>> spam = 'Hello'
+>>> spam += ' world!'
+>>> spam
 'Hello world!'
 
->>> b = ['hello']
->>> b *= 3
->>> b
-['hello', 'hello', 'hello']
+>>> bacon = ['Zophie']
+>>> bacon *= 3
+>>> bacon
+['Zophie', 'Zophie', 'Zophie']
 ```
 
 [_Return to the Top_](#title)
@@ -780,8 +828,9 @@ Examples:
 ### Finding a Value in a List with the index() Method
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals.index('dog')
+>>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+
+>>> spam.index('Pooka')
 1
 ```
 
@@ -813,91 +862,103 @@ Examples:
 
 [_Return to the Top_](#title)
 
-### Removing Values from Lists with remove() or pop()
-
-- `remove()` method delete values or object from the list using value
-- `pop()` deletes values or object from the list using an index
+### Removing Values from Lists with remove()
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals.pop(2)
-'fish'
->>> animals
-['cat', 'dog', 'elephant']
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals.remove('cat')
->>> animals
-['dog', 'fish', 'elephant']
->>> animals.pop()
-'elephant'
->>> animals
-['dog', 'fish']
->>> animals.pop(1)
-'fish'
->>> animals
-['dog']
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.remove('bat')
+
+>>> spam
+['cat', 'rat', 'elephant']
 ```
 
 If the value appears multiple times in the list, only the first instance of the value will be removed.
 
 [_Return to the Top_](#title)
 
+### Removing Values from Lists with pop()
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.pop()
+'elephant'
+
+>>> spam
+['cat', 'bat', 'rat']
+
+>>> spam.pop(0)
+'cat'
+
+>>> spam
+['bat', 'rat']
+```
+
+[_Return to the Top_](#title)
+
 ### Sorting the Values in a List with the sort() Method
 
 ```python
->>> a = [2, 5, 3.14, 1, -7]
->>> a.sort()
->>> a
+>>> spam = [2, 5, 3.14, 1, -7]
+>>> spam.sort()
+>>> spam
 [-7, 1, 2, 3.14, 5]
 ```
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> animals.sort()
->>> animals
-['cat', 'dog', 'elephant', 'fish']
+>>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+>>> spam.sort()
+>>> spam
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
 
 You can also pass True for the reverse keyword argument to have sort() sort the values in reverse order:
 
 ```python
->>> animals.sort(reverse=True)
->>> animals
-['fish', 'elephant', 'dog', 'cat']
+>>> spam.sort(reverse=True)
+>>> spam
+['elephants', 'dogs', 'cats', 'badgers', 'ants']
+```
+
+If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort() method call:
+
+```python
+>>> spam = ['a', 'z', 'A', 'Z']
+>>> spam.sort(key=str.lower)
+>>> spam
+['a', 'A', 'z', 'Z']
 ```
 
 You can use the built-in function `sorted` to return a new list:
 
 ```python
->>> animals = ['cat', 'dog', 'fish', 'elephant']
->>> sorted(animals)
-['cat', 'dog', 'elephant', 'fish']
->>> animals
-['cat', 'dog', 'fish', 'elephant']
+>>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+>>> sorted(spam)
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
 
 [_Return to the Top_](#title)
 
 ### Tuple Data Type
 
-Tuples and lists are the same in every way except two: 
-
-- tuples use parentheses instead of square brackets
-- the items in tuples cannot be modified (**immutable**) but the items in lists can be modified (**mutable**)
+```python
+>>> eggs = ('hello', 42, 0.5)
+>>> eggs[0]
+'hello'
+```
 
 ```python
->>> a = [1, 1, 2, 3, 5, 8]  # list
->>> b = (1, 1, 2, 3, 5, 8)  # tuple
->>> a[4] = 'hello!'
->>> a
-[1, 1, 2, 3, 'hello!', 8]
->>> b[4] = 'hello!'
-Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-TypeError: 'tuple' object does not support item assignment
->>> b
-(1, 1, 2, 3, 5, 8)
+>>> eggs[1:3]
+(42, 0.5)
 ```
+
+```python
+>>> len(eggs)
+3
+```
+
+The main way that tuples are different from lists is that tuples, like strings, are immutable.
 
 [_Return to the Top_](#title)
 
@@ -4203,12 +4264,5 @@ Usage:
 3.  Exit the Virtual Environment
 
         conda deactivate
-
-[_Return to the Top_](#title)
-
-## References
-
-- https://www.pythoncheatsheet.org
-- https://bit.ly/3I8EeDW
 
 [_Return to the Top_](#title)

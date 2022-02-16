@@ -3,6 +3,11 @@ layout: post
 title: Tailpages (Tailwind + Github Pages)
 tags: tutorial open-source
 ---
+<div class="flex justify-center">
+
+<a href="https://www.producthunt.com/posts/tailpages-tailwind-github-pages?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tailpages-tailwind-github-pages" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=331602&theme=light" alt="Tailpages (Tailwind + Github Pages) - A Minimalist Jekyll Template for Personal Websites | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+</div>
 
 My team started to use Tailwind CSS a few months ago and I want to learn a little bit more about it so that I don't feel like a complete idiot in some technical discussions :). So, I started a small project to design a Jekyll template using TailwindCSS.
 
@@ -23,9 +28,3 @@ Key features are:
 ### Tutorials
 - No-code Tutorial: this tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](https://harrywang.medium.com/introducing-tailpages-tailwind-github-pages-89903c52d3ec) or [blog](http://harrywang.me/2022/01/19/tailpages-tutorial-nocode.html).
 - Technical Tutorial: this tutorial shows how to setup the development environment for Tailpages from scratch, which you can access at [medium](https://harrywang.medium.com/developing-tailpages-a-jekyll-template-based-on-tailwind-css-b8b51e60e25b) or [blog](http://harrywang.me/2022/01/18/tailpages-tutorial-technical.html). 
-
-<div class="flex justify-center">
-
-<a href="https://www.producthunt.com/posts/tailpages-tailwind-github-pages?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tailpages-tailwind-github-pages" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=331602&theme=light" alt="Tailpages (Tailwind + Github Pages) - A Minimalist Jekyll Template for Personal Websites | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-</div>
