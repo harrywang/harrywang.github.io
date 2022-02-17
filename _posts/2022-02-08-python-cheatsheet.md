@@ -379,111 +379,77 @@ True
 
 [_Return to the Top_](#title)
 
-### if Statements
+
+
+### `if` Statements
 
 ```python
-if name == 'Alice':
-    print('Hi, Alice.')
+>>> credit_score = 750
+>>> if credit_score >= 720:
+...     print('Excellent')
+... 
+Excellent
+
+>>> credit_score = 700
+>>> if credit_score >= 690 and credit_score <= 719:
+...     print('Good')
+... 
+Good
 ```
 
 [_Return to the Top_](#title)
 
-### else Statements
+### `else` Statements
 
 ```python
-name = 'Bob'
-if name == 'Alice':
-    print('Hi, Alice.')
+credit_score = 650
+if credit_score>=700:
+    print('loan approved')  # auto loan approval
 else:
-    print('Hello, stranger.')
+    print('application received and under review')
 ```
 
 [_Return to the Top_](#title)
 
-### elif Statements
+### `elif` Statements
 
 ```python
-name = 'Bob'
-age = 5
-if name == 'Alice':
-    print('Hi, Alice.')
-elif age < 12:
-    print('You are not Alice, kiddo.')
+credit_score = 600
+student = 'yes'
+if credit_score>=700:
+    print('card approved')
+elif student == 'yes':
+    print('student card approved')
 ```
+`if...elif...else`
 
 ```python
-name = 'Bob'
-age = 30
-if name == 'Alice':
-    print('Hi, Alice.')
-elif age < 12:
-    print('You are not Alice, kiddo.')
+credit_score = 600
+student = 'no'
+if credit_score>=700:
+    print('card approved')
+elif student == 'yes':
+    print('student card approved')
 else:
-    print('You are neither Alice nor a little kid.')
+    print('application declined')
 ```
 
 [_Return to the Top_](#title)
 
-### while Loop Statements
+### `for` Loops and the `range()` Function
 
 ```python
-spam = 0
-while spam < 5:
-    print('Hello, world.')
-    spam = spam + 1
+print('The only three things that matter in real estate are:')
+for i in range(3):
+    print(f'{i+1}. Location!')
+
+The only three things that matter in real estate are:
+1. Location!
+2. Location!
+3. Location!
 ```
 
-[_Return to the Top_](#title)
-
-### break Statements
-
-If the execution reaches a break statement, it immediately exits the while loop’s clause:
-
-```python
-while True:
-    print('Please type your name.')
-    name = input()
-    if name == 'your name':
-        break
-print('Thank you!')
-```
-
-[_Return to the Top_](#title)
-
-### continue Statements
-
-When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
-
-```python
-while True:
-    print('Who are you?')
-    name = input()
-    if name != 'Joe':
-        continue
-    print('Hello, Joe. What is the password? (It is a fish.)')
-    password = input()
-    if password == 'swordfish':
-        break
-print('Access granted.')
-```
-
-[_Return to the Top_](#title)
-
-### for Loops and the range() Function
-
-```python
->>> print('My name is')
->>> for i in range(5):
->>>     print('Jimmy Five Times ({})'.format(str(i)))
-My name is
-Jimmy Five Times (0)
-Jimmy Five Times (1)
-Jimmy Five Times (2)
-Jimmy Five Times (3)
-Jimmy Five Times (4)
-```
-
-The _range()_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
+The `range()` function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 >>> for i in range(0, 10, 2):
@@ -510,38 +476,63 @@ You can even use a negative number for the step argument to make the for loop co
 
 [_Return to the Top_](#title)
 
-### Importing Modules
+
+### while Loop Statements
 
 ```python
-import random
-for i in range(5):
-    print(random.randint(1, 10))
+a = 0
+while a < 5:
+    print('Hello, world.')
+    a = a + 1
 ```
-
-```python
-import random, sys, os, math
-```
-
-```python
-from random import *
-```
+**NOTE**: in the example above, if you don't increase the value of `a` within the loop, the condition would be always true, then you run into an infinite loop. 
 
 [_Return to the Top_](#title)
 
-### Ending a Program Early with sys.exit()
+### `break` Statements
+
+If the execution reaches a `break` statement, it immediately exits the while loop’s clause:
 
 ```python
-import sys
-
 while True:
-    print('Type exit to exit.')
-    response = input()
-    if response == 'exit':
-        sys.exit()
-    print('You typed {}.'.format(response))
+    print('Please enter the password:')
+    name = input()
+    if name == 'precious':
+        break
+print('here is the ring')
 ```
 
 [_Return to the Top_](#title)
+
+### `continue` Statements
+
+When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
+
+```python
+while True:
+    print('Who are you?')
+    name = input()
+    if name != 'Joe':
+        continue
+    print('Hello, Joe. What is the password? (It is a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
+print('Access granted.')
+```
+
+### `pass` Statement
+
+`pass` is a null statement, which is generally used as a placeholder and results into no operation.
+
+```python
+a = 5
+if a == 5:
+    pass  # nothing happens
+```
+
+[_Return to the Top_](#title)
+
 
 ## Lists
 
@@ -922,54 +913,59 @@ TypeError: 'tuple' object does not support item assignment
 
 ## Dictionaries
 
-Example Dictionary:
+Dictionary: key:value pairs separated by comma:
 
 ```python
-myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
+customer = {'name': 'John', 'gender': 'male', 'age': 25}
 ```
 
 [_Return to the Top_](#title)
 
 ### The keys(), values(), and items() Methods
 
-values():
+`keys()`:
 
 ```python
->>> spam = {'color': 'red', 'age': 42}
->>> for v in spam.values():
->>>     print(v)
-red
-42
-```
-
-keys():
-
-```python
->>> for k in spam.keys():
->>>     print(k)
-color
+>>> for k in customer.keys():
+...     print(k)
+... 
+name
+gender
 age
 ```
 
-items():
+`values()`:
 
 ```python
->>> for i in spam.items():
->>>     print(i)
-('color', 'red')
-('age', 42)
+>>> for v in customer.values():
+...     print(v)
+... 
+John
+male
+25
 ```
 
-Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively.
+`items()`: each item is a tuple
+
+```python
+>>> for i in customer.items():
+...     print(i)
+... 
+('name', 'John')
+('gender', 'male')
+('age', 25)
+```
+
+access the key and value from each item via a for loop:
 
 ```python
 
->>> spam = {'color': 'red', 'age': 42}
->>>
->>> for k, v in spam.items():
->>>     print('Key: {} Value: {}'.format(k, str(v)))
-Key: age Value: 42
-Key: color Value: red
+>>> for k, v in customer.items():
+...     print(f'Key is {k}, Value is {v}')
+... 
+Key is name, Value is John
+Key is gender, Value is male
+Key is age, Value is 25
 ```
 
 [_Return to the Top_](#title)
@@ -977,27 +973,13 @@ Key: color Value: red
 ### Checking Whether a Key or Value Exists in a Dictionary
 
 ```python
->>> spam = {'name': 'Zophie', 'age': 7}
-```
-
-```python
->>> 'name' in spam.keys()
-True
-```
-
-```python
->>> 'Zophie' in spam.values()
-True
-```
-
-```python
->>> # You can omit the call to keys() when checking for a key
->>> 'color' in spam
+>>> 'zip' in customer.keys()
 False
-```
-
-```python
->>> 'color' not in spam
+>>> 'age' in customer
+True
+>>> 'john' in customer.values()
+False
+>>> 'John' in customer.values()
 True
 ```
 
@@ -1005,95 +987,14 @@ True
 
 ### The get() Method
 
-Get has two parameters: key and default value if the key did not exist
+Get has two parameters: key and default value if the key does not exist
 
 ```python
->>> picnic_items = {'apples': 5, 'cups': 2}
-
->>> 'I am bringing {} cups.'.format(str(picnic_items.get('cups', 0)))
-'I am bringing 2 cups.'
-```
-
-```python
->>> 'I am bringing {} eggs.'.format(str(picnic_items.get('eggs', 0)))
-'I am bringing 0 eggs.'
-```
-
-[_Return to the Top_](#title)
-
-### The setdefault() Method
-
-Let's consider this code:
-
-```python
-spam = {'name': 'Pooka', 'age': 5}
-
-if 'color' not in spam:
-    spam['color'] = 'black'
-```
-
-Using `setdefault` we could write the same code more succinctly:
-
-```python
->>> spam = {'name': 'Pooka', 'age': 5}
->>> spam.setdefault('color', 'black')
-'black'
-```
-
-```python
->>> spam
-{'color': 'black', 'age': 5, 'name': 'Pooka'}
-```
-
-```python
->>> spam.setdefault('color', 'white')
-'black'
-```
-
-```python
->>> spam
-{'color': 'black', 'age': 5, 'name': 'Pooka'}
-```
-
-[_Return to the Top_](#title)
-
-### Pretty Printing
-
-```python
->>> import pprint
->>>
->>> message = 'It was a bright cold day in April, and the clocks were striking
->>> thirteen.'
->>> count = {}
->>>
->>> for character in message:
->>>     count.setdefault(character, 0)
->>>     count[character] = count[character] + 1
->>>
->>> pprint.pprint(count)
-{' ': 13,
- ',': 1,
- '.': 1,
- 'A': 1,
- 'I': 1,
- 'a': 4,
- 'b': 1,
- 'c': 3,
- 'd': 3,
- 'e': 5,
- 'g': 2,
- 'h': 3,
- 'i': 6,
- 'k': 2,
- 'l': 3,
- 'n': 4,
- 'o': 2,
- 'p': 1,
- 'r': 5,
- 's': 3,
- 't': 6,
- 'w': 2,
- 'y': 1}
+>>> customer.get('name')
+'John'
+>>> customer.get('zip')  # return an empty string
+>>> customer.get('zip', '19713')
+'19713'
 ```
 
 [_Return to the Top_](#title)
@@ -1104,21 +1005,17 @@ Using `setdefault` we could write the same code more succinctly:
 # in Python 3.5+:
 >>> x = {'a': 1, 'b': 2}
 >>> y = {'b': 3, 'c': 4}
->>> z = {**x, **y}
->>> z
-{'c': 4, 'a': 1, 'b': 3}
-
-# in Python 2.7
->>> z = dict(x, **y)
+>>> z = {**x, **y}  # this means pass x to z first, then pass y, which overwrite the values of same keys
 >>> z
 {'c': 4, 'a': 1, 'b': 3}
 ```
 
+[_Return to the Top_](#title)
 ## Sets
 
-From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
+A set is an **unordered** collection with **no duplicate elements**. 
 
-> A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
 
 ### Initializing a set
 
@@ -1255,6 +1152,8 @@ KeyError: 3
 
 ## List/Dict/Set Comprehensions
 
+List/Dict/Set Comprehension returns a new List/Dict/Set
+
 ### List comprehension
 
 ```python
@@ -1262,14 +1161,6 @@ KeyError: 3
 
 >>> [i - 1 for i in a]
 [0, 2, 4, 6, 8, 10]
-```
-
-### Set comprehension
-
-```python
->>> b = {"abc", "def"}
->>> {s.upper() for s in b}
-{"ABC", "DEF"}
 ```
 
 ### Dict comprehension
@@ -1280,12 +1171,12 @@ KeyError: 3
 {'Pooka': 'name', 5: 'age'}
 ```
 
-A List comprehension can be generated from a dictionary:
+### Set comprehension
 
 ```python
->>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
->>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
-['NAME:POOKA', 'FIRST_NAME:OOOKA']
+>>> b = {"abc", "def"}
+>>> {s.upper() for s in b}
+{"ABC", "DEF"}
 ```
 
 ## itertools Module
