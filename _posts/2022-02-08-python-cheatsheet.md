@@ -4,7 +4,7 @@ title: Python Cheatsheet
 tags: tutorial coding
 ---
 
-This Python Cheatsheet is revised based on many references.
+This Python Cheatsheet is created based on many [open references](#references).
 
 ## Python Basics
 
