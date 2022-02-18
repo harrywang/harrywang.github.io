@@ -54,7 +54,7 @@ Examples of expressions in the interactive shell:
 16.0
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Data Types
 
@@ -64,7 +64,7 @@ Examples of expressions in the interactive shell:
 | Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
 | Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### String Concatenation and Replication
 
@@ -82,7 +82,7 @@ String Replication:
 'AliceAliceAliceAliceAlice'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Variables
 
@@ -107,7 +107,7 @@ Example:
 
 `_spam` should not be used again in the code.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Comments
 
@@ -132,7 +132,7 @@ a = 1  # initialization
 
 Please note the two spaces in front of the comment.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The print() Function
 
@@ -147,7 +147,7 @@ Hello world!
 Hello world! 1
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The input() Function
 
@@ -162,7 +162,7 @@ Al
 It is good to meet you, Al
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The len() Function
 
@@ -182,7 +182,7 @@ boolean evaluation.
 >>>     print("the list is not empty!")
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The str(), int(), and float() Functions
 
@@ -215,7 +215,7 @@ Float to Integer:
 8
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Flow Control
 
@@ -320,7 +320,7 @@ And these as well:
 >>>    pass
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Boolean Operators
 
@@ -351,7 +351,7 @@ The _not_ Operator’s _Truth_ Table:
 | `not True`  | `False`      |
 | `not False` | `True`       |
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Mixing Boolean and Comparison Operators
 
@@ -377,8 +377,7 @@ You can also use multiple Boolean operators in an expression, along with the com
 True
 ```
 
-[_Return to the Top_](#title)
-
+[Back to Top](#title)
 
 
 ### `if` Statements
@@ -397,7 +396,7 @@ Excellent
 Good
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### `else` Statements
 
@@ -409,7 +408,7 @@ else:
     print('application received and under review')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### `elif` Statements
 
@@ -434,7 +433,7 @@ else:
     print('application declined')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### `for` Loops and the `range()` Function
 
@@ -474,7 +473,7 @@ You can even use a negative number for the step argument to make the for loop co
 0
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 
 ### while Loop Statements
@@ -487,7 +486,7 @@ while a < 5:
 ```
 **NOTE**: in the example above, if you don't increase the value of `a` within the loop, the condition would be always true, then you run into an infinite loop. 
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### `break` Statements
 
@@ -502,7 +501,7 @@ while True:
 print('here is the ring')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### `continue` Statements
 
@@ -531,7 +530,7 @@ if a == 5:
     pass  # nothing happens
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 
 ## Lists
@@ -543,7 +542,7 @@ if a == 5:
 ['cat', 'dog', 'fish', 'elephant']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Getting Individual Values in a List with Indexes
 
@@ -558,7 +557,7 @@ if a == 5:
 'dog'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Negative Indexes
 
@@ -578,7 +577,7 @@ if a == 5:
 'I have one cat and no dog.'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Getting Sublists with Slices
 
@@ -621,7 +620,7 @@ Slicing the complete list will perform a copy:
 ['cat', 'dog', 'fish', 'elephant']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Getting a List’s Length with len()
 
@@ -631,7 +630,7 @@ Slicing the complete list will perform a copy:
 3
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Changing Values in a List with Indexes
 
@@ -649,7 +648,7 @@ Slicing the complete list will perform a copy:
 ['cat', 'bird', 'cat', 12345]
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### List Concatenation and List Replication
 
@@ -662,7 +661,7 @@ Slicing the complete list will perform a copy:
 
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Using for Loops with Lists
 
@@ -677,7 +676,7 @@ Index 2 in animals list is: fish
 Index 3 in animals list is: elephant
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Looping Through Multiple Lists with zip()
 
@@ -707,7 +706,7 @@ True
 ```
 
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The Multiple Assignment Trick
 
@@ -740,7 +739,7 @@ Traceback (most recent call last):
 ValueError: not enough values to unpack (expected 4, got 3)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Augmented Assignment Operators
 
@@ -766,7 +765,7 @@ Examples:
 ['hello', 'hello', 'hello']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Finding a Value in a List with the index() Method
 
@@ -776,7 +775,7 @@ Examples:
 1
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Adding Values to Lists with the append() and insert() Methods
 
@@ -802,7 +801,7 @@ Examples:
 ['cat', 'chicken', 'dog', 'bat']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Removing Values from Lists with remove() or pop()
 
@@ -831,7 +830,7 @@ Examples:
 
 If the value appears multiple times in the list, only the first instance of the value will be removed.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Sorting the Values in a List with the sort() Method
 
@@ -867,7 +866,7 @@ You can use the built-in function `sorted` to return a new list:
 ['cat', 'dog', 'fish', 'elephant']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Tuple Data Type
 
@@ -890,7 +889,7 @@ TypeError: 'tuple' object does not support item assignment
 (1, 1, 2, 3, 5, 8)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Converting Types with the list() and tuple() Functions
 
@@ -909,7 +908,7 @@ TypeError: 'tuple' object does not support item assignment
 ['h', 'e', 'l', 'l', 'o']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Dictionaries
 
@@ -919,7 +918,7 @@ Dictionary: key:value pairs separated by comma:
 customer = {'name': 'John', 'gender': 'male', 'age': 25}
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The keys(), values(), and items() Methods
 
@@ -968,7 +967,7 @@ Key is gender, Value is male
 Key is age, Value is 25
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Checking Whether a Key or Value Exists in a Dictionary
 
@@ -983,7 +982,7 @@ False
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The get() Method
 
@@ -997,7 +996,7 @@ Get has two parameters: key and default value if the key does not exist
 '19713'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Merge two dictionaries
 
@@ -1010,7 +1009,7 @@ Get has two parameters: key and default value if the key does not exist
 {'c': 4, 'a': 1, 'b': 3}
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 ## Sets
 
 A set is an **unordered** collection with **no duplicate elements**. 
@@ -1148,7 +1147,7 @@ KeyError: 3
 {1, 4}
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## List/Dict/Set Comprehensions
 
@@ -1200,7 +1199,7 @@ operator.mul(24, 5)
 120
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### accumulate()
 
@@ -1234,7 +1233,7 @@ You can also pass a function:
 120
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### combinations()
 
@@ -1256,7 +1255,7 @@ Example:
 ('triangle', 'square')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### combinations_with_replacement()
 
@@ -1281,7 +1280,7 @@ Example:
 ('square', 'square')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### count()
 
@@ -1305,7 +1304,7 @@ Example:
 22
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### cycle()
 
@@ -1333,7 +1332,7 @@ orange
 
 When reached the end of the iterable it start over again from the beginning.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### chain()
 
@@ -1362,7 +1361,7 @@ square
 pentagon
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### compress()
 
@@ -1384,7 +1383,7 @@ circle
 square
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### dropwhile()
 
@@ -1410,7 +1409,7 @@ Example:
 1
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### filterfalse()
 
@@ -1435,7 +1434,7 @@ Example:
 10
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### groupby()
 
@@ -1480,7 +1479,7 @@ decepticon
 [{'name': 'megatron', 'faction': 'decepticon'}, {'name': 'starcream', 'faction': 'decepticon'}]
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### islice()
 
@@ -1501,7 +1500,7 @@ red
 orange
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### permutations()
 
@@ -1524,7 +1523,7 @@ Example:
 ('c', 'b', 'a')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### product()
 
@@ -1547,7 +1546,7 @@ Creates the cartesian products from a series of iterables.
 (3, 'c')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### repeat()
 
@@ -1567,7 +1566,7 @@ spam
 spam
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### starmap()
 
@@ -1589,7 +1588,7 @@ Example:
 21
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### takewhile()
 
@@ -1612,7 +1611,7 @@ Example:
 4
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### tee()
 
@@ -1648,7 +1647,7 @@ green
 blue
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### zip_longest()
 
@@ -1677,7 +1676,7 @@ Example:
 (None, 10)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Functions
 
@@ -1708,7 +1707,7 @@ then, you can access doctring:
 >>> 
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Return Values and return Statements
 
@@ -1745,7 +1744,7 @@ fortune = getAnswer(r)
 print(fortune)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The None Value
 
@@ -1761,7 +1760,7 @@ True
 
 Note: never compare to `None` with the `==` operator. Always use `is`.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Keyword Arguments and print()
 
@@ -1781,7 +1780,7 @@ cats dogs mice
 cats,dogs,mice
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Local and Global Scope
 
@@ -1793,7 +1792,7 @@ cats,dogs,mice
 
 - You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The global Statement
 
@@ -1820,7 +1819,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 
 1. But if the variable is not used in an assignment statement, it is a global variable.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Lambda Functions
 
@@ -1866,7 +1865,7 @@ Like regular nested functions, lambdas also work as lexical closures:
 
 Note: lambda can only evaluate an expression, like a single line of code.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Manipulating Strings
 
@@ -1892,7 +1891,7 @@ How are you?
 I'm doing fine.
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Raw Strings
 
@@ -1905,7 +1904,7 @@ That is Carol\'s cat.
 
 Note: mostly used for regular expression definition (see `re` package)
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Multiline Strings with Triple Quotes
 
@@ -1942,7 +1941,7 @@ To keep a nicer flow in your code, you can use the `dedent` function from the `t
 
 This generates the same string than before.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Indexing and Slicing Strings
 
@@ -2006,7 +2005,7 @@ Slicing:
 'Hello'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The in and not in Operators with Strings
 
@@ -2048,7 +2047,7 @@ False
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The upper(), lower(), isupper(), and islower() String Methods
 
@@ -2100,7 +2099,7 @@ False
 False
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The isX String Methods
 
@@ -2110,7 +2109,7 @@ False
 - **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
 - **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The startswith() and endswith() String Methods
 
@@ -2144,7 +2143,7 @@ True
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The join() and split() String Methods
 
@@ -2182,7 +2181,7 @@ split():
 ['My na', 'e is Si', 'on']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Justifying Text with rjust(), ljust(), and center()
 
@@ -2232,7 +2231,7 @@ center():
 '=======Hello========'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Removing Whitespace with strip(), rstrip(), and lstrip()
 
@@ -2258,7 +2257,7 @@ center():
 'BaconSpamEggs'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Copying and Pasting Strings with the pyperclip Module (need pip install)
 
@@ -2271,7 +2270,7 @@ center():
 'Hello world!'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## String Formatting
 
@@ -2308,7 +2307,7 @@ churn_rate = 0.0325
 print(f'the churn rate this month is {churn_rate:.3%}')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### % operator
 
@@ -2328,7 +2327,7 @@ We can use the `%x` format specifier to convert an int value to a string:
 
 Note: For new code, using [str.format](#string-formatting-strformat) or [f-strings](#formatted-string-literals-or-f-strings-python-36) (Python 3.6+) is strongly recommended over the `%` operator.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### String Formatting (str.format)
 
@@ -2351,7 +2350,7 @@ The official [Python 3.x documentation](https://docs.python.org/3/library/stdtyp
 
 > The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). Using the newer formatted string literals or the str.format() interface helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Lazy string formatting
 
@@ -2377,7 +2376,7 @@ Or:
 >>> logging.debug("User name: " + name)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Template Strings
 
@@ -2391,7 +2390,7 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 'Hey Elizabeth!'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Exception Handling
 
@@ -2415,7 +2414,7 @@ None
 42.0
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Final code in exception handling
 
@@ -2445,7 +2444,7 @@ None
 42.0
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 
 ## Regular Expressions
@@ -2461,7 +2460,7 @@ All the regex functions in Python are in the re module:
 >>> import re
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Regex Objects
 
@@ -2474,7 +2473,7 @@ All the regex functions in Python are in the re module:
 Phone number found: 415-555-4242
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Grouping with Parentheses
 
@@ -2511,7 +2510,7 @@ To retrieve all the groups at once: use the groups() method—note the plural fo
 555-4242
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Multiple Groups with the Pipe
 
@@ -2545,7 +2544,7 @@ You can also use the pipe to match one of several patterns as part of your regex
 'mobile'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Optional Matching with the Question Mark
 
@@ -2562,7 +2561,7 @@ The ? character flags the group that precedes it as an optional part of the patt
 'Batwoman'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Zero or More with the Star
 
@@ -2583,7 +2582,7 @@ The \* (called the star or asterisk) means “match zero or more”—the group 
 'Batwowowowoman'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching One or More with the Plus
 
@@ -2608,7 +2607,7 @@ While \* means “match zero or more,” the + (or plus) means “match one or m
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Specific Repetitions with Curly Brackets
 
@@ -2629,7 +2628,7 @@ Instead of one number, you can specify a range by writing a minimum, a comma, an
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Greedy and Nongreedy Matching
 
@@ -2649,7 +2648,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 'HaHaHa'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The findall() Method
 
@@ -2668,7 +2667,7 @@ To summarize what the findall() method returns, remember the following:
 
 - When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Making Your Own Character Classes
 
@@ -2693,7 +2692,7 @@ By placing a caret character (^) just after the character class’s opening brac
 ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The Caret and Dollar Sign Characters
 
@@ -2730,7 +2729,7 @@ True
 True
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The Wildcard Character
 
@@ -2743,7 +2742,7 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Everything with Dot-Star
 
@@ -2777,7 +2776,7 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 '<To serve man> for dinner.>'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Matching Newlines with the Dot Character
 
@@ -2795,7 +2794,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Review of Regex Symbols
 
@@ -2817,7 +2816,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `[abc]`                  | any character between the brackets (such as a, b, ).   |
 | `[^abc]`                 | any character that isn’t between the brackets.         |
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Case-Insensitive Matching
 
@@ -2840,7 +2839,7 @@ To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a sec
 'robocop'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Substituting Strings with the sub() Method
 
@@ -2867,7 +2866,7 @@ Another example:
 A**** told C**** that E**** knew B**** was a double agent.'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Managing Complex Regexes
 
@@ -2892,7 +2891,7 @@ phone_regex = re.compile(r'''(
     )''', re.VERBOSE)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Handling File and Directory Paths
 
@@ -2901,7 +2900,7 @@ One is the `os.path` module and the other is the `pathlib` module.
 The `pathlib` module was added in Python 3.4, offering an object-oriented way
 to handle file system paths.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
 
@@ -2971,7 +2970,7 @@ Using `pathlib` on \*nix:
 /home/asweigart/invite.docx
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### The Current Working Directory
 
@@ -3002,7 +3001,7 @@ Using `pathlib` on \*nix:
 /usr/lib/python3.6
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Creating New Folders
 
@@ -3040,7 +3039,7 @@ it. To fix this, do:
 
 And all is good :)
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Absolute vs. Relative Paths
 
@@ -3051,7 +3050,7 @@ There are two ways to specify a file path.
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Handling Absolute and Relative Paths
 
@@ -3117,7 +3116,7 @@ Using `pathlib` on \*nix:
 etc/passwd
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Checking Path Validity
 
@@ -3203,7 +3202,7 @@ False
 False
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Finding File Sizes and Folder Contents
 
@@ -3290,7 +3289,7 @@ Using `pathlib` on \*nix:
 1903178911
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Copying Files and Folders
 
@@ -3319,7 +3318,7 @@ While shutil.copy() will copy a single file, shutil.copytree() will copy an enti
 'C:\\bacon_backup'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Moving and Renaming Files and Folders
 
@@ -3343,7 +3342,7 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 'C:\\eggs'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Permanently Deleting Files and Folders
 
@@ -3353,7 +3352,7 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 
 - Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Safe Deletes with the send2trash Module
 
@@ -3369,7 +3368,7 @@ You can install this module by running pip install send2trash from a Terminal wi
 >>> send2trash.send2trash('bacon.txt')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Walking a Directory Tree
 
@@ -3401,7 +3400,7 @@ The current folder is C:\delicious\walnut\waffles
 FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 `pathlib` provides a lot more functionality than the ones listed above,
 like getting file name, getting file extension, reading/writing a file without
@@ -3416,7 +3415,7 @@ if you want to know more!
 To read/write to a file in Python, you will want to use the `with`
 statement, which will close the file for you after you are done.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Opening and reading files with the open() function
 
@@ -3445,7 +3444,7 @@ And trouble deaf heaven with my bootless cries,
 And look upon myself and curse my fate,
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Writing to Files
 
@@ -3466,7 +3465,7 @@ Hello world!
 Bacon is not a vegetable.
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Saving Variables with the shelve Module
 
@@ -3500,7 +3499,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 [['Zophie', 'Pooka', 'Simon']]
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Saving Variables with the pprint.pformat() Function
 
@@ -3517,7 +3516,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 83
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Reading ZIP Files
 
@@ -3538,7 +3537,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 'Compressed file is 3.63x smaller!'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Extracting from ZIP Files
 
@@ -3563,7 +3562,7 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 'C:\\some\\new\\folders\\spam.txt'
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Creating and Adding to ZIP Files
 
@@ -3576,7 +3575,7 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 
 This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## JSON, YAML and configuration files
 
@@ -3600,7 +3599,7 @@ with open("filename.json", "w") as f:
     f.write(json.dumps(content, indent=2))
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### YAML
 
@@ -3627,7 +3626,7 @@ with open("filename.yaml") as f:
     yaml.load(f)
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Anyconfig
 
@@ -3647,7 +3646,7 @@ import anyconfig
 conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Debugging
 
@@ -3688,7 +3687,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
         print('An exception happened: ' + str(err))
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Getting the Traceback as a String
 
@@ -3713,7 +3712,7 @@ The 116 is the return value from the write() method, since 116 characters were w
       File "<pyshell#28>", line 2, in <module>
     Exception: This is the error message.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Assertions
 
@@ -3745,7 +3744,7 @@ Disabling Assertions
 
 Assertions can be disabled by passing the -O option when running Python.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Logging
 
@@ -3794,7 +3793,7 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 2015-05-23 16:20:12,684 - DEBUG - End of program
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Logging Levels
 
@@ -3808,7 +3807,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Disabling Logging
 
@@ -3829,7 +3828,7 @@ After you’ve debugged your program, you probably don’t want all these log me
 >>> logging.error('Error! Error!')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### Logging to a File
 
@@ -3841,7 +3840,7 @@ import logging
 logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 
 
@@ -3881,7 +3880,7 @@ else:
     print('adult')
 ```
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## args and kwargs
 
@@ -3980,7 +3979,7 @@ None
 3. Keyword arguments with default values make it easy to add new behaviors to a function, especially when the function has existing callers.
 4. Optional keyword arguments should always be passed by keyword instead of by position.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## Context Manager
 
@@ -4042,14 +4041,14 @@ For example we are developing script which is designed to be used as module, we 
 3. Python files can act as either reusable modules, or as standalone programs.
 4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 
 ## Virtual Environment
 
 The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### virtualenv
 
@@ -4070,7 +4069,7 @@ Anything we install now will be specific to this project. And available to the p
         deactivate
 
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ### anaconda
 
@@ -4095,11 +4094,11 @@ Usage:
 
         conda deactivate
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
 
 ## References
 
 - https://www.pythoncheatsheet.org
 - https://bit.ly/3I8EeDW
 
-[_Return to the Top_](#title)
+[Back to Top](#title)
