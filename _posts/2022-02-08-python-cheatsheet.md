@@ -91,21 +91,30 @@ Variable naming rules:
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
 1. It can’t begin with a number.
-1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
 
 Example:
 
 ```python
->>> spam = 'Hello'
->>> spam
-'Hello'
+>>> first_name = 'Harry'
+>>> first_name
+'Harry'
 ```
+
+A variable starts with an underscore (`_`) is considered as "I don't Care" or "Throwaway" variable in Python:
 
 ```python
->>> _spam = 'Hello'
+>>> _foo = 'Hello'
 ```
 
-`_spam` should not be used again in the code.
+`_foo` should not be used again in the code.
+
+```python
+x, _, y = (1, 2, 3)
+>>> x
+1
+>>> y 
+3
+```
 
 [Back to Top](#title)
 
