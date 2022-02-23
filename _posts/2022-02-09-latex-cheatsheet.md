@@ -2,6 +2,7 @@
 layout: post
 title: LaTex Cheatsheet
 tags: tutorial open-source
+permalink: latex
 ---
 
 This is a simple LaTex Cheatsheet for writing math symbols and formulas in Jupyter Notebook, which uses [MathJax](https://www.mathjax.org/) to render LaTex inside the Markdown cells.

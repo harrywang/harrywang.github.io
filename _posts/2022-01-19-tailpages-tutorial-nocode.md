@@ -2,6 +2,7 @@
 layout: post
 title: Tailpages No-Code Tutorial
 tags: tutorial no-code
+permalink: tailpages-tutorial-nocode
 ---
 
 [Tailpages (Tailwind + Github Pages)](https://harrywang.me/2022/01/20/tailpages.html) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the [demo site](https://harrywang.me/tailpages/).

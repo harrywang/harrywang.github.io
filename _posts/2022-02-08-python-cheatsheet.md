@@ -2,6 +2,7 @@
 layout: post-toc
 title: Python Cheatsheet
 tags: tutorial coding
+permalink: python
 ---
 
 This Python Cheatsheet is created based on many [open references](#references).
