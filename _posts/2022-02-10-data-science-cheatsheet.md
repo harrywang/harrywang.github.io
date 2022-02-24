@@ -1,6 +1,6 @@
 ---
 layout: post-toc
-title: Python Data Science Cheatsheet
+title: Data Science Cheatsheet
 tags: tutorial coding
 permalink: ds
 ---
@@ -24,7 +24,7 @@ The definitions are as follows. You can check usage examples in [Python Cheatshe
 - Set `{...}` is a collection that is **unordered**, **immutable**, with **unique items**.
 - Dictionary `{key1:value1, key2:value2,...}` is a collection that is **unordered**, **mutable**, with **unique keys**.
 
-NOTE: after python 3.7, dictionaries are ordered.
+NOTE: Python 3.7+, dictionaries are ordered.
 
 ## Numpy
 
