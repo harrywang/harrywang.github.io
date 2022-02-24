@@ -176,7 +176,7 @@ print(c)  # c is not changed
 ```
 - Numpy array is way more faster than Python list for computation
 
-## Initial Placeholder Arrays
+### Initial Placeholder Arrays
 
 Create evenly spaced values by step value: (start, stop, step):
 
