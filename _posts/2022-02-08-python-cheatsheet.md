@@ -991,7 +991,7 @@ male
 access the key and value from each item via a for loop:
 
 ```python
-
+>>> customer = {'name': 'John', 'gender': 'male', 'age': 25}
 >>> for k, v in customer.items():
 ...     print(f'Key is {k}, Value is {v}')
 ... 
