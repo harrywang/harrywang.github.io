@@ -122,7 +122,7 @@ print(b.sum(axis=0), b.sum(axis=1))
 20.0
 [ 3.9  4.9 11.2] [14.  6.]
 ```
-- A slice of a Python list is a copy while a slice of a Numpy array is a view (same way of slicing using `[start, stop, step]`)
+- A slice of a Python list is a copy while a slice of a Numpy array is a view (same way of slicing using `[start:stop:step]`)
 
 For list:
 
@@ -175,6 +175,38 @@ print(c)  # c is not changed
 [1 2 3 4 5]
 ```
 - Numpy array is way more faster than Python list for computation
+
+## Initial Placeholder Arrays
+
+Create evenly spaced values by step value: (start, stop, step):
+
+```
+>>>> np.arange(1, 10, 2) 
+array([1, 3, 5, 7, 9])
+```
+
+Create evenly spaced values by number of samples: (start, stop, num-of-samples):
+
+```
+>>>> np.linspace(1, 10, 5)
+array([ 1.  ,  3.25,  5.5 ,  7.75, 10.  ])
+```
+
+Create arrays with random numbers
+
+```
+>>>> np.random.random((2, 3))
+array([[0.65107703, 0.91495968, 0.85003858],
+       [0.44945067, 0.09541012, 0.37081825]])
+
+```
+
+Create arrays with zeros and ones:
+
+```
+np.zeros ((2, 3))  # 2 rows 3 columns
+np.ones ((2, 3, 4))  # 3D array with all ones
+```
 
 See more: [DataCamp Numpy Cheatsheet]({{site.baseurl}}/assets/img/posts/cheatsheet/numpy.png)
 
