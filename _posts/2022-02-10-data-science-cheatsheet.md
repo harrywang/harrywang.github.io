@@ -5,7 +5,7 @@ tags: tutorial coding
 permalink: ds
 ---
 
-This Python Data Science Cheatsheet is created based on many [references](#references).
+The goal of this Python Data Science Cheatsheet is to list the most commonly needed concepts and tools for beginners, which is created based on many [references](#references).
 
 ## Python Collection Data Types
 
@@ -283,6 +283,103 @@ df = pd.DataFrame(countries, columns=['country', 'gdp'])
 1   China  13.40
 2   Japan   4.97
 ```
+
+Read data from CSV files ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8156931/countries-2021.csv.zip)):
+
+```python
+df = pd.read_csv('countries-2021.csv')
+df
+
+          country    gdp   population   area           capital
+0   United States  20.49       331.00   9.53   WASHINGTON D.C.
+1           China  13.40      1439.32   9.60           Beijing
+2           Japan   4.97       126.48   0.38             Tokyo
+3         Germany   4.00        83.78   0.36            Berlin
+4  United Kingdom   2.83        67.89   0.24            London
+5          France   2.78        65.27   0.64             Paris
+6           India   2.72      1380.00   3.29         New Delhi
+7           Italy   2.07        60.46   0.30              Rome
+8          Brazil   1.87       212.56   8.52          Brasilia
+9          Canada   1.71        37.74   9.98            Ottawa
+```
+- `.index`:  return the index labels
+- `.columns`: return the column names
+
+### Selecting data in DataFrames using `[]`
+
+- Slicing a DataFrame by rows (you have to specify a range): `df[start:stop]`
+- Slicing a DataFrame by columns:
+    - one column: `df['column name']` or if `df.column_name` if there are no space in the column name
+    - multiple columns: `df[['column name1', 'column name2',...]]`
+
+```python
+# slice by rows
+df[1:3]
+
+  country    gdp   population   area   capital
+1   China  13.40      1439.32   9.60   Beijing
+2   Japan   4.97       126.48   0.38     Tokyo
+
+# select one column
+df['country']  # same as df.country
+
+0     United States
+1             China
+2             Japan
+3           Germany
+4    United Kingdom
+5            France
+6             India
+7             Italy
+8            Brazil
+9            Canada
+Name: country, dtype: object
+
+# select multiple columns
+df[['country','gdp']]
+
+          country    gdp
+0   United States  20.49
+1           China  13.40
+2           Japan   4.97
+3         Germany   4.00
+4  United Kingdom   2.83
+5          France   2.78
+6           India   2.72
+7           Italy   2.07
+8          Brazil   1.87
+9          Canada   1.71
+```
+### Selecting data in DataFrames using `.loc` and `.iloc`
+
+`[]` cannot select data by rows and columns together, which can be done by using the following methods:
+- [`.loc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-label) is primarily label based - **NOTE**: even numbers are treated as labels!
+
+```python
+# here 1 adn 4 are treated as labels
+# row 4 is included, i.e. UK
+df.loc[1:4, ['country', 'gdp']]  
+
+          country    gdp
+1           China  13.40
+2           Japan   4.97
+3         Germany   4.00
+4  United Kingdom   2.83
+```
+
+- [`.iloc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position) is primarily integer position based (from 0 to length-1 of the axis)
+
+```python
+# here 1 and 4 are treated as indexes
+# row 4 is NOT included, i.e. UK
+df.iloc[1:4, :2]
+
+   country    gdp
+1    China  13.40
+2    Japan   4.97
+3  Germany   4.00
+```
+
 
 [Back to Top](#title)
 
