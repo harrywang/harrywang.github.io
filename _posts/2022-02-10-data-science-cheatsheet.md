@@ -187,14 +187,14 @@ array([1, 3, 5, 7, 9])
 
 Create evenly spaced values by number of samples: (start, stop, num-of-samples):
 
-```
+```python
 >>>> np.linspace(1, 10, 5)
 array([ 1.  ,  3.25,  5.5 ,  7.75, 10.  ])
 ```
 
 Create arrays with random numbers
 
-```
+```python
 >>>> np.random.random((2, 3))
 array([[0.65107703, 0.91495968, 0.85003858],
        [0.44945067, 0.09541012, 0.37081825]])
@@ -203,12 +203,86 @@ array([[0.65107703, 0.91495968, 0.85003858],
 
 Create arrays with zeros and ones:
 
-```
+```python
 np.zeros ((2, 3))  # 2 rows 3 columns
 np.ones ((2, 3, 4))  # 3D array with all ones
 ```
 
 See more: [DataCamp Numpy Cheatsheet]({{site.baseurl}}/assets/img/posts/cheatsheet/numpy.png)
+
+[Back to Top](#title)
+
+## Pandas
+
+[Pandas](https://pandas.pydata.org/) is a fast, powerful, and flexible data analysis and manipulation tool.
+
+Use the following import convention:
+
+```python
+import pandas as pd
+```
+
+### Pandas Series
+
+A pandas series is a one dimensional **labeled** array (a Python array is only indexed but not labeled):
+
+```python
+# a series is an array with labeled index, default to 0, 1, 2...
+s = pd.Series([7, 9, 8])
+
+0    7
+1    9
+2    8
+dtype: int64
+```
+
+You can specify index labels:
+
+```python
+# series is array with labeled index
+s = pd.Series([7, 9, 8], index=['a', 'b', 'c'])
+
+a    7
+b    9
+c    8
+dtype: int64
+```
+
+You can use the label to access the element, e.g. `s['c']`
+
+### Pandas DataFrame
+
+A pandas DataFrame is a two dimensional **labeled** data structure with columns of potentially different types:
+
+<img class="mx-auto" src="{{site.baseurl}}/assets/img/posts/cheatsheet/dataframe.png">
+
+Create a pandas dataframe from a Python dictionary:
+
+```python
+# column names by default are keys in the dict
+countries = {
+    'country': ['USA', 'China', 'Japan'],
+    'gdp': [20.49, 13.40, 4.97],
+    'population':[331, 1439, 126],
+}
+df = pd.DataFrame(countries)
+
+  country    gdp  population
+0     USA  20.49         331
+1   China  13.40        1439
+2   Japan   4.97         126
+```
+
+Choose certain columns from keys:
+
+```python
+df = pd.DataFrame(countries, columns=['country', 'gdp'])
+
+  country    gdp
+0     USA  20.49
+1   China  13.40
+2   Japan   4.97
+```
 
 [Back to Top](#title)
 

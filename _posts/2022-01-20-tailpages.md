@@ -2,6 +2,7 @@
 layout: post
 title: Tailpages (Tailwind + Github Pages)
 tags: tutorial open-source
+permalink: tailpages-intro
 ---
 <div class="flex justify-center">
 

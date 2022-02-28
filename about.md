@@ -16,6 +16,7 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 
 ## Recent Projects and Tutorials
 
+- [Tailpages (Tailwind + Github Pages)](http://harrywang.me/tailpages-intro): a Jekyll website template based on TailwindCSS, which can be hosted by Github for free.
 - [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/mini-ml): a set of notebooks covering key basic components of real-world machine learning projects
 - [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
 - [Color + Culture + AI](http://harrywang.me/2021/02/13/color.html): culture-inspired multi-modal color palette generation and colorization
