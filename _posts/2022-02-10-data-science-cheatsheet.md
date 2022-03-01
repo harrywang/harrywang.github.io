@@ -286,7 +286,7 @@ df = pd.DataFrame(countries, columns=['country', 'gdp'])
 2   Japan   4.97
 ```
 
-Read data from CSV files: ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8162154/countries-2021.csv.zip)
+Read data from CSV (Comma-separated values) files: ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8162154/countries-2021.csv.zip)
 ):
 
 The data file is top 10 countries by GDP (in trillions) in 2021 with information on population (in millions), area (in millions square kilometer $km^2$), capital, continent.
