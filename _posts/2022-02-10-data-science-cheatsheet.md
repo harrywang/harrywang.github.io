@@ -250,6 +250,8 @@ dtype: int64
 
 You can use the label to access the element, e.g. `s['c']`
 
+[Back to Top](#title)
+
 ### Pandas DataFrame
 
 A pandas DataFrame is a two dimensional **labeled** data structure with columns of potentially different types:
@@ -284,31 +286,83 @@ df = pd.DataFrame(countries, columns=['country', 'gdp'])
 2   Japan   4.97
 ```
 
-Read data from CSV files ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8156931/countries-2021.csv.zip)):
+Read data from CSV files: ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8156931/countries-2021.csv.zip)):
+
+The data file is top 10 countries by GDP (in trillions) in 2021 with information on population (in millions), area (in millions square kilometer $km^2$), capital, continent.
 
 ```python
 df = pd.read_csv('countries-2021.csv')
 df
 
-          country    gdp   population   area           capital
-0   United States  20.49       331.00   9.53   WASHINGTON D.C.
-1           China  13.40      1439.32   9.60           Beijing
-2           Japan   4.97       126.48   0.38             Tokyo
-3         Germany   4.00        83.78   0.36            Berlin
-4  United Kingdom   2.83        67.89   0.24            London
-5          France   2.78        65.27   0.64             Paris
-6           India   2.72      1380.00   3.29         New Delhi
-7           Italy   2.07        60.46   0.30              Rome
-8          Brazil   1.87       212.56   8.52          Brasilia
-9          Canada   1.71        37.74   9.98            Ottawa
+          country    gdp  population  area          capital      continent
+0   United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+1           China  13.40     1439.32  9.60          Beijing           Asia
+2           Japan   4.97      126.48  0.38            Tokyo           Asia
+3         Germany   4.00       83.78  0.36           Berlin         Europe
+4  United Kingdom   2.83       67.89  0.24           London         Europe
+5          France   2.78       65.27  0.64            Paris         Europe
+6           India   2.72     1380.00  3.29        New Delhi           Asia
+7           Italy   2.07       60.46  0.30             Rome         Europe
+8          Brazil   1.87      212.56  8.52         Brasilia  South America
+9          Canada   1.71       37.74  9.98           Ottawa  North America
 ```
-- `.index`:  return the index labels
-- `.columns`: return the column names
+- `.index`:  returns the index labels
+- `.columns`: returns the column names
+- `.info()`: prints information about a DataFrame including the index dtype and columns, non-null values and memory usage.
+
+```python
+df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10 entries, 0 to 9
+Data columns (total 6 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   country     10 non-null     object 
+ 1   gdp         10 non-null     float64
+ 2   population  10 non-null     float64
+ 3   area        10 non-null     float64
+ 4   capital     10 non-null     object 
+ 5   continent   10 non-null     object 
+dtypes: float64(3), object(3)
+memory usage: 608.0+ bytes
+```
+
+- `.describe()`: prints descriptive statistics for numerical columns excluding NaN values
+
+```python
+df.describe()
+
+             gdp   population      area
+count  10.000000    10.000000  10.00000
+mean    5.684000   380.450000   4.28400
+std     6.243788   549.780564   4.51295
+min     1.710000    37.740000   0.24000
+25%     2.232500    65.925000   0.36500
+50%     2.805000   105.130000   1.96500
+75%     4.727500   301.390000   9.27750
+max    20.490000  1439.320000   9.98000
+```
+
+- `.head(n)`/`.tail(n)`: returns the first/last n rows (default n=5)
+
+```python
+df.head()
+
+           country    gdp  population  area          capital      continent
+0   United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+1           China  13.40     1439.32  9.60          Beijing           Asia
+2           Japan   4.97      126.48  0.38            Tokyo           Asia
+3         Germany   4.00       83.78  0.36           Berlin         Europe
+4  United Kingdom   2.83       67.89  0.24           London         Europe
+```
+
+[Back to Top](#title)
 
 ### Selecting data in DataFrames using `[]`
 
-- Slicing a DataFrame by rows (you have to specify a range): `df[start:stop]`
-- Slicing a DataFrame by columns:
+- Slicing a DataFrame by **rows** (you have to specify a range): `df[start:stop]`
+- Slicing a DataFrame by **columns**:
     - one column: `df['column name']` or if `df.column_name` if there are no space in the column name
     - multiple columns: `df[['column name1', 'column name2',...]]`
 
@@ -316,10 +370,11 @@ df
 # slice by rows
 df[1:3]
 
-  country    gdp   population   area   capital
-1   China  13.40      1439.32   9.60   Beijing
-2   Japan   4.97       126.48   0.38     Tokyo
-
+  country    gdp  population  area  capital continent
+1   China  13.40     1439.32  9.60  Beijing      Asia
+2   Japan   4.97      126.48  0.38    Tokyo      Asia
+```
+```python
 # select one column
 df['country']  # same as df.country
 
@@ -334,7 +389,8 @@ df['country']  # same as df.country
 8            Brazil
 9            Canada
 Name: country, dtype: object
-
+```
+```python
 # select multiple columns
 df[['country','gdp']]
 
@@ -350,6 +406,7 @@ df[['country','gdp']]
 8          Brazil   1.87
 9          Canada   1.71
 ```
+
 ### Selecting data in DataFrames using `.loc` and `.iloc`
 
 `[]` cannot select data by rows and columns together, which can be done by using the following methods:
@@ -380,6 +437,58 @@ df.iloc[1:4, :2]
 3  Germany   4.00
 ```
 
+### Filtering Rows using Masking Expressions
+
+- Filtering using **one** expression: `df[expression 1]`: one expression
+
+```python
+# returns countries with GDP greater than 3 trillions
+df[df['gdp'] > 3]
+
+         country    gdp  population  area          capital      continent
+0  United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+1          China  13.40     1439.32  9.60          Beijing           Asia
+2          Japan   4.97      126.48  0.38            Tokyo           Asia
+3        Germany   4.00       83.78  0.36           Berlin         Europe
+
+```
+- Filtering using **multiple** expressions:
+    - `df[(expression 1) & (expression 2) & ...]`: multiple masking conditions with AND relationship
+    - `df[(expression 1) | (expression 2) |...]`: multiple masking conditions with OR relationship
+
+```python
+# returns countries with GDP greater than 2 trillions and population less than 100 millions
+df[(df['gdp'] > 2) & (df['population'] < 100)]
+
+          country   gdp  population  area capital continent
+3         Germany  4.00       83.78  0.36  Berlin    Europe
+4  United Kingdom  2.83       67.89  0.24  London    Europe
+5          France  2.78       65.27  0.64   Paris    Europe
+7           Italy  2.07       60.46  0.30    Rome    Europe
+```
+
+### Derived Columns
+
+You can derive new columns from existing ones:
+
+```python
+# calculate GDP per capita (GDP divided by population)
+# a trillion has 12 zeros, a million has 6 zeros
+df['gdp per capita'] = df.gdp * 1000000 / df.population
+df
+
+          country    gdp  population  area          capital  gdp per capita
+0   United States  20.49      331.00  9.53  WASHINGTON D.C.    61903.323263
+1           China  13.40     1439.32  9.60          Beijing     9309.951922
+2           Japan   4.97      126.48  0.38            Tokyo    39294.750158
+3         Germany   4.00       83.78  0.36           Berlin    47744.091669
+4  United Kingdom   2.83       67.89  0.24           London    41685.078804
+5          France   2.78       65.27  0.64            Paris    42592.308871
+6           India   2.72     1380.00  3.29        New Delhi     1971.014493
+7           Italy   2.07       60.46  0.30             Rome    34237.512405
+8          Brazil   1.87      212.56  8.52         Brasilia     8797.515995
+9          Canada   1.71       37.74  9.98           Ottawa    45310.015898
+```
 
 [Back to Top](#title)
 
