@@ -410,7 +410,23 @@ df[['country','gdp']]
 
 ### Selecting data in DataFrames using `.loc` and `.iloc`
 
-`[]` cannot select data by rows and columns together, which can be done by using the following methods:
+`[]` can only do simple data selections by rows and columns.  More complicated data selection can be done by using the following methods:
+- [`.iloc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position) is primarily integer position based (from 0 to length-1 of the axis)
+
+```python
+# select rows with index 1, 4, and 6
+df.iloc[[1, 4, 6]]
+
+# here 1 and 4 are treated as indexes
+# row 4 is NOT included, i.e. UK
+df.iloc[1:4, :2]
+
+   country    gdp
+1    China  13.40
+2    Japan   4.97
+3  Germany   4.00
+```
+
 - [`.loc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-label) is primarily label based - **NOTE**: even numbers are treated as labels!
 
 ```python
@@ -423,19 +439,6 @@ df.loc[1:4, ['country', 'gdp']]
 2           Japan   4.97
 3         Germany   4.00
 4  United Kingdom   2.83
-```
-
-- [`.iloc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position) is primarily integer position based (from 0 to length-1 of the axis)
-
-```python
-# here 1 and 4 are treated as indexes
-# row 4 is NOT included, i.e. UK
-df.iloc[1:4, :2]
-
-   country    gdp
-1    China  13.40
-2    Japan   4.97
-3  Germany   4.00
 ```
 
 ### Filtering Rows using Masking Expressions
