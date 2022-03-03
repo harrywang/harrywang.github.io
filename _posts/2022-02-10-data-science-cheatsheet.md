@@ -408,10 +408,10 @@ df[['country','gdp']]
 9          Canada   1.71
 ```
 
-### Selecting data in DataFrames using `.loc` and `.iloc`
+### Selecting data in DataFrames using `.loc[]` and `.iloc[]`
 
 `[]` can only do simple data selections by rows and columns.  More complicated data selection can be done by using the following methods:
-- [`.iloc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position) is primarily integer position based (from 0 to length-1 of the axis)
+- [`.iloc[]`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position) is primarily integer position based (from 0 to length-1 of the axis)
 
 ```python
 # select rows with index 1, 4, and 6
@@ -427,7 +427,7 @@ df.iloc[1:4, :2]
 3  Germany   4.00
 ```
 
-- [`.loc`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-label) is primarily label based - **NOTE**: even numbers are treated as labels!
+- [`.loc[]`](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-label) is primarily label based - **NOTE**: even numbers are treated as labels!
 
 ```python
 # here 1 adn 4 are treated as labels
@@ -440,6 +440,8 @@ df.loc[1:4, ['country', 'gdp']]
 3         Germany   4.00
 4  United Kingdom   2.83
 ```
+
+[Back to Top](#title)
 
 ### Filtering Rows using Masking Expressions
 
@@ -493,6 +495,8 @@ df
 8          Brazil   1.87      212.56  8.52         Brasilia     8797.515995
 9          Canada   1.71       37.74  9.98           Ottawa    45310.015898
 ```
+
+[Back to Top](#title)
 
 ### Pandas Functions
 
@@ -550,6 +554,54 @@ capital           10
 continent          4
 dtype: int64
 ```
+
+[Back to Top](#title)
+
+### Sorting
+
+[`.sort_values()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html) can be used to sort the values, which returns a sorted DataFrame with original DataFrame unchanged. 
+
+- use `by='column name'` or `by=['column 1', column 2']` to specify columns to sort
+- use `ascending=False` to change ascending vs. descending
+- use `ignore_index=True` to label the result with index: 0, 1, …, n - 1.
+- use `inplace=True` to make the change to the DataFrame in place
+
+```
+# after the following line the df is NOT changed
+# the index is NOT reset 
+df.sort_values(by='population', ascending=False)
+
+          country    gdp  population  area          capital      continent
+1           China  13.40     1439.32  9.60          Beijing           Asia
+6           India   2.72     1380.00  3.29        New Delhi           Asia
+0   United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+8          Brazil   1.87      212.56  8.52         Brasilia  South America
+2           Japan   4.97      126.48  0.38            Tokyo           Asia
+3         Germany   4.00       83.78  0.36           Berlin         Europe
+4  United Kingdom   2.83       67.89  0.24           London         Europe
+5          France   2.78       65.27  0.64            Paris         Europe
+7           Italy   2.07       60.46  0.30             Rome         Europe
+9          Canada   1.71       37.74  9.98           Ottawa  North America
+```
+
+```
+df1 = df.sort_values(by='population', ascending=False, ignore_index=True)
+df1  # the index is reset 
+
+          country    gdp  population  area          capital      continent
+0           China  13.40     1439.32  9.60          Beijing           Asia
+1           India   2.72     1380.00  3.29        New Delhi           Asia
+2   United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+3          Brazil   1.87      212.56  8.52         Brasilia  South America
+4           Japan   4.97      126.48  0.38            Tokyo           Asia
+5         Germany   4.00       83.78  0.36           Berlin         Europe
+6  United Kingdom   2.83       67.89  0.24           London         Europe
+7          France   2.78       65.27  0.64            Paris         Europe
+8           Italy   2.07       60.46  0.30             Rome         Europe
+9          Canada   1.71       37.74  9.98           Ottawa  North America
+```
+
+[Back to Top](#title)
 
 ### GroupBy
 
@@ -639,7 +691,6 @@ South America
 ------------------------------------------------------------
 ```
 
-
 [Back to Top](#title)
 
 ## Matplotlib
@@ -654,7 +705,7 @@ The following picture shows the [basic Matplotlib concepts](https://matplotlib.o
 
 - Figure: the top level container for all the plot elements, which may contain 1 or more Axes.
 - Axes: an area where points can be specified in terms of x-y coordinates
-- Axis, Title, Label, Marker, Legend are self-explanatory
+- Axis, Title, Label, Tick, Marker, Legend are self-explanatory
 
 `matplotlib.pyplot` is a collection of functions that make matplotlib work like [MATLAB](https://www.mathworks.com/products/matlab.html).
 ```
@@ -681,9 +732,9 @@ In the next example, I illustrate the followings:
 - use different [line styles](https://matplotlib.org/3.5.1/gallery/lines_bars_and_markers/linestyles.html)
 - use different [marker styles](https://matplotlib.org/3.5.1/gallery/lines_bars_and_markers/marker_reference.html)
 - specify [colors](https://matplotlib.org/stable/tutorials/colors/colors.html)
+- set [ticks and tick lables](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xticks.html#matplotlib.axes.Axes.set_xticks): by default the tick and tick labels are automatically generated. `ax.set_xticks()` and `ax.set_yticks()` can be used to customize the ticks and tick labels. For example, `ax.set_xticks([1, 3, 7, 8], ['a', 'b', 'c', 'd'])` set 4 ticks with corresponding labels for the x-axis.
 - set plot title
 - set axis labels
-
 
 ```python
 import numpy as np
@@ -707,11 +758,13 @@ ax.plot(x,
 ax.set_title('Two Functions')  # plot title
 ax.set_xlabel('x')  # x label
 ax.set_ylabel('y')  # y label
+# ax.set_xticks([1, 3, 7, 8], ['a', 'b', 'c', 'd'])  # change the x ticks and labels
 ax.legend()  # show legend
 ```
 
-
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156435519-81e1437e-3ca9-4dc0-8f02-a0de3eecad21.png">
+
+[Back to Top](#title)
 
 ### Multiple Axes
 
@@ -745,6 +798,104 @@ ax[1, 2].plot(x, y2)
 
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156458730-7b4ba38e-b9f5-4203-ab8c-b1d41819f338.png">
 
+[Back to Top](#title)
+
+### Pandas Charting
+
+[Pandas charting](https://pandas.pydata.org/docs/user_guide/visualization.html) is built on top of Matplotlib. 
+
+I will use Country GDP dataset ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8162154/countries-2021.csv.zip)) and California housing dataset ([housing.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8180224/housing.csv.zip)) to illustrate the charts. You can learn more about the dataset from [my Kaggle dataset page](https://www.kaggle.com/harrywang/housing).
+
+#### Line Plot
+
+[`.plot()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html) (same as `.plot.line()`) is used to create line plots for all numerical columns with x-axis being the number of rows
+
+```python
+import pandas as pd
+df_country = pd.read_csv('countries-2021.csv')
+df_country.plot()
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156588884-6c074b34-5cf4-4311-aea2-472bb5d2cc58.png">
+
+Change the style sheet and only plot one column (country area) with custom ticks:
+
+```python
+import matplotlib.pyplot as plt
+plt.style.use('seaborn')
+
+df_country.area.plot().set_xticks(df_country.index, df_country.country, rotation=60)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156608087-47ecc57e-9e49-4597-ac11-5f8c32335fca.png">
+
+Create a new sorted DataFrame and plot the area with tick labels:
+
+```python
+df_sorted_area = df_country.sort_values(by='area', ignore_index=True)
+df_sorted_area.area.plot().set_xticks(df_sorted_area.index, df_sorted_area.country, rotation=60)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156607909-9c4fc734-e9d7-498a-bb42-aa93a5d7f431.png">
+
+Read the California housing dataset:
+
+```
+import pandas as pd
+df_housing = pd.read_csv('housing.csv')
+df_housing.info()
+
+RangeIndex: 20640 entries, 0 to 20639
+Data columns (total 10 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   longitude           20640 non-null  float64
+ 1   latitude            20640 non-null  float64
+ 2   housing_median_age  20640 non-null  float64
+ 3   total_rooms         20640 non-null  float64
+ 4   total_bedrooms      20433 non-null  float64
+ 5   population          20640 non-null  float64
+ 6   households          20640 non-null  float64
+ 7   median_income       20640 non-null  float64
+ 8   median_house_value  20640 non-null  float64
+ 9   ocean_proximity     20640 non-null  object 
+dtypes: float64(9), object(1)
+```
+
+Create a line plot for the median house price - think about what patterns you can see from this line chart?
+
+```
+df_housing.median_house_value.plot()
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156633243-ea43863b-c257-41a0-bde6-1735e00d1eab.png">
+
+
+#### Histogram
+
+
+[`.hist()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html) (same as `.plot.hist()`) is often used to create histograms to check the followings:
+
+- The distributions of the data
+- center and spread of the data
+- skewness of the data
+- presence of outliers
+
+`bins=50` can be used to change the number of bins, default is 10
+
+```
+# numerical data
+df_housing.median_income.hist(bins=50)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156634756-e0845400-478c-4516-b4c0-f031d850e811.png">
+
+```
+# categorical data
+df_country.continent.hist()
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156636098-361b3ad5-5be0-45ed-8c76-ff8b8cca1398.png">
 
 [Back to Top](#title)
 
