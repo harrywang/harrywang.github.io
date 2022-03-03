@@ -864,15 +864,15 @@ dtypes: float64(9), object(1)
 
 Create a line plot for the median house price - think about what patterns you can see from this line chart?
 
-```
+```python
 df_housing.median_house_value.plot()
 ```
 
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156633243-ea43863b-c257-41a0-bde6-1735e00d1eab.png">
 
+[Back to Top](#title)
 
 ### Histogram
-
 
 [`.hist()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html) (same as `.plot.hist()`) is often used to create histograms to check the followings:
 
@@ -883,14 +883,14 @@ df_housing.median_house_value.plot()
 
 `bins=50` can be used to change the number of bins, default is 10
 
-```
+```python
 # numerical data
 df_housing.median_income.hist(bins=50)
 ```
 
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156634756-e0845400-478c-4516-b4c0-f031d850e811.png">
 
-```
+```python
 # categorical data
 df_country.continent.hist()
 ```
@@ -899,6 +899,53 @@ df_country.continent.hist()
 
 [Back to Top](#title)
 
+### Boxplot
+
+A box plot [`.plot.box()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.box.html) shows:
+
+- the median (the line in the box)
+- the middle 50% of the data (the box)
+- the outliers (the dots)
+- smallest and largest data points after removing outliers
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/110555173-1d876280-810a-11eb-9e67-0491463b21e6.png">
+
+The box plot is constructed in the following steps:
+
+1. find the median (the middle value of the dataset or Q2/50th Percentile) of the dataset and divide the data into lower half (smaller numbers) and upper half (larger numbers)
+2. find the median of the lower half of the dataset, which is called Q1 (First quartile/25th Percentile)
+3. find the median of the upper half of the dataset, which is called Q3 (Third quartile/75th Percentile)
+4. Calculate IQR (Interquartile Range): IQR = Q3 - Q1 
+5. Identify outliers (if any): data points that are 1.5 IQR away from the median are considered outliers
+6. remove the outliers from the dataset and minimum/maximum is the smallest/largest number in the remaining dataset
+
+The following example also shows how to have multiple axes for different pandas charts:
+
+```python
+fig, ax = plt.subplots(1, 3, figsize=(20,8))
+df_housing.median_income.plot.box(ax=ax[0])  # income
+df_housing.median_house_value.plot.box(ax=ax[1])  # house price
+df_housing.housing_median_age.plot.box(ax=ax[2])  # house age
+```
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156644435-6a539e61-a57b-4759-af3a-07fb9e7da88f.png">
+
+[Back to Top](#title)
+
+### Scatter Plot
+
+Scatter plot [`.plot.scatter()`](https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.plot.scatter.html) is often used for **correlation analysis** between different features. Correlation coefficient is between -1 and 1, representing negative and positive correlations. 0 means there is no liner correlation. Correlation is said to be linear if the ratio of change is constant, otherwise is non-linear. 
+
+What insights you can get from the following scatter plot?
+
+```python
+df_housing.plot.scatter(x='median_income', y='median_house_value')
+```
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156646442-f4b8a472-2884-4d6f-8900-7cddda8a2ccc.png">
+
+
+[Back to Top](#title)
 
 ## References
 
