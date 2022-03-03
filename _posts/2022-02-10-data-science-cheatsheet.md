@@ -800,13 +800,13 @@ ax[1, 2].plot(x, y2)
 
 [Back to Top](#title)
 
-### Pandas Charting
+## Pandas Charting
 
 [Pandas charting](https://pandas.pydata.org/docs/user_guide/visualization.html) is built on top of Matplotlib. 
 
 I will use Country GDP dataset ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8162154/countries-2021.csv.zip)) and California housing dataset ([housing.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8180224/housing.csv.zip)) to illustrate the charts. You can learn more about the dataset from [my Kaggle dataset page](https://www.kaggle.com/harrywang/housing).
 
-#### Line Plot
+### Line Plot
 
 [`.plot()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html) (same as `.plot.line()`) is used to create line plots for all numerical columns with x-axis being the number of rows
 
@@ -871,7 +871,7 @@ df_housing.median_house_value.plot()
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156633243-ea43863b-c257-41a0-bde6-1735e00d1eab.png">
 
 
-#### Histogram
+### Histogram
 
 
 [`.hist()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html) (same as `.plot.hist()`) is often used to create histograms to check the followings:
