@@ -494,6 +494,258 @@ df
 9          Canada   1.71       37.74  9.98           Ottawa    45310.015898
 ```
 
+### Pandas Functions
+
+- `.min()`, `.max()`, `.mean()`, `.sum()`, etc.
+
+```
+df.max()
+
+country             United States
+gdp                         20.49
+population                1439.32
+area                         9.98
+capital           WASHINGTON D.C.
+continent           South America
+```
+
+- [`.value_counts()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.value_counts.html): return a Series containing counts of unique rows in the DataFrame.
+
+```
+df.continent.value_counts()  # this is a Series
+
+Europe           4
+Asia             3
+North America    2
+South America    1
+Name: continent, dtype: int64
+```
+
+```
+df.continent.value_counts()['Asia']
+
+3
+```
+
+```
+df.continent.value_counts(normalize=True)
+
+Europe           0.4
+Asia             0.3
+North America    0.2
+South America    0.1
+Name: continent, dtype: float64
+```
+
+- `.nunique()`: return Series with number of distinct elements
+
+```
+df.nunique()
+
+country           10
+gdp               10
+population        10
+area              10
+capital           10
+continent          4
+dtype: int64
+```
+
+### GroupBy
+
+[`.groupby()`](https://pandas.pydata.org/docs/reference/groupby.html) can be used to group the data by different values of one or more categorical columns, then various aggregation functions can be applied to each group.
+
+```python
+df.groupby('continent')  # this returns a DataFrameGroupBy object
+
+<pandas.core.groupby.generic.DataFrameGroupBy object at 0x11bff9310>
+```
+
+Count number of countries in each continent:
+
+```python
+df.groupby('continent').count()
+
+               country  gdp  population  area  capital  gdp per capita
+continent                                                             
+Asia                 3    3           3     3        3               3
+Europe               4    4           4     4        4               4
+North America        2    2           2     2        2               2
+South America        1    1           1     1        1               1
+```
+
+```python
+# this returns the max in each group for each column
+# for Strings max() returns highest alphabetical character
+# for example: Japan's GDP is NOT 13.40
+df.groupby('continent').max()
+
+                     country    gdp  population  area          capital 
+continent                                                                 
+Asia                    Japan  13.40     1439.32  9.60            Tokyo   
+Europe         United Kingdom   4.00       83.78  0.64             Rome   
+North America   United States  20.49      331.00  9.98  WASHINGTON D.C.   
+South America          Brazil   1.87      212.56  8.52         Brasilia
+```
+```python
+df.groupby('continent')['gdp'].max()
+
+continent
+Asia             13.40
+Europe            4.00
+North America    20.49
+South America     1.87
+Name: gdp, dtype: float64
+```
+`df.groupby('continent')` returns a tuple with two elements:
+
+- the first one is the group label, such as 'Asia', 'Europ', etc.
+- the second one is the DataFrame for the group
+
+The following example shows how to loop over the groups:
+
+```python
+for group, group_df in df.groupby('continent'):
+    print(group)
+    print('#' * 15)
+    print(group_df)
+    print('-' * 60)
+
+Asia
+###############
+  country    gdp  population  area    capital continent
+1   China  13.40     1439.32  9.60    Beijing      Asia
+2   Japan   4.97      126.48  0.38      Tokyo      Asia
+6   India   2.72     1380.00  3.29  New Delhi      Asia
+------------------------------------------------------------
+Europe
+###############
+          country   gdp  population  area capital continent
+3         Germany  4.00       83.78  0.36  Berlin    Europe
+4  United Kingdom  2.83       67.89  0.24  London    Europe
+5          France  2.78       65.27  0.64   Paris    Europe
+7           Italy  2.07       60.46  0.30    Rome    Europe
+------------------------------------------------------------
+North America
+###############
+         country    gdp  population  area          capital      continent
+0  United States  20.49      331.00  9.53  WASHINGTON D.C.  North America
+9         Canada   1.71       37.74  9.98           Ottawa  North America
+------------------------------------------------------------
+South America
+###############
+  country   gdp  population  area   capital      continent
+8  Brazil  1.87      212.56  8.52  Brasilia  South America
+------------------------------------------------------------
+```
+
+
+[Back to Top](#title)
+
+## Matplotlib
+
+[Matplotlib](https://matplotlib.org/) is a comprehensive library for creating visualizations in Python.
+
+### Basic Matplotlib Concepts
+
+The following picture shows the [basic Matplotlib concepts](https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py):
+
+<img class="mx-auto" src="{{site.baseurl}}/assets/img/posts/cheatsheet/matplotlib.png">
+
+- Figure: the top level container for all the plot elements, which may contain 1 or more Axes.
+- Axes: an area where points can be specified in terms of x-y coordinates
+- Axis, Title, Label, Marker, Legend are self-explanatory
+
+`matplotlib.pyplot` is a collection of functions that make matplotlib work like [MATLAB](https://www.mathworks.com/products/matlab.html).
+```
+import matplotlib.pyplot as plt
+```
+
+Create a figure with one axes:
+
+```python
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+x = [1, 2, 3, 4]
+y = [1, 4, 2, 3]
+ax.plot(x, y);  # Plot some data on the axes.
+```
+
+<img width="300" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156420126-7abdfe2e-2baa-4f34-9229-1c2989fc77df.png">
+
+In the next example, I illustrate the followings:
+
+- create data using Numpy for plotting
+- set different [style sheets](https://matplotlib.org/3.5.1/gallery/style_sheets/style_sheets_reference.html)
+- use `figsize=(5, 5)` to change the size of the plot - default is (6.4, 4.8)
+- specify legend labels (in plain text and LaTex)
+- use different [line styles](https://matplotlib.org/3.5.1/gallery/lines_bars_and_markers/linestyles.html)
+- use different [marker styles](https://matplotlib.org/3.5.1/gallery/lines_bars_and_markers/marker_reference.html)
+- specify [colors](https://matplotlib.org/stable/tutorials/colors/colors.html)
+- set plot title
+- set axis labels
+
+
+```python
+import numpy as np
+plt.style.use('seaborn')  # seaborn style, which looks better than the default one
+# plt.style.use('default')  # reset to default style
+
+x = np.linspace(1, 10, 20)  # return 20 evenly spaced numbers between 0 and 10
+y1 = 2 * x + 3  # a linear function
+y2 = x**2 - 5 * x + 3  # a quadratic function
+
+fig, ax = plt.subplots(figsize=(5, 5))  # one axes of size (5, 5)
+ax.plot(x, y1, label='y = 2x + 3')
+ax.plot(x, 
+        y2, 
+        label='$y = x^2 - 5x + 3$',  # legend label using Latex
+        linestyle='dashed',  # line style
+        marker='s',  # marker style
+        color='red', # line color
+        )
+
+ax.set_title('Two Functions')  # plot title
+ax.set_xlabel('x')  # x label
+ax.set_ylabel('y')  # y label
+ax.legend()  # show legend
+```
+
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156435519-81e1437e-3ca9-4dc0-8f02-a0de3eecad21.png">
+
+### Multiple Axes
+
+A figure can have multiple axes:
+
+- one column/one row of axes: use `ax[0]`, `ax[1]`, ... to refer to the axes.
+
+```python
+fig, ax = plt.subplots(2)  # two rows
+ax[0].plot(x, y1)
+ax[1].plot(x, y2)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156457694-6e1baf7d-12e0-4530-8a73-219f53ff52f3.png">
+
+```python
+fig, ax = plt.subplots(1, 2)  # one row, two columns
+ax[0].plot(x, y1)
+ax[1].plot(x, y2)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156458069-aa6c2c59-faba-4c9a-bb23-1fbb58cf9910.png">
+
+- multiple rows and columns: must use `ax[row, column]`, such as `ax[0, 0]`, `ax[0, 1]`, `ax[1, 0]`, ... to refer to the axes.
+
+```python
+fig, ax = plt.subplots(2, 3)  # 2 rows and 3 columns
+ax[0, 1].plot(x, y1)
+ax[1, 2].plot(x, y2)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156458730-7b4ba38e-b9f5-4203-ab8c-b1d41819f338.png">
+
+
 [Back to Top](#title)
 
 
@@ -502,6 +754,7 @@ df
 - [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [https://www.datacamp.com/blog/numpy-cheat-sheet-data-analysis-in-python](https://www.datacamp.com/blog/numpy-cheat-sheet-data-analysis-in-python)
 - [https://www.datacamp.com/blog/pandas-cheat-sheet-for-data-science-in-python](https://www.datacamp.com/blog/pandas-cheat-sheet-for-data-science-in-python)
--[https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python](https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python)
+- [https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python](https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python)
+- [https://matplotlib.org/cheatsheets/](https://matplotlib.org/cheatsheets/)
 
 [Back to Top](#title)
