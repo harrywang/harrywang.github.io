@@ -1,11 +1,11 @@
 ---
 layout: post-toc
-title: Data Science Cheatsheet
+title: Python Data Science Tools Cheatsheet
 tags: tutorial coding
 permalink: ds
 ---
 
-The goal of this Python Data Science Cheatsheet is to list the most commonly needed concepts and tools for beginners, which is created based on many [references](#references).
+The goal of this Python Data Science Tools Cheatsheet is to illustrate the most commonly used concepts and tools for beginners.
 
 ## Python Collection Data Types
 
@@ -943,6 +943,14 @@ df_housing.plot.scatter(x='median_income', y='median_house_value')
 ```
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156646442-f4b8a472-2884-4d6f-8900-7cddda8a2ccc.png">
+
+Create a [scatter matrix](https://pandas.pydata.org/docs/reference/api/pandas.plotting.scatter_matrix.html) (histogram plots in the diagonal):
+
+```python
+pd.plotting.scatter_matrix(df_housing, figsize=(25,25))
+```
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156790761-c79f13a2-28d0-40b0-9568-a7c3ae19ff28.png">
 
 
 [Back to Top](#title)
