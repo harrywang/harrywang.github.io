@@ -26,6 +26,8 @@ The definitions are as follows. You can check usage examples in [Python Cheatshe
 
 NOTE: Python 3.7+, dictionaries are ordered.
 
+[Back to Top](#title)
+
 ## Numpy
 
 Numpy is the core library for scientific computing in Python, which provides a high-performance multidimensional array objects and related tools to work with the array.
@@ -89,6 +91,8 @@ print(c.ndim, c.size, c.shape, c.dtype)
 2 6 (2, 3) float64
 3 24 (4, 3, 2) int64
 ```
+
+[Back to Top](#title)
 
 ### Numpy Array vs. Python List
 
@@ -175,6 +179,8 @@ print(c)  # c is not changed
 [1 2 3 4 5]
 ```
 - Numpy array is way more faster than Python list for computation
+
+[Back to Top](#title)
 
 ### Initial Placeholder Arrays
 
