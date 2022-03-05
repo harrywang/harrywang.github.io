@@ -61,19 +61,19 @@ Streamlit enables fast data app development and deployment using Python with no 
 
 <img class="mx-auto" width='400' src="https://user-images.githubusercontent.com/595772/156841714-1bf12a2f-ac0c-4a81-991c-5f392bc06bc3.png">
 
-You can see the demo app live at:
+See the demo app live at:
 
 - [Streamlit Cloud](https://share.streamlit.io/harrywang/streamlit-basics/app.py)
 - [Heroku](https://st-demo-harrywang.herokuapp.com/)
 
-You can follow the steps below to get the data app running locally for testing:
+Follow the steps below to get the data app running locally for testing:
 
 - Run `mini-ml.ipynb` notebook to generate the model file `clf-best.pickle`
 - Make sure the virtual environment is activated: `source venv/bin/activate`
 - Run the app from the root of the repo folder using terminal: `streamlit run streamlit-app.py`, then open a browser to visit the app at [http://localhost:8501](http://localhost:8501) 
 - Stop the app by using Ctrl + C or closing the terminal
 
-You can follow my [tutorial](https://github.com/harrywang/streamlit-basics) to deploy the app to the cloud for public access via services such as Streamlit Share, Heroku, or AWS.
+Follow my [tutorial](https://github.com/harrywang/streamlit-basics) to deploy the app to the cloud for public access via services such as Streamlit Share, Heroku, or AWS.
 
 [Back to Top](#title)
 
@@ -84,8 +84,6 @@ The `automl.ipynb` notebook shows how you can conduct automatic EDA with `pandas
 With a few lines of code, `pandas_profiling` can generate a comprehensive EDA report:
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156847132-ceb01927-0755-4335-97d3-006d1bcc5fde.png">
-
-You still need to handle data issues as shown in the `mini-ml.ipynb` notebook. 
 
 `autogluon` can automatically train and tune many models and generate a leaderboard to show the model performance:
 
