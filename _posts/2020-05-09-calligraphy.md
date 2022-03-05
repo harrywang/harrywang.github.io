@@ -2,6 +2,7 @@
 layout: post
 title: Calligraphy + Art + AI
 tags: research open-source
+permalink: calligraphy
 ---
 
 Creativity is often considered the ultimate moonshot for Artificial Intelligence. Generative Modeling and Natural Language Processing have been applied to create paintings, generate music, and write poems. There has been extensive research on linking text and image, such as image captioning, text-to-image generation, where the texts are largely the descriptions about the images and are either encoded as features or treated as labels. Inspired by Chinese calligraphy as a unique form of visual art where the character itself is an aesthetic painting, we develop a creative framework based on Conditional Generative Adversarial Networks and Contextual Neural Language Model to generate artworks that have intrinsic meaning and aesthetic value. We demonstrate the framework in a case study, where artworks are generated in real-time to improve the overall customer experience and engagement in a restaurant. (Patent Pending, 2020)

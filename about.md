@@ -6,22 +6,20 @@ permalink: about
 
 Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://lerner.udel.edu/) with more than 15 years' research, teaching, and management experience in AI, business intelligence and analytics, business process management, and enterprise systems. I am also an affiliated faculty at the [Data Science Institute](https://dsi.udel.edu/) and the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/).
 
-I currently serve as the Chief Scientist of [Tezign](https://www.tezign.com) (a tech startup based in Shanghai, China backed by VC firms like Sequoia Capital, Hearst Ventures, and Temasek) and an Independent Director for [So-Young International Inc.](https://www.soyoung.com) (NASDAQ: SY - the largest social community in China for consumers, professionals, and service providers in the medical aesthetics industry). 
+I currently serve as the Chief Scientist of [Tezign](https://www.tezign.com) (a unicorn tech startup based in Shanghai backed by VC firms like Sequoia Capital, Hearst Ventures, and Temasek) and an Independent Director for [So-Young International Inc.](https://www.soyoung.com) (NASDAQ: SY - the largest social community in China for consumers, professionals, and service providers in the medical aesthetics industry). 
 
-I was the Founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members of the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/) at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. 
-
-I am very passionate about entrepreneurship and founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
+I was the Founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members of the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/) at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. I also founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
 
 In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([check out some of my hobby projects](http://harrywang.me/tag#hobby)).
 
 ## Recent Projects and Tutorials
 
 - [Tailpages (Tailwind + Github Pages)](http://harrywang.me/tailpages-intro): a Jekyll website template based on TailwindCSS, which can be hosted by Github for free.
-- [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/mini-ml): a set of notebooks covering key basic components of real-world machine learning projects
+- [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/ml): a set of notebooks covering key basic components of real-world machine learning projects
 - [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
-- [Color + Culture + AI](http://harrywang.me/2021/02/13/color.html): culture-inspired multi-modal color palette generation and colorization
-- [Calligraphy + AI](http://harrywang.me/2020/05/09/calligraphy.html): abstract art generation based on Chinese calligraphy
-- [FRED (Flask + REact + Docker)](http://harrywang.me/2020/04/10/fred.html): an end-to-end boilerplate for full stack development
+- [Color + Culture + AI](http://harrywang.me/color): culture-inspired multi-modal color palette generation and colorization
+- [Calligraphy + AI](http://harrywang.me/calligraphy): abstract art generation based on Chinese calligraphy
+- [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
 - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >130K views since posted in September 2019.
 
 ## Recent Teaching
