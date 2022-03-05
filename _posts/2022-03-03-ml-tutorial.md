@@ -5,7 +5,7 @@ tags: tutorial open-source coding
 permalink: ml
 ---
 
-This tutorial is developed based on teaching materials from my courses at the University of Delaware and professional training workshops. Many of the tools have been/are being used by data scientists and machine learning engineers in my teams in the industry. My goal is to have a minimalistic coverage of key concepts and steps in a typical end-to-end machine learning project with open-source/free tools, simple datasets, and well-documented coding examples.
+This tutorial is developed based on teaching materials from my courses at the University of Delaware and my professional training workshops for industry practitioners. Many of the tools have been/are being used by data scientists and machine learning engineers in my teams. My goal is to have a minimalistic coverage of key concepts and steps in a typical end-to-end machine learning project with open-source/free tools, simple datasets, and well-documented coding examples.
 
 The key topics include:
 
