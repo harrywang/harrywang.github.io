@@ -90,7 +90,7 @@ With a few lines of code, `pandas_profiling` can generate a comprehensive EDA re
 
 `autogluon.tabular` version tries 8 models:
 
-<img class="mx-auto" width='400' src="https://user-images.githubusercontent.com/595772/156847695-6b1bf380-5db6-4b68-bce2-4156615aa5f2.png">
+<img class="mx-auto" width='400' src="https://user-images.githubusercontent.com/595772/156929364-f7c940a1-b3b4-4b60-8486-9a06a448ce53.png">
 
 `autogluon` full version tries 14 models:
 
