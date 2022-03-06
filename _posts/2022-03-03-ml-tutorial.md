@@ -137,9 +137,9 @@ Follow the steps below to setup ClearML and run the programs:
 
 I use RapidMiner to teach basic machine learning to less technical audiences, such as product managers, executives, MBA students, etc. [RapidMiner Studio Free version](https://rapidminer.com/products/studio/) is enough, which has 10,000 data rows limit.
 
-In the `rapidminer` folder, I created a No-Code version of the `mini-ml.ipynb` notebook using Rapidminer (v9.10).
+In the `rapidminer` folder, I created a no-code version of the `mini-ml.ipynb` notebook using RapidMiner (v9.10).
 
-- `mini-ml.rmp` is the training process, where two models, i.e., decision tree and random forest, are trained (typical CV with a Grid Search) for a simple classification problem. 
+- `mini-ml.rmp` is the training process, where two models, i.e., decision tree and random forest, are trained using typical CV with a Grid Search for a simple classification problem. 
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156889739-f44f7d02-d219-4136-8733-698bec46ec00.png">
 
