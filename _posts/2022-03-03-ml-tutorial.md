@@ -85,7 +85,7 @@ With a few lines of code, `pandas_profiling` can generate a comprehensive EDA re
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156847132-ceb01927-0755-4335-97d3-006d1bcc5fde.png">
 
-`autogluon` can automatically train and tune many models and generate a leaderboard to show the model performance (**NOTE**: I use `autogluon.tabular` to support Mac with M1 chip - some packages such as CatBoost does not support M1 chip yet. A full version of `autogluon` is used in the [Kaggle version](https://www.kaggle.com/harrywang/autoeda-and-automl)):
+`autogluon` can automatically train and tune many models and generate a leaderboard to show the model performance (**NOTE**: I use `autogluon.tabular` to support Mac with M1 chip - some packages, such as CatBoost, do not support M1 chip yet. A full version of `autogluon` is used in the [Kaggle version](https://www.kaggle.com/harrywang/autoeda-and-automl)):
 
 
 `autogluon.tabular` version tries 8 models:
