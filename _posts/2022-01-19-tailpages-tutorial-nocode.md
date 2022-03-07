@@ -29,10 +29,10 @@ Login with your Github account, go to https://github.com/harrywang/tailpages and
 <img width="1371" src="https://user-images.githubusercontent.com/1081826/150206142-5bc8db16-6ca3-4a84-a7e5-775242587f02.png">
 
 
-Rename the forked repo to any name you want. Here I rename it to `johndoe`:
+Rename the forked repo to any name you want. Here I rename it to `johndoe` (if you want a shorter URL for your website, you can rename the repo to `<username>.github.io`):
 <img width="1020" src="https://user-images.githubusercontent.com/1081826/150206457-cb65ff43-214b-4031-86de-2886b51c789a.png">
 
-Enable the Github Pages: click the Settings option, choose Pages, select main branch and save. Now, you can access the new website at `https://<username>.github.io/<your-repo>`
+Enable the Github Pages: click the Settings option, choose Pages, select main branch and save. Now, you can access the new website at `https://<username>.github.io/<your-repo>` (or `https://<username>.github.io` if you renamed your repo as `<username>.github.io`)
 
 ![0_EcsPmERW8Dj9S5HO](https://user-images.githubusercontent.com/595772/150408998-915d3a62-db2b-4429-aff1-98bfbffc4294.png)
 
@@ -49,7 +49,7 @@ Click the `_config.yml` file as shown below:
 Edit the file:
 <img width="1356" src="https://user-images.githubusercontent.com/1081826/150207856-a493fbd6-4f26-4265-9a33-451dfff681c8.png">
 
-**IMPORTANT**: you have to change `baseurl` and `url` in `_config.yml` to match your repo name and username to make the website work. You should also change other basic information. 
+**IMPORTANT**: you have to change `baseurl` and `url` in `_config.yml` to match your repo name and username to make the website work (if you renamed your repo as `<username>.github.io`, just set `baseurl: ""`). You should also change other basic information. 
 
 <img width="665" src="https://user-images.githubusercontent.com/1081826/150208297-956f9794-d059-484d-a14b-e5d79802ef20.png">
 
@@ -190,6 +190,22 @@ If you don't have blogs, you can simply delete the posts in the `_post` folder a
 If you have your own domain name, you can follow the documentation [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
 
 **That's it!** Now you can add more content to your website and I hope you enjoy Tailpages template. 
+
+## TOC and Permalink
+
+If your blog is long, you can use the `post-toc` layout. A table of contents will be automatically generated based on all `##` headings - this is defined by `h_max=2` in `_layouts/post-toc.html` file, which you can change to fit your need.
+
+You can also add `permalink` so that the post have a neat URL, such as [https://harrywang.me/tailpages/toc](https://harrywang.me/tailpages/toc)
+
+```
+---
+layout: post-toc
+title: Table of Contents Support
+tags: tutorial open-source
+permalink: toc
+---
+```
+
 
 ## References
 
