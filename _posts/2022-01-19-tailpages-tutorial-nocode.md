@@ -26,11 +26,11 @@ The details of each step are as follows:
 
 Login with your Github account, go to https://github.com/harrywang/tailpages and fork the tailpages repo:
 
-<img width="1371" src="https://user-images.githubusercontent.com/1081826/150206142-5bc8db16-6ca3-4a84-a7e5-775242587f02.png">
+<img class="mx-auto" src="https://user-images.githubusercontent.com/1081826/150206142-5bc8db16-6ca3-4a84-a7e5-775242587f02.png">
 
 
 Rename the forked repo to any name you want. Here I rename it to `johndoe` (if you want a shorter URL for your website, you can rename the repo to `<username>.github.io`):
-<img width="1020" src="https://user-images.githubusercontent.com/1081826/150206457-cb65ff43-214b-4031-86de-2886b51c789a.png">
+<img class="mx-auto" src="https://user-images.githubusercontent.com/1081826/150206457-cb65ff43-214b-4031-86de-2886b51c789a.png">
 
 Enable the Github Pages: click the Settings option, choose Pages, select main branch and save. Now, you can access the new website at `https://<username>.github.io/<your-repo>` (or `https://<username>.github.io` if you renamed your repo as `<username>.github.io`)
 
@@ -38,16 +38,16 @@ Enable the Github Pages: click the Settings option, choose Pages, select main br
 
 NOTE that the website right now should not look good as follows - we need to change some configurations next to fix it. 
 
-<img width="430" src="https://user-images.githubusercontent.com/1081826/150208962-367a05a2-5b40-4b6d-8fdc-bd088eac61b2.png">
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/1081826/150208962-367a05a2-5b40-4b6d-8fdc-bd088eac61b2.png">
 
 ## Customize Homepage
 
 Click the `_config.yml` file as shown below:
-<img width="1010" src="https://user-images.githubusercontent.com/1081826/150207681-c28c6d01-338a-4a8d-826e-56b09a7cd4dd.png">
+<img class="mx-auto" src="https://user-images.githubusercontent.com/1081826/150207681-c28c6d01-338a-4a8d-826e-56b09a7cd4dd.png">
 
 
 Edit the file:
-<img width="1356" src="https://user-images.githubusercontent.com/1081826/150207856-a493fbd6-4f26-4265-9a33-451dfff681c8.png">
+<img class="mx-auto"" src="https://user-images.githubusercontent.com/1081826/150207856-a493fbd6-4f26-4265-9a33-451dfff681c8.png">
 
 **IMPORTANT**: you have to change `baseurl` and `url` in `_config.yml` to match your repo name and username to make the website work (if you renamed your repo as `<username>.github.io`, just set `baseurl: ""`). You should also change other basic information. 
 
@@ -185,12 +185,6 @@ You can remove unused pages and other assets (such as images) if you want. For e
 
 If you don't have blogs, you can simply delete the posts in the `_post` folder and delete the blog menu in `_config.yml` file. I suggest you keep the `blog.md` file in case you want to blog later :). 
 
-## Add Custom Domain
-
-If you have your own domain name, you can follow the documentation [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
-
-**That's it!** Now you can add more content to your website and I hope you enjoy Tailpages template. 
-
 ## TOC and Permalink
 
 If your blog is long, you can use the `post-toc` layout. A table of contents will be automatically generated based on all `##` headings - this is defined by `h_max=2` in `_layouts/post-toc.html` file, which you can change to fit your need.
@@ -206,6 +200,22 @@ permalink: toc
 ---
 ```
 
+## Custom Domain
+
+If you have your own domain name, you can follow the documentation [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
+
+The document is quite confusing. You need to do the following:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/157142987-3e9883f4-5b06-48b9-a311-5bac6a5f2b57.png">
+
+1. Add domain to Github Pages page
+2. Go to your domain provider (GoDaddy for me), add:
+  - A record pointing to the IP address of Github: `185.199.108.153`
+  - CNAME record mapping `www.yourdomain.com` to `<your username>.github.io`
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/157143446-bc8c3a6e-361e-4333-aa7e-d9332f06aae4.png">
+
+**That's it!** Now you can add more content to your website and I hope you enjoy Tailpages template. 
 
 ## References
 
