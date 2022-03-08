@@ -916,6 +916,16 @@ The box plot is constructed in the following steps:
 5. Identify outliers (if any): data points that are 1.5 IQR away from the median are considered outliers
 6. remove the outliers from the dataset and minimum/maximum is the smallest/largest number in the remaining dataset
 
+The following example shows how a boxplot is constructed:
+
+```python
+s = pd.Series([-10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 22])
+fig, ax = plt.subplots(figsize=(4, 6))
+s.plot.box()
+ax.set_yticks(s)
+```
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/157317157-bd336cf7-3cfa-458a-a328-7544e0a1462e.png">
+
 The following example also shows how to have multiple axes for different pandas charts:
 
 ```python
