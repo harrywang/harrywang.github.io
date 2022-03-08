@@ -619,17 +619,17 @@ df.groupby('continent')  # this returns a DataFrameGroupBy object
 <pandas.core.groupby.generic.DataFrameGroupBy object at 0x11bff9310>
 ```
 
-Count number of countries in each continent:
+Sum of GDP, Population, and Area for countries in each continent:
 
 ```python
-df.groupby('continent').count()
+df.groupby('continent').sum()
 
-               country  gdp  population  area  capital  gdp per capita
-continent                                                             
-Asia                 3    3           3     3        3               3
-Europe               4    4           4     4        4               4
-North America        2    2           2     2        2               2
-South America        1    1           1     1        1               1
+                 gdp  population   area
+continent                                              
+Asia           21.09     2945.80  13.27
+Europe         11.68      277.40   1.54
+North America  22.20      368.74  19.51
+South America   1.87      212.56   8.52
 ```
 
 ```python
@@ -645,19 +645,10 @@ Europe         United Kingdom   4.00       83.78  0.64             Rome
 North America   United States  20.49      331.00  9.98  WASHINGTON D.C.   
 South America          Brazil   1.87      212.56  8.52         Brasilia
 ```
-```python
-df.groupby('continent')['gdp'].max()
 
-continent
-Asia             13.40
-Europe            4.00
-North America    20.49
-South America     1.87
-Name: gdp, dtype: float64
-```
 `df.groupby('continent')` returns a tuple with two elements:
 
-- the first one is the group label, such as 'Asia', 'Europ', etc.
+- the first one is the group label, such as 'Asia', 'Europe', etc.
 - the second one is the DataFrame for the group
 
 The following example shows how to loop over the groups:
