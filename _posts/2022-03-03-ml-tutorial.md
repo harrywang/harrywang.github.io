@@ -9,7 +9,7 @@ This tutorial is developed based on teaching materials from my courses at the Un
 
 The key topics include:
 
-- Full machine learning pipeline ([Numpy, Pandas, Matplotlib, Seaborn](https://harrywang.me/ds), [Scikit-learn](https://scikit-learn.org/stable/)
+- Full machine learning pipeline (Numpy, Pandas, Matplotlib, Seaborn - [see my other tutorial](https://harrywang.me/ds), [Scikit-learn](https://scikit-learn.org/stable/))
 - Data app development and deployment ([Streamlit](https://streamlit.io/))
 - AutoEDA ([Pandas-profiling](https://github.com/ydataai/pandas-profiling)) and AutoML ([AutoGluon](https://auto.gluon.ai))
 - MLOps, experiment tracking and automation ([ClearML](https://clear.ml/))
