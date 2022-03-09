@@ -803,6 +803,15 @@ ax[1, 2].plot(x, y2)
 
 I will use Country GDP dataset ([countries-2021.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8162154/countries-2021.csv.zip)) and California housing dataset ([housing.csv.zip](https://github.com/harrywang/harrywang.github.io/files/8180224/housing.csv.zip)) to illustrate the charts. You can learn more about the dataset from [my Kaggle dataset page](https://www.kaggle.com/harrywang/housing).
 
+We introduce the following plots:
+
+- Line Plot
+- Bar Plot
+- Histogram
+- Box Plot
+- Scatter Plot
+- Scatter Matrix
+
 ### Line Plot
 
 [`.plot()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html) (same as `.plot.line()`) is used to create line plots for all numerical columns with x-axis being the number of rows
@@ -866,6 +875,20 @@ df_housing.median_house_value.plot()
 ```
 
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156633243-ea43863b-c257-41a0-bde6-1735e00d1eab.png">
+
+[Back to Top](#title)
+
+### Bar Plot
+
+[Bar plot](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html) shows a bar for each data point (whereas a line plot uses lines to connect the data points). 
+
+We can show the DataFrame on countries sorted by area as a bar plot:
+
+```python
+df_sorted_area.area.plot.bar().set_xticks(df_sorted_area.index, df_sorted_area.country, rotation=60)
+```
+
+<img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/157488173-c7e818b1-7ef4-4842-b064-82b7520de981.png">
 
 [Back to Top](#title)
 
