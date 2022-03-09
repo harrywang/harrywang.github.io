@@ -1,11 +1,11 @@
 ---
 layout: post-toc
-title: Python Data Science Tools Cheatsheet
+title: Introduction to Python Data Science Tools
 tags: tutorial coding
 permalink: ds
 ---
 
-The goal of this Python Data Science Tools Cheatsheet is to illustrate the most commonly used concepts and tools for beginners.
+The goal of this introductory Python Data Science tutorial is to illustrate the most commonly used concepts and tools for beginners.
 
 ## Python Collection Data Types
 
@@ -916,7 +916,14 @@ The box plot is constructed in the following steps:
 5. Identify outliers (if any): data points that are 1.5 IQR away from the median are considered outliers
 6. remove the outliers from the dataset and minimum/maximum is the smallest/largest number in the remaining dataset
 
-The following example shows how a boxplot is constructed:
+The following example shows how a boxplot is constructed step by step:
+
+1. 13 numbers in total, median is 6
+2. Q1 is 3: the median of [-10, 1, 2, 3, 4, 5]
+3. Q3 is 9: the median of [7, 8, 9, 10, 20, 22]
+4. IQR is 9 - 3 = 6 and 1.5 IQR is 1.5 * 6 = 9
+5. 1.5 IQR from the median is -3 (6 - 9) and 15 (6 + 9), so -10, 20, 22 are outliers
+6. minimum/maximum is then 1/10
 
 ```python
 s = pd.Series([-10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 22])
