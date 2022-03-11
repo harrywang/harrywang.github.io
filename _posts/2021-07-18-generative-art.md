@@ -28,7 +28,7 @@ It looks awesome after framed:
 
 ## Setup Inkscape and Axidraw Driver
 
-Please follow the instructions at https://wiki.evilmadscientist.com/Axidraw_Software_Installation and do the followings:
+Please follow the [instructions](https://wiki.evilmadscientist.com/Axidraw_Software_Installation) and do the followings:
 
 1. Download and install the latest version of [Inkscape for Mac](https://inkscape.org/) (1.1 tested)
 2. Download and run the latest [AxiDraw installer](https://wiki.evilmadscientist.com/Axidraw_Software_Installation) (AxiDraw_Install_Mac_274r1 tested)
@@ -80,7 +80,7 @@ Position the left upper corner of the paper directly underneath the pen tip and 
 
 This tutorial is based on the following tutorials:
 
-- [https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_Guide_v40_r3.pdf](https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_Guide_v40_r3.pdf)
-- [https://www.generativehut.com/post/robots-and-generative-art-and-python-oh-my](https://www.generativehut.com/post/robots-and-generative-art-and-python-oh-my)
+- [evilmadscientist.com](https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_Guide_v40_r3.pdf)
+- [generativehut.com](https://www.generativehut.com/post/robots-and-generative-art-and-python-oh-my)
 
 

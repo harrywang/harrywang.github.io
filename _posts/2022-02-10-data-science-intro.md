@@ -994,10 +994,10 @@ pd.plotting.scatter_matrix(df_housing, figsize=(25,25))
 
 ## References
 
-- [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)
-- [https://www.datacamp.com/blog/numpy-cheat-sheet-data-analysis-in-python](https://www.datacamp.com/blog/numpy-cheat-sheet-data-analysis-in-python)
-- [https://www.datacamp.com/blog/pandas-cheat-sheet-for-data-science-in-python](https://www.datacamp.com/blog/pandas-cheat-sheet-for-data-science-in-python)
-- [https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python](https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python)
-- [https://matplotlib.org/cheatsheets/](https://matplotlib.org/cheatsheets/)
+- [jakevdp.github.io](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- [datacamp numpy cheatsheet](https://www.datacamp.com/blog/numpy-cheat-sheet-data-analysis-in-python)
+- [datacamp pandas cheatsheet](https://www.datacamp.com/blog/pandas-cheat-sheet-for-data-science-in-python)
+- [datacamp matplotlib cheatsheet](https://www.datacamp.com/blog/matplotlib-cheat-sheet-plotting-in-python)
+- [matplotlib cheatsheet](https://matplotlib.org/cheatsheets/)
 
 [Back to Top](#title)
