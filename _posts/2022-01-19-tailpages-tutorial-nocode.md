@@ -206,16 +206,31 @@ If you have your own domain name, you can follow the documentation [here](https:
 
 The document is quite confusing. You need to do the following:
 
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/157142987-3e9883f4-5b06-48b9-a311-5bac6a5f2b57.png">
+**Step 1**: add the domain name, e.g., sigbit.org, to Github Pages page by following the [instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) below:
 
-1. Add domain to Github Pages page
-2. Go to your domain provider (GoDaddy for me), add:
-  - A record pointing to the IP address of Github: `185.199.108.153`
-  - CNAME record mapping `www.yourdomain.com` to `<your username>.github.io`
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158027093-b8f089d9-044f-4244-85ca-b4fb07925fb3.png">
 
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/157143446-bc8c3a6e-361e-4333-aa7e-d9332f06aae4.png">
+- On GitHub, navigate to your site's repository.
+- Under your repository name, click  Settings.
+- In the "Code and automation" section of the sidebar, click  Pages.
+- Under "Custom domain", type your custom domain, then click Save. This will create a commit that adds a CNAME file in the root of your publishing source.
 
-**That's it!** Now you can add more content to your website and I hope you enjoy Tailpages template. 
+**Step 2**: go to your domain provider (GoDaddy for me), add:
+
+- four A records pointing to the [IP addresses of Github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain):
+  ```
+  185.199.108.153
+  185.199.109.153
+  185.199.110.153
+  185.199.111.153
+  ```
+- one CNAME record mapping `www` to `<your username>.github.io`
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158026803-1e1d0dcd-af1a-4642-a9ff-6327c259e311.png">
+
+**Step 3**: enable the `Enforce HTTPS` option when it becomes available on the Github Pages setting page in Step 1 above.
+
+That's it! Now you can add more content to your website and I hope you enjoy Tailpages template. 
 
 ## References
 
