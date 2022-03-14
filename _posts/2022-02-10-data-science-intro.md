@@ -967,6 +967,15 @@ df_housing.housing_median_age.plot.box(ax=ax[2])  # house age
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156644435-6a539e61-a57b-4759-af3a-07fb9e7da88f.png">
 
+You can also show the boxplots for one feature/column for different groups (like using groupby):
+
+```python
+df_housing.boxplot(column=['median_house_value'], by='ocean_proximity', figsize=(10, 8), rot=60)
+```
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158241543-a66e36c3-6fb8-490c-a9f2-b6f8e7314b3b.png">
+
+
 [Back to Top](#title)
 
 ### Scatter Plot
