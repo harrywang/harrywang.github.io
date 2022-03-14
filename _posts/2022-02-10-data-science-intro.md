@@ -688,6 +688,17 @@ South America
 ------------------------------------------------------------
 ```
 
+### Deletion
+
+`.drop()` can be used to delete rows or columns (use `inplace=True` if you want the df to be altered):
+
+```
+df.drop([1, 3, 4])  # delete discrete rows with index 1, 3, 4, default axis=0
+df.drop(df.index[3:5])  # delete middle rows
+df.drop(['gdp', 'area'], axis=1)  # delete 'gdp' and 'area' columns
+df.drop(['population'], axis=1, inplace=True)  # delete 'population' column in place
+```
+
 [Back to Top](#title)
 
 ## Matplotlib
