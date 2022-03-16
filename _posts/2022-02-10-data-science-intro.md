@@ -699,11 +699,13 @@ df.drop(['gdp', 'area'], axis=1)  # delete 'gdp' and 'area' columns
 df.drop(['population'], axis=1, inplace=True)  # delete 'population' column in place
 ```
 
+`.reset_index(drop=True)` can be used to reset the index from 0 after deletion if needed. `drop=True` will delete the old index.
+
 [Back to Top](#title)
 
 ## Matplotlib
 
-[Matplotlib](https://matplotlib.org/) is a comprehensive library for creating visualizations in Python.
+[Matplotlib](https://matplotlib.org/) is a comprehensive library for creating visualizations in Python. Version 3.5.1 is used for this tutorial.
 
 ### Basic Matplotlib Concepts
 
@@ -846,7 +848,7 @@ df_country.area.plot().set_xticks(df_country.index, df_country.country, rotation
 
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156608087-47ecc57e-9e49-4597-ac11-5f8c32335fca.png">
 
-Create a new sorted DataFrame and plot the area with tick labels:
+Create a new sorted DataFrame and plot the area with tick labels (`ignore_index=True` reset the index from 0):
 
 ```python
 df_sorted_area = df_country.sort_values(by='area', ignore_index=True)
