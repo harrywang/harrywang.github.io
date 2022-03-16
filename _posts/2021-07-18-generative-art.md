@@ -7,7 +7,7 @@ permalink: generative
 
 This tutorial shows how to make generative art using Python and AxiDraw pen plotter. I also published this tutorial on [mirror.xyz](https://mirror.xyz/0x33632E2F9Dd846f5Cd6038e4415cb875ED19D87F/jSgGFegMyB6Hip4a7F169PTkhBH88bvKrLoKhgqWnf0) for testing out web3 publishing experience. 
 
-The code can be access at [Github Repo](https://github.com/harrywang/python-generative-art).
+The code can be accessed at [Github Repo](https://github.com/harrywang/python-generative-art).
 
 
 You should start with `axidraw-basics.ipynb` notebook, which shows how to setup AxiDraw V3 and use Python to control it to plot a simple SVG.
