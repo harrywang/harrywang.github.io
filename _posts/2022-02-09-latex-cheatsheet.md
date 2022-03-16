@@ -14,23 +14,39 @@ This is a simple LaTex Cheatsheet for writing math symbols and formulas in Jupyt
 |   $$\frac{x}{y}$$   |   `\frac{x}{y}`| $$\sum_{k=1}^n$$  | `\sum_{k=1}^n`  |
 |   $$\sqrt[n]{x}$$   |   `\sqrt[n]{x}`| $$\prod_{k=1}^n$$  | `\prod_{k=1}^n`  |
 
-|   $$\leq$$   | `\leq`| $$\geq$$   | `\geq`  |   $$\neq$$   | `\neq`| $$\approx$$   | `\approx`  |
-|   $$\times$$   | `\times`| $$\div$$   | `\div`  |  $$\pm$$   | `\pm`| $$\cdot$$   | `\cdot`  |
-|   $$x^{\circ}$$   | `x^{\circ}`| $$\circ$$   | `\circ`  |   $$x^\prime$$   | `x^\prime`| $$\cdots$$   | `\cdots`  |
-|   $$\infty$$   | `\infty`| $$\neg$$   | `\neg`  |   $$\wedge$$   | `\wedge`| $$\vee$$   | `\vee`  |
-|   $$\supset$$   | `\supset`| $$\forall$$   | `\forall`  |   $$\in$$   | `\in`| $$\rightarrow$$   | `\rightarrow`  |
-|   $$\subset$$   | `\subset`| $$\exists$$   | `\exists`  |   $$\notin$$   | `\notin`| $$\Rightarrow$$   | `\Rightarrow`  |
-|   $$\cup$$   | `\cup`| $$\cap$$   | `\cap`  |   $$\mid$$   | `\mid`| $$\Leftrightarrow$$   | `\Leftrightarrow`  |
-|   $$\dot a$$   | `\dot a`| $$\hat a$$   | `\hat a`  |   $$\bar a$$   | `\bar a`| $$\tilde a$$   | `\tilde a`  |
+|   $$\leq$$   | `\leq`| $$\geq$$   | `\geq`  |
+|   $$\neq$$   | `\neq`| $$\approx$$   | `\approx`  |
+|   $$\times$$   | `\times`| $$\div$$   | `\div`  |
+|  $$\pm$$   | `\pm`| $$\cdot$$   | `\cdot`  |
+|   $$x^{\circ}$$   | `x^{\circ}`| $$\circ$$   | `\circ`  |
+|   $$x^\prime$$   | `x^\prime`| $$\cdots$$   | `\cdots`  |
+|   $$\infty$$   | `\infty`| $$\neg$$   | `\neg`  |
+|   $$\wedge$$   | `\wedge`| $$\vee$$   | `\vee`  |
+|   $$\supset$$   | `\supset`| $$\forall$$   | `\forall`  |
+|   $$\in$$   | `\in`| $$\rightarrow$$   | `\rightarrow`  |
+|   $$\subset$$   | `\subset`| $$\exists$$   | `\exists`  |
+|   $$\notin$$   | `\notin`| $$\Rightarrow$$   | `\Rightarrow`  |
+|   $$\cup$$   | `\cup`| $$\cap$$   | `\cap`  |
+|   $$\mid$$   | `\mid`| $$\Leftrightarrow$$   | `\Leftrightarrow`  |
+|   $$\dot a$$   | `\dot a`| $$\hat a$$   | `\hat a`  |
+|   $$\bar a$$   | `\bar a`| $$\tilde a$$   | `\tilde a`  |
 
-|   $$\alpha$$   | `\alpha`| $$\beta$$   | `\beta`  |   $$\gamma$$   | `\gamma`| $$\delta$$   | `\delta`  |
-|   $$\epsilon$$   | `\epsilon`| $$\zeta$$   | `\zeta`  |   $$\eta$$   | `\eta`| $$\varepsilon$$   | `\varepsilon`  |
-|   $$\theta$$   | `\theta`| $$\iota$$   | `\iota`  |   $$\kappa$$   | `\kappa`| $$\vartheta$$   | `\vartheta`  |
-|   $$\pi$$   | `\pi`| $$\rho$$   | `\rho`  |   $$\sigma$$   | `\sigma`| $$\tau$$   | `\tau`  |
-|   $$\upsilon$$   | `\upsilon`| $$\phi$$   | `\phi`  |   $$\chi$$   | `\chi`| $$\psi$$   | `\psi`  |
-|   $$\omega$$   | `\omega`| $$\Gamma$$   | `\Gamma`  |   $$\Delta$$   | `\Delta`| $$\Theta$$   | `\Theta`  |
-|   $$\Lambda$$   | `\Lambda`| $$\Xi$$   | `\Xi`  |   $$\Pi$$   | `\Pi`| $$\Sigma$$   | `\Sigma`  |
-|   $$\Upsilon$$   | `\Upsilon`| $$\Phi$$   | `\Phi`  |   $$\Psi$$   | `\Psi`| $$\Omega$$   | `\Omega`  |
+|   $$\alpha$$   | `\alpha`| $$\beta$$   | `\beta`  |
+|   $$\gamma$$   | `\gamma`| $$\delta$$   | `\delta`  |
+|   $$\epsilon$$   | `\epsilon`| $$\zeta$$   | `\zeta`  |
+|   $$\eta$$   | `\eta`| $$\varepsilon$$   | `\varepsilon`  |
+|   $$\theta$$   | `\theta`| $$\iota$$   | `\iota`  |
+|   $$\kappa$$   | `\kappa`| $$\vartheta$$   | `\vartheta`  |
+|   $$\pi$$   | `\pi`| $$\rho$$   | `\rho`  |
+|   $$\sigma$$   | `\sigma`| $$\tau$$   | `\tau`  |
+|   $$\upsilon$$   | `\upsilon`| $$\phi$$   | `\phi`  |
+|   $$\chi$$   | `\chi`| $$\psi$$   | `\psi`  |
+|   $$\omega$$   | `\omega`| $$\Gamma$$   | `\Gamma`  |
+|   $$\Delta$$   | `\Delta`| $$\Theta$$   | `\Theta`  |
+|   $$\Lambda$$   | `\Lambda`| $$\Xi$$   | `\Xi`  |
+|   $$\Pi$$   | `\Pi`| $$\Sigma$$   | `\Sigma`  |
+|   $$\Upsilon$$   | `\Upsilon`| $$\Phi$$   | `\Phi`  |
+|   $$\Psi$$   | `\Psi`| $$\Omega$$   | `\Omega`  |
 
 
 I also created the list of symbols table used in the [Mathematics for Machine Learning](https://mml-book.github.io/) book, which is a great LaTex reference and can be accessed at:
@@ -141,6 +157,6 @@ $
 |$\Beta(\alpha, \beta)$           |Beta distribution with parameters $\alpha, \beta$|
 
 
-A more complete LaTex cheatsheet can be accessed [here](https://wch.github.io/latexsheet/).
+A more complete LaTex cheatsheet can be found [here](https://wch.github.io/latexsheet/).
 
 [Back to Top](#title)
