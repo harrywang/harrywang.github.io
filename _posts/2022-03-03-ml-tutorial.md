@@ -129,7 +129,7 @@ Follow the steps below to setup ClearML and run the programs:
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156858995-f6e6b15a-6e52-4ccc-aedc-6c31fd48b24e.png">
 
-- run`python clearml-pytorch.py` to see another example on training a deep learning model (the well-known MNIST handwritten recognition algorithm) using PyTorch
+- run `python clearml-pytorch.py` to see another example on training a deep learning model (the well-known MNIST handwritten recognition algorithm) using PyTorch
 
 [Back to Top](#title)
 

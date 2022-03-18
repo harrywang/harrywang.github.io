@@ -9,7 +9,6 @@ This tutorial shows how to make generative art using Python and AxiDraw pen plot
 
 The code can be accessed at [Github Repo](https://github.com/harrywang/python-generative-art).
 
-
 You should start with `axidraw-basics.ipynb` notebook, which shows how to setup AxiDraw V3 and use Python to control it to plot a simple SVG.
 
 After that, you can look at `voronoi-art.ipynb` notebook for a more complicated tutorial on generating art based on Voronoi diagram like:
