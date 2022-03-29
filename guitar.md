@@ -2,7 +2,7 @@
 layout: post-toc
 title: 一些谱子
 tags: hobby
-permalink: test/guitar
+permalink: guitar
 ---
 
 我喜欢的一些歌， 网上找的谱子， 根据自己水平和习惯做了简化修改。
