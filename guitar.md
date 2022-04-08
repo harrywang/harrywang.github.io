@@ -302,3 +302,71 @@ permalink: guitar
 
 [Back to Top](#title)
 
+## 敢问路在何方
+
+`Am C | G Am`
+
+你挑着担 我牵着马
+
+`C Am | F G`
+
+迎来日出 送走晚霞
+
+`Am C | G Em`
+
+踏平坎坷 成大道
+
+`C Am | G Dm | G Am`
+
+斗罢艰险 又出发 又出发
+
+`C F Am`
+
+啦……啦……
+
+`C | G C`
+
+一番番 春秋冬夏
+
+`C | G C`
+
+一场场 酸甜苦辣
+
+`Am Dm | G Em`
+
+敢问路在何方 路在脚下
+
+`Am C | G Am`
+
+你挑着担 我牵着马
+
+`C Am | F G`
+
+翻山涉水 两肩霜花
+
+`Am C | G Em`
+
+风雨雷电 任叱咤
+
+`C Am | G Dm | G Am`
+
+一路豪歌 向天涯 向天涯 
+
+`C F Am`
+
+啦……啦……
+
+`C | G C`
+
+一番番 春秋冬夏
+
+`C | G C`
+
+一场场 酸甜苦辣
+
+`Am Dm | G Em`
+
+敢问路在何方 路在脚下
+
+[Back to Top](#title)
+
