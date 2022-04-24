@@ -9,7 +9,7 @@ permalink: nft
 
 ## TL;DR 
 
-I created an open dataset for the [Crypto Coven](https://www.cryptocoven.xyz/) NFT collection using [OpenSea API](https://docs.opensea.io/reference/api-overview) and my scripts, which can be used to teach/practice various topics, such as exploratory data analysis, time series analysis, data visualization, predictive analytics, text mining, and image analytics via deep learning.
+I created an open dataset for the [Crypto Coven](https://www.cryptocoven.xyz/) NFT collection using [OpenSea API](https://docs.opensea.io/reference/api-overview) and my scripts (it took about 4 hours to download all images), which can be used to teach/practice various topics, such as exploratory data analysis, time series analysis, data visualization, predictive analytics, text mining, and image analytics via deep learning.
 
 The dataset can be accessed at [Kaggle](https://www.kaggle.com/datasets/harrywang/crypto-coven). I also added some simple code notebooks and look forward to more contributions from the community:
 - [NFT Sales Price Prediction using AutoML](https://www.kaggle.com/code/harrywang/nft-sales-price-prediction-using-automl)
