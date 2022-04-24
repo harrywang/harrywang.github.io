@@ -28,7 +28,7 @@ I list some analysis examples here.
 
     50%
 
-- **Find the top 10 addresses holding most witches. Based on the average sales price, how much those withes are worth?**
+- **Find the top 10 addresses holding most witches. Based on the average sales price, how much those witches are worth?**
 
     This address `0xa1707c82aa2866955991c7f2c6f431d6619b8b4c` owns 162 witches, which are worth ~ $595,801 based on the average sales price in the past. Check out this address on OpenSea: [https://opensea.io/Divine_Femininity](https://opensea.io/Divine_Femininity)
 - **Which is the most expensive witch ever sold (before 4/21/2022)? Who bought it?**
