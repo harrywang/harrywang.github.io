@@ -33,7 +33,7 @@ I list some analysis examples here.
     This address `0xa1707c82aa2866955991c7f2c6f431d6619b8b4c` owns 162 witches, which are worth ~ $595,801 based on the average sales price in the past. Check out this address on OpenSea: [https://opensea.io/Divine_Femininity](https://opensea.io/Divine_Femininity)
 - **Which is the most expensive witch ever sold (before 4/21/2022)? Who bought it?**
 
-    It's [her](https://www.cryptocoven.xyz/witches/7496), sold for $39,772 by [https://opensea.io/kaiynne2](https://opensea.io/kaiynne2) on January 25, 2022.
+    It's [her](https://www.cryptocoven.xyz/witches/7496), bought for $39,772 on January 25, 2022 by [https://opensea.io/kaiynne2](https://opensea.io/kaiynne2). 
     <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/164984725-8551f01c-2d69-48e7-b376-37cce77c921d.png">
 - **Plot the daily sales price and weekly moving average to understand the NFT investment cycles.**
 
