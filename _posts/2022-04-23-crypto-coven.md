@@ -50,4 +50,4 @@ I list some analysis examples here.
 
 I hope you find this dataset interesting and useful and use it in your teaching and learning. 
 
-PS. I made the collage of the witches shown above, which can be downloaded from [Figma.com](https://www.figma.com/community/file/1100967615435586762).
+PS. I made the witch collage shown at the top of this post using the images in this dataset, which can be downloaded from [Figma.com](https://www.figma.com/community/file/1100967615435586762).
