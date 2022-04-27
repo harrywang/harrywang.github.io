@@ -49,3 +49,5 @@ I list some analysis examples here.
     <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/164985142-e8bc5f3c-b20f-4538-b1a2-dd8a4aabccf0.png">
 
 I hope you find this dataset interesting and useful and use it in your teaching and learning. 
+
+PS. I made the collage of the witches shown above, which can be downloaded from [Figma.com](https://www.figma.com/community/file/1100967615435586762).
