@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When Data Science Meets NFT
-tags: dataset open-source teaching
+tags: dataset open-source teaching crypto
 permalink: nft
 ---
 
