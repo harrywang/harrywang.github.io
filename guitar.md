@@ -456,7 +456,7 @@ permalink: guitar
 
 `Am Em Dm C`
 
-我們不能闹 我們不能叫 我們的生活帶套套
+我們不能叫 我們不能闹 我們的生活帶套套
 
 `C F C G`
 
