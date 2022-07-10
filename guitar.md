@@ -423,6 +423,7 @@ permalink: guitar
 有人在哭泣 有人在歌唱  有人生來有錢包
 
 `Am Em Dm G`
+
 有人在奮鬥 有人在幻想 有人一生沒吃飽
 
 `C G F C`
