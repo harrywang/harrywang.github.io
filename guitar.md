@@ -506,13 +506,15 @@ permalink: guitar
 
 `Am Dm Am G` x 2
 
+Intro
+
 `Am Dm F Am`
 
 梧桐身旁的 浮云里 飘出 一弯朦胧的 月亮
 
 `Em G Am C`
 
-清清淡淡的 月光静静地 飘落在我的 身旁
+清清淡淡的 月光 静静地 飘落在我的 身旁
 
 `Dm G Am C`
 
@@ -551,7 +553,12 @@ permalink: guitar
 也许在那里 我能够 自由的飘扬
 
 `Am Em/F F Am`
+
 也许到那里 才是我 停留的地方
+
+`C Am Dm G`
+
+(我)飞呀飞呀 飞到那 蓝色的天堂
 
 `Dm G C E`
 
