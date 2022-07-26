@@ -206,16 +206,7 @@ If you have your own domain name, you can follow the documentation [here](https:
 
 The document is quite confusing. You need to do the following:
 
-**Step 1**: add the domain name, e.g., sigbit.org, to Github Pages page by following the [instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) below:
-
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158027093-b8f089d9-044f-4244-85ca-b4fb07925fb3.png">
-
-- On GitHub, navigate to your site's repository.
-- Under your repository name, click  Settings.
-- In the "Code and automation" section of the sidebar, click  Pages.
-- Under "Custom domain", type your custom domain, then click Save. This will create a commit that adds a CNAME file in the root of your publishing source.
-
-**Step 2**: go to your domain provider (GoDaddy for me), add:
+**Step 1**: go to your domain provider (GoDaddy for me), add:
 
 - four A records pointing to the [IP addresses of Github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain):
   ```
@@ -227,6 +218,15 @@ The document is quite confusing. You need to do the following:
 - one CNAME record mapping `www` to `<your username>.github.io`
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158026803-1e1d0dcd-af1a-4642-a9ff-6327c259e311.png">
+
+**Step 2**: add the domain name, e.g., sigbit.org, to Github Pages page by following the [instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) below:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158027093-b8f089d9-044f-4244-85ca-b4fb07925fb3.png">
+
+- On GitHub, navigate to your site's repository.
+- Under your repository name, click  Settings.
+- In the "Code and automation" section of the sidebar, click  Pages.
+- Under "Custom domain", type your custom domain, then click Save. This will create a commit that adds a CNAME file in the root of your publishing source.
 
 **Step 3**: enable the `Enforce HTTPS` option when it becomes available on the Github Pages setting page in Step 1 above.
 
