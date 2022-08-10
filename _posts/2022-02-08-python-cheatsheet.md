@@ -3915,6 +3915,62 @@ else:
 
 [Back to Top](#title)
 
+## Unpacking Operator
+
+One or two asterisk(s) can be used as unpacking operators:
+
+- one asterisk (`*`) operator to unpack iterable objects, such as lists, tuples, strings, etc.
+- two asterisks (`**`) to unpack dictionaries
+
+They are also discussed in the next section on `*args` and `**kwargs`.
+
+
+one asterisk (`*`) example:
+
+```python
+>>> a = ["Tom", "Jerry", "Mike"]  # a list
+>>> print(*a)
+Tom Jerry Mike 
+
+>>> b = ("Jenny", "Chris", "Monica")  # a tuple
+>>> print(*b)
+Jenny Chris Monica
+
+>>> c = [[1, 2], [3, 4]]  # list of lists
+>>> print(*c)
+[1, 2] [3, 4]
+
+>>> d = 'apple'  # a string
+>>> print(*d)
+a p p l e
+
+>>> e = {'name':'tom', 'age': 25}  # a dictionary
+>>> print(*e)
+name age
+
+```
+
+Note that the last example above, using one `*` to unpack a dictionary, only the keys are returned. 
+
+The following example shows how `**` unpacks a dictionary and assign the results to a function :
+
+```
+
+# here argument names must match dict keys, order does not matter
+
+def print_info(name, age):  
+    print(f'The age of {name} is {age}.')
+
+print_info(**e)
+
+The age of tom is 25.
+```
+
+
+
+[Back to Top](#title)
+
+
 ## args and kwargs
 
 The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
