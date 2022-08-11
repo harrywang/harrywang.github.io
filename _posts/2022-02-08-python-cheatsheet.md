@@ -4070,13 +4070,9 @@ None
 
 [Back to Top](#title)
 
-## Context Manager
+## Context Manager (`with` statement)
 
-While Python's context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
-
-### with statement
-
-A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
+A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the `with` statement.
 
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
 
@@ -4088,7 +4084,7 @@ For example, file objects are context managers. When a context ends, the file ob
 ```
 
 Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
-d
+
 ## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
