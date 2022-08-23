@@ -7,7 +7,7 @@ permalink: diffusion
 
 I spent a few hours trying to set up [Stable Diffusion](https://github.com/CompVis/stable-diffusion) on Mac M1 and failed - I cannot install the packages properly, e.g., version not found, dependency issues, etc. I found some successful attempts [here](https://github.com/CompVis/stable-diffusion/issues/25) but have no time to try them yet.
 
-I ended up setup Stable Diffusion on my old GPU server running Ubuntu and here are my notes.
+I ended up setting up Stable Diffusion on my old GPU server running Ubuntu and here are my notes.
 
 - Check Ubuntu Version
 
