@@ -81,10 +81,13 @@ Now, Stable Diffusion is ready to go:
 ```
 python optimizedSD/optimized_txt2img.py --prompt "a car in 2050 designed by Antoni Gaudi" --H 512 --W 512 --seed 27 --n_iter 2 --n_samples 10 --ddim_steps 50
 ```
+This whole area is relatively new and there are many potential interesting research topics, e.g.,
 
-I found that the quality of generated images without prompt engineering still varies a lot and how to use AI to pick top n results is an interesting issue to investigate, e.g., preferences on cleaner background, less color, simpler composition, aesthetics scoring, etc. 
+- how humans work with AI creativity tools like Stable Diffusion (workflow shift? efficiency improvement? creativity boosting?...)
+- how to use AI to pick top n results generated from the same prompt, e.g., preference on cleaner background, less color, simpler composition, aesthetics scoring, etc.
+- how to do systemic/serendipitous prompt engineering to improve art creation novelty, efficiency, and quality by leveraging ideas from areas such as AutoMl, recommender systems, and reinforcement learning.
 
-Out of the 20 generated images, the following are my top 3:
+Anyway, out of the 20 generated images from the prompt above, the following are my top 3:
 
 <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/186077379-069a39fb-56a1-42b9-91ff-fbf8d0bc9503.png">
 
