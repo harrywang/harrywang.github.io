@@ -54,7 +54,7 @@ rename the checkpoint file to `model.ckpt` and put it in the following folder (c
 mkdir -p models/ldm/stable-diffusion-v1/
 ```
 
-- **IMPORTANT**: Switch to `stable-diffusion` folder and change the `cudatoolkit=10.2` to match my CUDA: `vim environment.yaml`
+- **IMPORTANT**: Switch to `stable-diffusion` folder and change to `cudatoolkit=10.2` to match my CUDA: `vim environment.yaml`
 
 ```
 name: ldm
