@@ -20,7 +20,7 @@ Release:	18.04
 Codename:	bionic
 ```
 
-- Check CUDA version: my GPU machine only has two 2080Ti with 11G GPU each and CUDA 10.2
+- Check CUDA version: my GPU machine only has two 2080Ti with 11G VRAM each and CUDA 10.2
 
 ```
 nvidia-smi
