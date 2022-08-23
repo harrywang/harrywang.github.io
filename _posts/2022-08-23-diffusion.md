@@ -39,7 +39,7 @@ nvidia-smi
 +-------------------------------+----------------------+----------------------+
 ```
 
-- Use [optimized fork](https://github.com/basujindal/stable-diffusion), which uses lesser VRAM than the original by sacrificing on inference speed - I did this because I ran into [CUDA out of memory issue](https://github.com/CompVis/stable-diffusion/issues/39) using the original repo: `git clone https://github.com/basujindal/stable-diffusion`
+- Use [optimized fork](https://github.com/basujindal/stable-diffusion), which uses lesser VRAM than the original by sacrificing on inference speed `git clone https://github.com/basujindal/stable-diffusion` - I did this because I ran into [CUDA out of memory issue](https://github.com/CompVis/stable-diffusion/issues/39) using the original repo.
 
 - Download/Upload the checkpoint file to the server. I use `links` to browse websites and download files via terminal:
 
