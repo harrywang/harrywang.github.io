@@ -86,7 +86,9 @@ conda env create -f environment.yaml
 conda activate ldm
 ```
 
-Now, Stable Diffusion is ready to go:
+Now, Stable Diffusion is ready to go and let's see what AI will create based on the following text:
+
+> A car in 2050 designed by Antoni Gaudi
 
 ```
 python optimizedSD/optimized_txt2img.py --prompt "a car in 2050 designed by Antoni Gaudi" --H 512 --W 512 --seed 27 --n_iter 2 --n_samples 10 --ddim_steps 50
