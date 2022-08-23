@@ -41,7 +41,7 @@ nvidia-smi
 
 - Use [optimized fork](https://github.com/basujindal/stable-diffusion), which uses lesser VRAM than the original by sacrificing on inference speed `git clone https://github.com/basujindal/stable-diffusion` - I did this because I ran into [CUDA out of memory issue](https://github.com/CompVis/stable-diffusion/issues/39) using the original repo.
 
-- Download/Upload the checkpoint file to the server. I use `links` to browse websites and download files via terminal:
+- Get the checkpoint file from [HuggingFace Repo](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original). Download/Upload the checkpoint file to the server. I use `links` to browse websites and download files via terminal:
 
 ```
 sudo apt install links
@@ -53,6 +53,16 @@ rename the checkpoint file to `model.ckpt` and put it in the following folder (c
 ```
 mkdir -p models/ldm/stable-diffusion-v1/
 ```
+
+A side note on estimated training cost based on the reported GPU usage and the related AWS price I found:
+
+Hardware Type: A100 PCIe 40GB
+Hours used: 150000 (about 17.1 years)
+Cloud Provider: AWS
+
+p4d.24xlarge instance with 8 A100 with 40G VRAM: $32.77 (hourly), $19.22 (1-year reserved), $11.57 (3-year reserved)
+
+The training would cost between $225,000 and $600,000
 
 - **IMPORTANT**: Switch to `stable-diffusion` folder and change to `cudatoolkit=10.2` to match my CUDA: `vim environment.yaml`
 
