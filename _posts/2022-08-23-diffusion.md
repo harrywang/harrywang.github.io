@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Stable Diffusion
+title: Set up Stable Diffusion
 tags: tutorial coding 
 permalink: diffusion
 ---
