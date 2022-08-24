@@ -97,7 +97,7 @@ This whole area is relatively new and there are many potential interesting resea
 
 - how humans work with AI creativity tools like Stable Diffusion (workflow shift? efficiency improvement? creativity boosting?...)
 - how to use AI to pick top n results generated from the same prompt, e.g., preference on cleaner background, less color, simpler composition, aesthetics scoring, etc.
-- how to do systemic/serendipitous prompt engineering to improve art creation novelty, efficiency, and quality by leveraging ideas from areas such as AutoMl, recommender systems, and reinforcement learning.
+- how to do systemic/serendipitous prompt engineering to improve art creation novelty, efficiency, and quality by leveraging ideas from areas such as AutoML, recommender systems, and reinforcement learning.
 
 Anyway, out of the 20 generated images from the prompt above, the following are my top 3:
 
