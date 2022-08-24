@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Set up Stable Diffusion
+title: Deploy Stable Diffusion for AI Image Generation
 tags: tutorial coding 
 permalink: diffusion
 ---
 
-In the past few months, I tried almost all popular text-to-image AI creation products, such as Dall-E 2, MidJourney, Disco Diffusion, Stable Diffusion, etc. Stable Diffusion checkpoint was just released a few days ago. I deployed one on my old GPU server and record my notes here for people who may also want to try. Machine creativity is a quite interesting research area for IS scholars and I jotted down some potential research topics in the blog as well.
+In the past few months, I tried almost all popular text-to-image AI image generation products, such as Dall-E 2, MidJourney, Disco Diffusion, Stable Diffusion, etc. Stable Diffusion checkpoint was just released a few days ago. I deployed one on my old GPU server and record my notes here for people who may also want to try. Machine creativity is a quite interesting research area for IS scholars and I jotted down some potential research topics in the blog as well.
 
 I first spent a few hours trying to set up [Stable Diffusion](https://github.com/CompVis/stable-diffusion) on Mac M1 and failed - I cannot install the packages properly, e.g., version not found, dependency issues, etc. I found some successful attempts [here](https://github.com/CompVis/stable-diffusion/issues/25) but have no time to try them yet.
 
