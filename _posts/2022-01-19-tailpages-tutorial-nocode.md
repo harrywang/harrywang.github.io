@@ -215,7 +215,7 @@ The document is quite confusing. You need to do the following:
   185.199.110.153
   185.199.111.153
   ```
-- one CNAME record mapping `www` to `<your username>.github.io`
+- one CNAME record mapping `www` to `<your username>.github.io`, e.g., the following shows how to map `www.sigbit.org` to `ais-sigbit.github.io`:
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/158026803-1e1d0dcd-af1a-4642-a9ff-6327c259e311.png">
 
@@ -231,6 +231,17 @@ The document is quite confusing. You need to do the following:
 **Step 3**: enable the `Enforce HTTPS` option when it becomes available on the Github Pages setting page in Step 1 above.
 
 That's it! Now you can add more content to your website and I hope you enjoy Tailpages template. 
+
+If you need to create another sub-domain name for another repo such as `2022.sigbit.org`, follow the steps below:
+
+- create the repo using the sub-domain name, i.e., 2022
+- create another CNAME name mapping mapping `2022` to `ais-sigbit.github.io`
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/187943433-a584df58-b4ed-4578-869a-8ead78284fd7.png">
+
+- add the sub-domain name to Github Pages setting as in the step 2 above
+- enforce HTTPS as in the step 3 above if needed
+
 
 ## References
 
