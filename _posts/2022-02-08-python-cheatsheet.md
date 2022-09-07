@@ -2309,10 +2309,12 @@ center():
 
 ### Formatted String Literals or f-strings (Python 3.6+)
 
+f-strings are string literals that have an `f` at the beginning and curly braces containing expressions that will be replaced with their values.
+
 ```python
 >>> name = 'Stephen Curry'
 >>> born = 1988
->>> print(f"{name} is born in {born}.")
+>>> print(f'{name} is born in {born}.')
 Stephen Curry is born in 1988.
 ```
 
