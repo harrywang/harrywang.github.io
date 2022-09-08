@@ -393,17 +393,13 @@ True
 ### `if` Statements
 
 ```python
->>> credit_score = 750
->>> if credit_score >= 720:
-...     print('Excellent')
-... 
-Excellent
+credit_score = 750
+if credit_score >= 720:
+    print('Excellent')
 
->>> credit_score = 700
->>> if credit_score >= 690 and credit_score <= 719:
-...     print('Good')
-... 
-Good
+credit_score = 700
+if credit_score >= 690 and credit_score <= 719:
+    print('Good')
 ```
 
 [Back to Top](#title)
