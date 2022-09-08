@@ -412,7 +412,7 @@ Good
 
 ```python
 credit_score = 650
-if credit_score>=700:
+if credit_score >= 700:
     print('loan approved')  # auto loan approval
 else:
     print('application received and under review')
@@ -425,7 +425,7 @@ else:
 ```python
 credit_score = 600
 student = 'yes'
-if credit_score>=700:
+if credit_score >= 700:
     print('card approved')
 elif student == 'yes':
     print('student card approved')
@@ -435,7 +435,7 @@ elif student == 'yes':
 ```python
 credit_score = 600
 student = 'no'
-if credit_score>=700:
+if credit_score >= 700:
     print('card approved')
 elif student == 'yes':
     print('student card approved')
