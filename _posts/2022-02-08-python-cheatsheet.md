@@ -2504,16 +2504,16 @@ A regular expression is a sequence of characters that specifies a **pattern** in
 - Flexible character set matching patterns: a set of characters are defined for matching, such as all digits, all lower case letters from `a` to `f`, etc.
 
 |  Regex &nbsp; &nbsp; &nbsp; &nbsp;|    Note  |
-|   `.`   |  matches any character|
-|   `\d`   |  matches any digit|
+|   `.`   |  matches any one character, e.g., `d`, `5`, `&`|
+|   `\d`   |  matches any digit, e.g., `\d\d\d` mathes any three digit numbers|
 |   `\D`   |  matches any non-digit|
 |   `\w`   |  matches any alphanumeric (Latin letters + Arabic digits) character with underscore `_` included |
 |   `\W`   |  matches any non-alphanumeric character |
 |   `\s`   |  matches any whitespace character |
 |   `\S`   |  matches any non-whitespace character |
-|   `[a-z]`   |  matches any lowercase character from `a` to `z` |
-|   `[A-Z]`   |  matches any uppercase character from `a` to `z` |
-|   `[0-9]`   |  matches any digit same as `\d` above |
+|   `[a-z]`   |  matches any one lowercase character from `a` to `z` |
+|   `[A-Z]`   |  matches any one uppercase character from `a` to `z` |
+|   `[0-9]`   |  matches any one digit same as `\d` above |
 
 - Quantifiers for matching: specify how many times the patten can repeat for matching.
 
@@ -2537,7 +2537,7 @@ A regular expression is a sequence of characters that specifies a **pattern** in
 - `re.finditer(<regex>, s)`: finds and returns an **iterator** consisting of all matches of the regular expression `<regex>` in the input string `s`
 - `re.sub(<regex>, new_s, s)`: finds and substitutes all matches of the regular expression `<regex>` in the input string `s` with `new_s`
 
-All functions return a `re.Match` object if matchs are found, otherwise `None` is returned. `.group()`and `.span()` can be used to get the matched string and its location.
+All functions return a `re.Match` object if matches are found, otherwise `None` is returned. `.group()`and `.span()` can be used to get the matched string and its location.
 
 Match with quantifier example:
 
