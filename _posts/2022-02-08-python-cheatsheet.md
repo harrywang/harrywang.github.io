@@ -2480,12 +2480,7 @@ None
 
 ## Regular Expressions
 
-1. Import the regex module with `import re`.
-1. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
-1. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
-1. Call the Match object’s `group()` method to return a string of the actual matched text.
-
-All the regex functions in Python are in the re module:
+A regular expression is a sequence of characters that specifies a **pattern** in text. Python has a built-in package called re for working with Regular Expressions - you have to import it before use.
 
 ```python
 >>> import re
@@ -2493,14 +2488,75 @@ All the regex functions in Python are in the re module:
 
 [Back to Top](#title)
 
-### Matching Regex Objects
+### Regex Patterns
+
+- Fixed character matching pattern: specific characters are defined for matching, such as `ab`, `42`, `hello`, etc.
+
+|  Regex | Note  |
+|   `a`   |  matches the character `a`|
+|   `abc`   |  matches `abc`|
+|   `^abc`   |  matches any string begins with `abc`|
+|   `abc$`   |  matches any string ends with `abc`|
+|   `ab|cd`   |  matches `ab` or `cd` |
+|   `[abc]`   |  matches `a`, `b` or `c`|
+|   `[^abc]`   |  matches any character except `a`, `b`, and `c`|
+
+- Flexible character set matching patterns: a set of characters are defined for matching, such as all digits, all lower case letters from `a` to `f`, etc.
+
+|  Regex &nbsp; &nbsp; &nbsp; &nbsp;|    Note  |
+|   `.`   |  matches any character|
+|   `\d`   |  matches any digit|
+|   `\D`   |  matches any non-digit|
+|   `\w`   |  matches any alphanumeric (Latin letters + Arabic digits) character with underscore `_` included |
+|   `\W`   |  matches any non-alphanumeric character |
+|   `\s`   |  matches any whitespace character |
+|   `\S`   |  matches any non-whitespace character |
+|   `[a-z]`   |  matches any lowercase character from `a` to `z` |
+|   `[A-Z]`   |  matches any uppercase character from `a` to `z` |
+|   `[0-9]`   |  matches any digit same as `\d` above |
+
+- Quantifiers for matching: specify how many times the patten can repeat for matching.
+
+|  Regex |    Note  |
+|   `*`   |  matches 0 or more times|
+|   `+`   |  matches 1 or more times|
+|   `?`   |  matches 0 or 1 time|
+|   `{m}`   |  matches exactly `m` times |
+|   `{m,n}`   |  matches `m` to `n` times |
+|   `{m,}`   |  matches `m` or more times |
+|   `{,n}`   |  matches up to `n` times |
+|   `{n,m}? or *? or +?`   |  performs a non-greedy (shortest) match |
+
+[Back to Top](#title)
+
+### Regex Functions
+
+- `re.match(<regex>, s)`: finds and returns the **first match** of the regular expression `<regex>` starting from the **beginning** of the input string `s`
+- `re.search(<regex>, s)`: finds and returns the **first match** of the regular expression `<regex>` in the input string `s`
+- `re.findall(<regex>, s)`: finds and returns a **list** of all matches of the regular expression `<regex>` in the input string `s`
+- `re.finditer(<regex>, s)`: finds and returns an **iterator** consisting of all matches of the regular expression `<regex>` in the input string `s`
+- `re.sub(<regex>, new_s, s)`: finds and substitutes all matches of the regular expression `<regex>` in the input string `s` with `new_s`
+
+All functions return a `re.Match` object if matchs are found, otherwise `None` is returned. `.group()`and `.span()` can be used to get the matched string and its location.
+
+Match with quantifier example:
+
+```
+import re
+regex = r'o+'  # try 'o*', 'o+', 'o{3}', 'o{5}', 'o{2,6}', 'o{2,6}?'
+m = re.search(regex, 'Helloooo')
+print(m)  # return a match object
+
+if m is not None:
+    print(m.span(), m.group())  # get the location and matched string
+```
+
+Another example:
 
 ```python
->>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
-
->>> mo = phone_num_regex.search('My number is 415-555-4242.')
-
->>> print('Phone number found: {}'.format(mo.group()))
+>>> phone_num_regex = r'\d\d\d-\d\d\d-\d\d\d\d'
+>>> m = re.search(phone_num_regex, 'My number is 415-555-4242.')
+>>> print(f'Phone number found: {m.group()}')
 Phone number found: 415-555-4242
 ```
 
@@ -2508,31 +2564,29 @@ Phone number found: 415-555-4242
 
 ### Grouping with Parentheses
 
+By default, the entire regex pattern is matched but you can also specify a portion of the patten to be matched using parentheses. The following defines two groups.
+
 ```python
->>> phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+>>> phone_num_regex = r'(\d\d\d)-(\d\d\d-\d\d\d\d)'
 
->>> mo = phone_num_regex.search('My number is 415-555-4242.')
+>>> m = re.search(phone_num_regex, 'My number is 415-555-4242.')
 
->>> mo.group(1)
+>>> m.group(0)
+'415-555-4242'
+
+>>> m.group()
+'415-555-4242'
+
+>>> m.group(1)
 '415'
 
->>> mo.group(2)
+>>> m.group(2)
 '555-4242'
 
->>> mo.group(0)
-'415-555-4242'
-
->>> mo.group()
-'415-555-4242'
-```
-
-To retrieve all the groups at once: use the groups() method—note the plural form for the name.
-
-```python
->>> mo.groups()
+>>> m.groups()  # all groups
 ('415', '555-4242')
 
->>> area_code, main_number = mo.groups()
+>>> area_code, main_number = m.groups()
 
 >>> print(area_code)
 415
@@ -4182,6 +4236,7 @@ Usage:
 ## References
 
 - https://www.pythoncheatsheet.org
+- https://towardsdatascience.com/beginners-guide-to-regular-expressions-in-python-d16d2fa31587
 - https://bit.ly/3I8EeDW
 
 [Back to Top](#title)
