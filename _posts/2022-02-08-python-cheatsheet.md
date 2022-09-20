@@ -2537,7 +2537,7 @@ A regular expression is a sequence of characters that specifies a **pattern** in
 - `re.finditer(<regex>, s)`: finds and returns an **iterator** consisting of all matches of the regular expression `<regex>` in the input string `s`
 - `re.sub(<regex>, new_s, s)`: finds and substitutes all matches of the regular expression `<regex>` in the input string `s` with `new_s`
 
-All functions return a `re.Match` object if matches are found, otherwise `None` is returned. `.group()`and `.span()` can be used to get the matched string and its location.
+All functions return a `re.Match` object if matches are found, otherwise `None` is returned. `.group()` and `.span()` can be used to get the matched string and its location.
 
 Match with quantifier example:
 
