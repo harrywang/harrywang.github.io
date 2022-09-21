@@ -58,13 +58,17 @@ mkdir -p models/ldm/stable-diffusion-v1/
 
 A side note on estimated training cost based on the reported GPU usage and the related AWS price I found:
 
-Hardware Type: A100 PCIe 40GB
-Hours used: 150000 (about 17.1 years)
-Cloud Provider: AWS
+- Hardware Type: A100 PCIe 40GB
+- Hours used: 150000 (about 17.1 years)
+- Cloud Provider: AWS
 
-p4d.24xlarge instance with 8 A100 with 40G VRAM: 32.77 USD (hourly), 19.22 USD (1-year reserved), 11.57 USD (3-year reserved)
+Price of p4d.24xlarge instance with 8 A100 with 40G VRAM:
 
-The training would cost between 225,000 USD and 600,000 USD
+- 32.77 USD (hourly)
+- 19.22 USD (1-year reserved)
+- 11.57 USD (3-year reserved)
+
+The training would cost between 225,000 USD and 600,000 USD.
 
 - **IMPORTANT**: Switch to `stable-diffusion` folder and change to `cudatoolkit=10.2` to match my CUDA: `vim environment.yaml`
 
