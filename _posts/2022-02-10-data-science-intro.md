@@ -98,7 +98,7 @@ print(c.ndim, c.size, c.shape, c.dtype)
 
 Numbers can be loaded from a text file using `.loadtxt()`. 
 
-For example, the 3d array above can be loaded from [this txt file](https://github.com/harrywang/harrywang.github.io/files/9761004/numbers.txt).
+For example, the 3d array above can be loaded from [numbers.txt.zip](https://github.com/harrywang/harrywang.github.io/files/9761068/numbers.txt.zip).
 
 By default, the delimiter is whitespace. The example below shows how to specify comma as the delimiter. 
 
