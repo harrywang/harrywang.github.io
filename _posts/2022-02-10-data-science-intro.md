@@ -94,6 +94,38 @@ print(c.ndim, c.size, c.shape, c.dtype)
 
 [Back to Top](#title)
 
+### Load from Text File
+
+Numbers can be loaded from a text file using `.loadtxt()`. 
+
+For example, the 3d array above can be loaded from [this txt file](https://github.com/harrywang/harrywang.github.io/files/9761004/numbers.txt).
+
+By default, the delimiter is whitespace. The example below shows how to specify comma as the delimiter. 
+
+```
+a = np.loadtxt('numbers.txt', delimiter=',')
+a = a.reshape(4, 3, 2)
+print(a)
+
+[[[7. 1.]
+  [9. 4.]
+  [2. 3.]]
+
+ [[4. 5.]
+  [0. 6.]
+  [8. 0.]]
+
+ [[1. 3.]
+  [3. 9.]
+  [6. 9.]]
+
+ [[5. 8.]
+  [8. 8.]
+  [4. 7.]]]
+```
+
+[Back to Top](#title)
+
 ### Numpy Array vs. Python List
 
 - A list can have elements of different types but Numpy array can only have elements of the same type.
