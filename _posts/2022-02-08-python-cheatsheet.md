@@ -2505,7 +2505,7 @@ A regular expression is a sequence of characters that specifies a **pattern** in
 
 |  Regex &nbsp; &nbsp; &nbsp; &nbsp;|    Note  |
 |   `.`   |  matches any one character, e.g., `d`, `5`, `&`|
-|   `\d`   |  matches any digit, e.g., `\d\d\d` mathes any three digit numbers|
+|   `\d`   |  matches any digit, e.g., `\d\d\d` matches any three digit numbers|
 |   `\D`   |  matches any non-digit|
 |   `\w`   |  matches any alphanumeric (Latin letters + Arabic digits) character with underscore `_` included |
 |   `\W`   |  matches any non-alphanumeric character |
