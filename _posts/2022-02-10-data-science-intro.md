@@ -739,6 +739,13 @@ df.drop(['population'], axis=1, inplace=True)  # delete 'population' column in p
 
 [Matplotlib](https://matplotlib.org/) is a comprehensive library for creating visualizations in Python. Version 3.5.1 is used for this tutorial.
 
+Check the version:
+
+```
+import matplotlib
+matplotlib.__version__
+```
+
 ### Basic Matplotlib Concepts
 
 The following picture shows the [basic Matplotlib concepts](https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py):
