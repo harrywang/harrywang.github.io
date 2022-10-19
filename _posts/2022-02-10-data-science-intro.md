@@ -867,6 +867,13 @@ df_country = pd.read_csv('countries-2021.csv')
 df_country.plot()
 ```
 
+`df_country.plot()` is same as the following (figure and axis are implicitly created and used):
+
+```
+fig, ax = plt.subplots()
+df_country.plot(ax=ax)
+```
+
 <img width="400" class="mx-auto" src="https://user-images.githubusercontent.com/595772/156588884-6c074b34-5cf4-4311-aea2-472bb5d2cc58.png">
 
 Change the style sheet and only plot one column (country area) with custom ticks:
