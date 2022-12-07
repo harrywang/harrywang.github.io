@@ -5,6 +5,48 @@ tags: tutorial coding
 permalink: diffusion
 ---
 
+Updated on 12/6/2022 to add M1 deployment notes.
+
+## M1 Deployment
+
+I just followed the instructions [here](https://github.com/apple/ml-stable-diffusion). 
+
+Tested on my 2020 MacBook Pro M1 with 16G RAM and Torch 1.13.0.
+
+Run the following to generate the models in `coreml-sd` folder:
+
+```
+git clone https://github.com/apple/ml-stable-diffusion.git
+cd ml-stable-diffusion
+conda create -n coreml_stable_diffusion python=3.8 -y
+conda activate coreml_stable_diffusion
+pip install -e .
+huggingface-cli login
+python -m python_coreml_stable_diffusion.torch2coreml --convert-unet --convert-text-encoder --convert-vae-decoder --convert-safety-checker -o coreml-sd
+```
+
+Generate image with Python and output to `image-outputs` folder:
+
+```
+python -m python_coreml_stable_diffusion.pipeline --prompt "a photo of an astronaut riding a horse on mars" -i coreml-sd -o image-outputs --compute-unit ALL --seed 93
+```
+
+The method above loads the model every time, which is quite (2-3 minutes). 
+
+So, use Swift to speed up model loading by setting up the Resources:
+
+```
+python -m python_coreml_stable_diffusion.torch2coreml --convert-unet --convert-text-encoder --convert-vae-decoder --convert-safety-checker --bundle-resources-for-swift-cli -o coreml-sd 
+```
+
+Then, generate image with Swift and output to `image-outputs` folder:
+
+```
+swift run StableDiffusionSample "a photo of an astronaut riding a horse on mars" --resource-path coreml-sd/Resources/ --seed 93 --output-path image-outputs
+```
+
+
+## Ubuntu Deployment
 In the past few months, I tried almost all popular text-to-image AI generation models/products, such as Dall-E 2, MidJourney, Disco Diffusion, Stable Diffusion, etc. Stable Diffusion checkpoint was just released a few days ago. I deployed one on my old GPU server and record my notes here for people who may also want to try. Machine creativity is a quite interesting research area for IS scholars and I jotted down some potential research topics in the end of this post as well.
 
 I first spent a few hours trying to set up [Stable Diffusion](https://github.com/CompVis/stable-diffusion) on Mac M1 and failed - I cannot install the packages properly, e.g., version not found, dependency issues, etc. I found some successful attempts [here](https://github.com/CompVis/stable-diffusion/issues/25) but have no time to try them yet.
