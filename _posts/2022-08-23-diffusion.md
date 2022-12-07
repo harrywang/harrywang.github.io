@@ -31,9 +31,7 @@ Generate image with Python and output to `image-outputs` folder:
 python -m python_coreml_stable_diffusion.pipeline --prompt "a photo of an astronaut riding a horse on mars" -i coreml-sd -o image-outputs --compute-unit ALL --seed 93
 ```
 
-The method above loads the model every time, which is quite (2-3 minutes). 
-
-So, use Swift to speed up model loading by setting up the Resources:
+The method above loads the model every time, which is quite slow (2-3 minutes). Use Swift to speed up model loading by setting up the Resources:
 
 ```
 python -m python_coreml_stable_diffusion.torch2coreml --convert-unet --convert-text-encoder --convert-vae-decoder --convert-safety-checker --bundle-resources-for-swift-cli -o coreml-sd 
