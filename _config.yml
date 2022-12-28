@@ -3,7 +3,7 @@ baseurl: "" # the name of your github repo
 url: "https://harrywang.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Harry Wang"
+title: "harrywang.me"
 description: Harry Wang's Personal Website
 
 # color theme for links
@@ -44,3 +44,4 @@ google-analytics: G-QWDZHEK3XK
 # jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+    - jekyll-feed
