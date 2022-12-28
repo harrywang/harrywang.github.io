@@ -30,7 +30,8 @@ facebook: false
 instagram: false
 github: https://github.com/harrywang
 linkedin: https://www.linkedin.com/in/harryjwang/
-medium: https://harrywang.medium.com/
+medium: false
+rss: /feed.xml
 google-scholar: false
 email: false
 
