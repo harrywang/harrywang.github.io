@@ -5,6 +5,8 @@ tags: tutorial coding
 permalink: diffusion
 ---
 
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/210280151-4ccfc86b-1d02-4d5f-a04e-9131fec86f7a.png">
+
 Updated on 12/6/2022 to add M1 deployment notes.
 
 ## M1 Deployment
@@ -152,3 +154,5 @@ Anyway, out of the 20 generated images from the prompt above, the following are 
 <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/186077382-894b90c3-fcf3-4ad5-a966-9d59121d3dbd.png">
 
 <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/186077544-756a378a-5cb4-4dba-89b1-3898aceb6427.png">
+
+PS. The first image for this post is generated via [Midjourney](https://www.midjourney.com/) using the prompt "A car in 2050 designed by Antoni Gaudi".
