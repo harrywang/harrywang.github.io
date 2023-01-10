@@ -235,12 +235,18 @@ That's it! Now you can add more content to your website and I hope you enjoy Tai
 If you need to create another sub-domain name for another repo such as `2022.sigbit.org`, follow the steps below:
 
 - create the repo using the sub-domain name, i.e., 2022
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/211574631-299a2f9a-74d9-4268-8074-915e6a192e40.png">
+
 - create another CNAME name mapping mapping `2022` to `ais-sigbit.github.io`
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/187943433-a584df58-b4ed-4578-869a-8ead78284fd7.png">
 
 - add the sub-domain name to Github Pages setting as in the step 2 above
+
 - enforce HTTPS as in the step 3 above if needed
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/211574891-3b7d59e5-fae7-4654-b453-3de2cdc1ece3.png">
 
 
 ## References
