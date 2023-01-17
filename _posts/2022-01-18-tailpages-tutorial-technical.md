@@ -22,20 +22,28 @@ cd tailpages
 
 ## Setup Jekyll
 
-**NOTE**: for Mac M1 users: follow https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/ to install jekyll ARM compatible version:
+**NOTE**: for Mac M1 users: follow [this](https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/) to install jekyll ARM compatible version:
 
 ```bash
 xcode-select --install
+brew upgrade
 brew install rbenv ruby-build
-rbenv install 3.0.0
-rbenv global 3.0.0
+rbenv install 3.1.2
+rbenv global 3.1.2
 ruby -v
 rbenv rehash
 echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
 echo 'eval "$(rbenv init - bash)"' >> ~/.bash_profile
-gem install jekyll bundler 
-echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"' >> ~/.zshrc
-echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.2/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.2/bin:$PATH"' >> ~/.bash_profile
+```
+
+**RESTART** the terminal and install the gems in the environment (no `sudo` needed):
+
+```
+gem install jekyll bundler
+bundle install
+bundle exec jekyll serve
 ```
 
 create a new Jekyll site: `jekyll new tailpages`, which create a `tailpages` folder within the repo folder:
