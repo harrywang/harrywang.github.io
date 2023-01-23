@@ -13,6 +13,10 @@ Our idea was inspired by paintings by Franz Kline, such as Painting Number 2 (19
 
 <img src="https://user-images.githubusercontent.com/595772/81478786-830a7a00-91ed-11ea-9014-57a10be30aa7.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
 
+## Media Coverage
+
+A featured article about our paper by TechXplore (January 2021): [A model that can create unique Chinese calligraphy art](https://techxplore.com/news/2021-01-unique-chinese-calligraphy-art.html)
+
 ## Paper
 
 "A Framework and Dataset for Abstract Art Generation via CalligraphyGAN", with Jinggang Zhuo and Ling Fan, [Workshop on Machine Learning for Creativity and Design at NeurIPS 2020](https://neurips2020creativity.github.io/), Vancouver, Canada. [(arXiv link)](https://arxiv.org/abs/2012.00744)
@@ -27,6 +31,6 @@ You can access the source code for this project [here](https://github.com/harryw
 
 ## Team
 
-This is a collaborative project with the Design AI Lab directed by Dr. [Ling Fan](https://www.linkedin.com/in/fatflatfloat/) at the [College of Design and Innovation](https://tjdi.tongji.edu.cn/?lang=en), Tongji University.
+This is a collaborative project with the Design AI Lab directed by Dr. [Ling Fan](https://www.linkedin.com/in/fatflatfloat/) at the College of Design and Innovation, Tongji University.
 
 Master Student: [Jinggang Zhuo](https://github.com/zhuojg)
