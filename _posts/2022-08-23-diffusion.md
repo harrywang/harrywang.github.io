@@ -7,8 +7,9 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/210280151-4ccfc86b-1d02-4d5f-a04e-9131fec86f7a.png">
 
+- Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
-- Updated on 12/6/2022: add M1 deployment notes.
+- Updated on 12/6/2022: add M1 deployment notes
 
 ## M1 Deployment
 
