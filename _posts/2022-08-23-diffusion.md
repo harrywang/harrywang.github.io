@@ -32,7 +32,31 @@ pyenv global 3.10.6
 - switch to `stable-diffusion-webui` folder and run `./webui.sh`
 - visit [http://127.0.0.1:7860](http://127.0.0.1:7860) to use the tool
 
-It should be simple as the few steps above if the Python version is correct. I want to record the issues I ran into below in case I need them later.
+It should be simple as the few steps above if the Python version is correct. 
+
+> "Stable Diffusion 2.0 and 2.1 require both a model and a configuration file, and image width & height will need to be set to 768 or higher when generating images"
+
+For using Stable Diffusion v2.0, follow the [instruction](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) to download the checkpoints and yaml files. 
+
+My `/stable-diffusion-webui/models/Stable-diffusion/` folder looks like the following:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/215642669-92422d92-51f6-4389-afbe-3af37dd811b4.png">
+
+
+Note: for v2.0, you may need to run `./webui.sh --no-half` or restart to make it work.
+
+for `768-v-ema.ckpt` SD v2.0, you have to use at least 768x768 or higher, e.g., 768x1024 to generate images otherwise you get garbage images shown below:
+
+- 512x512 garbage result:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/215643435-f65ada42-6c43-415c-9948-55b405eabb6c.png">
+
+- 768x768 result:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/215643430-5d386c1c-4cb2-4f7a-98f0-3aefc6c3e272.png">
+
+
+I want to record the issues I ran into below in case I need them later.
 
 - python 3.9.7 works 3.8.x has the following error
 
