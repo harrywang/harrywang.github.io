@@ -58,7 +58,7 @@ for `768-v-ema.ckpt` SD v2.0, you have to use at least 768x768 or higher, e.g., 
 
 I want to record the issues I ran into below in case I need them later.
 
-- python 3.9.7 works 3.8.x has the following error
+- 3.8.x has the following error (python 3.9.7 works but has other errors):
 
   ```
   File "/Users/harrywang/.pyenv/versions/3.8.11/lib/python3.8/site-packages/ldm.py", line 20
