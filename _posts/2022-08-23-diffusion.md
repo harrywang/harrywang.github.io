@@ -7,9 +7,72 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/210280151-4ccfc86b-1d02-4d5f-a04e-9131fec86f7a.png">
 
-- Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models
+- Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
 - Updated on 12/6/2022: add M1 deployment notes
+
+## Setup Stable Diffusion WebUI
+
+I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work.
+
+The most important lesson learned: **the Python version matters!**
+
+I figured this out from the inline comment [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/2c1bb46c7ad5b4536f6587d327a03f0ff7811c5d/launch.py#L37) after having many issues with Python 3.8.0 and 3.9.7 - It would be helpful if the author can highlight this in the README file. 
+
+I use `pyenv` to manage my Python versions and use the following commands to install Python 3.10.6 first.
+
+```
+pyenv versions
+pyenv install 3.10.6
+pyenv global 3.10.6
+```
+
+- clone the repo: `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git`
+- download a checkpoint, such as stable diffusion 1.5 from [https://huggingface.co/runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5) and put the downloaded model in `/stable-diffusion-webui/models/Stable-diffusion/` folder.
+- switch to `stable-diffusion-webui` folder and run `./webui.sh`
+- visit [http://127.0.0.1:7860](http://127.0.0.1:7860) to use the tool
+
+It should be simple as the few steps above if the Python version is correct. I want to record the issues I ran into below in case I need them later.
+
+- python 3.9.7 works 3.8.x has the following error
+
+  ```
+  File "/Users/harrywang/.pyenv/versions/3.8.11/lib/python3.8/site-packages/ldm.py", line 20
+      print self.face_rec_model_path 
+            ^
+  SyntaxError: Missing parentheses in call to 'print'. Did you mean print(self.face_rec_model_path)?
+  ```
+
+- run into this [error](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/4346), removed the `k_diffusion_commit_hash` in [launch.py](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/launch.py#L302)
+
+  ```
+  git_clone(k_diffusion_repo, repo_dir('k-diffusion'), "K-diffusion", k_diffusion_commit_hash)
+  ```
+  
+  to 
+
+  ```
+    git_clone(k_diffusion_repo, repo_dir('k-diffusion'), "K-diffusion")
+  ```
+- I have the following msg but I have not update to torch 1.13.1 yet - 1.12.1 seems to work fine so far.
+
+  ```
+  You are running torch 1.12.1.
+  The program is tested to work with torch 1.13.1.
+  To reinstall the desired version, run with commandline flag --reinstall-torch.
+  Beware that this will cause a lot of large files to be downloaded, as well as
+  there are reports of issues with training tab on the latest version.
+  ```
+
+- run into the following errors - all seems to related to `mps`. I used `python launch.py  --skip-torch-cuda-test --no-half --use-cpu all` to launch to fix them - essentially don't use `mps` and use `cpu` instead.
+
+  ```
+  NotImplementedError: The operator 'aten::frac.out' is not currently implemented for the MPS device. If you want this op to be added in priority during the prototype phase of this feature, please comment on https://github.com/pytorch/pytorch/issues/77764. As a temporary fix, you can set the environment variable `PYTORCH_ENABLE_MPS_FALLBACK=1` to use the CPU as a fallback for this op. WARNING: this will be slower than running natively on MPS.
+  ```
+
+  ```
+  RuntimeError: "LayerNormKernelImpl" not implemented for 'Half'
+  ```
 
 ## M1 Deployment
 
