@@ -174,7 +174,7 @@ If you use W&B, the validation results (4 generated images from the prompt "A ph
 
 - at training step 1084, all cats have weird eyes:
 
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219907656-59bd527d-5556-4168-813d-f96c17728152.png">
+  <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219907656-59bd527d-5556-4168-813d-f96c17728152.png">
 
 In this case, choosing a checkpoint close to step 684 may generate better results. 
 
