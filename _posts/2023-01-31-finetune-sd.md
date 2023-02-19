@@ -106,7 +106,7 @@ Then, you can run the training scripts using my cat dataset as follows:
     --report_to=wandb
   ```
 
-- Conduct a DreamBooth fine-tuning using LoRA (`sks` below is the special token - see more discussion about this [here](https://www.reddit.com/r/DreamBooth/comments/zc5w3e/rare_tokens_for_dreambooth_training/):
+- Conduct a DreamBooth fine-tuning using LoRA (`sks` below is the special token - see more discussion about this [here](https://www.reddit.com/r/DreamBooth/comments/zc5w3e/rare_tokens_for_dreambooth_training/)):
 
   ```
   export MODEL_NAME="runwayml/stable-diffusion-v1-5"
@@ -198,7 +198,7 @@ However, I have not been able to train a good model on faces (Miss Dong dataset)
 
 Another way to get a custom model is via merging existing models, which can be easily done using Automatic1111 WebUI by following the tutorial [here](https://www.youtube.com/watch?v=xLQcWKI5OLk).
 
-I use an example to show why and how to merge models. You can find tons of models and model merging receipts from [civitai.com/](https://civitai.com/).
+I use an example to show why and how to merge models. You can find tons of models and model merging receipts from [civitai.com](https://civitai.com/).
 
 The following XY Plot shows the generated images using the prompt "cat" and seed values from 1 to 5 from three models (top to bottom):
 
