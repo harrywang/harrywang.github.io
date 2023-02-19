@@ -7,7 +7,7 @@ permalink: sd
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219880541-ce36d12a-bc7a-476c-b831-09a8d130f61a.png">
 
-[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release last week, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try on my old RTX 2080 Ti (I use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G.
+[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release last week, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G.
 
 There are many tutorials on fine-tuning Stable Diffusion using Colab notebooks and UI tools. But I did not find a good "self-contained" repo with environment setup, simple sample datasets, training scripts, and instructions so that people can just clone, customize, and run. 
 
@@ -206,7 +206,7 @@ The following XY Plot shows the generated images using the prompt "cat" and seed
 
 - the [SD 1.5 base model](https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main): the cats are realistic, i.e., like real cats
 - the [Dream Shaper model](https://civitai.com/models/4384/dreamshaper): the cats are very "dreamy", i.e., cartoon-looking with a more artistic touch.
-- my merged model of the two models above with multiplier setting 0.3, which means I want to have 30% of the DreamShaper model effect merged into the SD 1.5 base model. The results clearly show the balanced effect - realistic with a more dreamy feeling.
+- my merged model of the two models above with multiplier setting 0.3, which means I want to have 30% of the DreamShaper model effect merged into the SD 1.5 base model. The results clearly show the balanced effect - realistic with a more dreamy feeling (merging the two models only takes less than 2 minutes on Tesla V100).
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219909605-15a05e93-03f7-4c0b-99c3-fa4e5cb85820.png">
 
