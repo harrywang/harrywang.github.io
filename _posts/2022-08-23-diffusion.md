@@ -5,11 +5,14 @@ tags: tutorial coding
 permalink: diffusion
 ---
 
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/210280151-4ccfc86b-1d02-4d5f-a04e-9131fec86f7a.png">
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/217112364-0ad39757-8468-4f40-9d89-90bd6578ea90.png">
 
+- Updated 2/4/2023： added InvokeAI(https://github.com/invoke-ai/InvokeAI) instruction
 - Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
 - Updated on 12/6/2022: add M1 deployment notes
+
+Stable Diffusion WebUI is my current go-to UI.
 
 ## Setup Stable Diffusion WebUI
 
@@ -56,7 +59,7 @@ for `768-v-ema.ckpt` SD v2.0, you have to use at least 768x768 or higher, e.g., 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/215643430-5d386c1c-4cb2-4f7a-98f0-3aefc6c3e272.png">
 
 
-I want to record the issues I ran into below in case I need them later.
+I want to record the issues I ran into below in case I need to refer to them later.
 
 - 3.8.x has the following error (python 3.9.7 works but has other errors):
 
@@ -97,6 +100,26 @@ I want to record the issues I ran into below in case I need them later.
   ```
   RuntimeError: "LayerNormKernelImpl" not implemented for 'Half'
   ```
+
+## Setup InvokeAI
+
+This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
+
+- `pip install .` installs packages using `pyproject.toml`.
+- `invokeai-configure` asks you to download sd models
+
+```
+git clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+python -m venv venv
+pip install --use-pep517 .
+invokeai-configure
+invokeai --web
+```
+
+Visit [http://localhost:9090](http://localhost:9090) to use the UI.
+
+InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI below. 
 
 ## M1 Deployment
 
