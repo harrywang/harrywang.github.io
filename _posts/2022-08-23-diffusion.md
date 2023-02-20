@@ -7,7 +7,7 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/217112364-0ad39757-8468-4f40-9d89-90bd6578ea90.png">
 
-- Updated 2/4/2023： added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
+- Updated on 2/4/2023: added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
 - Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
 - Updated on 12/6/2022: add M1 deployment notes
