@@ -14,6 +14,26 @@ permalink: diffusion
 
 Stable Diffusion WebUI is my current go-to UI.
 
+## Setup InvokeAI
+
+This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
+
+- `pip install .` installs packages using `pyproject.toml`.
+- `invokeai-configure` asks you to download sd models
+
+```
+git clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+python -m venv venv
+pip install --use-pep517 .
+invokeai-configure
+invokeai --web
+```
+
+Visit [http://localhost:9090](http://localhost:9090) to use the UI.
+
+InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI below. 
+
 ## Setup Stable Diffusion WebUI
 
 I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work.
@@ -100,26 +120,6 @@ I want to record the issues I ran into below in case I need to refer to them lat
   ```
   RuntimeError: "LayerNormKernelImpl" not implemented for 'Half'
   ```
-
-## Setup InvokeAI
-
-This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
-
-- `pip install .` installs packages using `pyproject.toml`.
-- `invokeai-configure` asks you to download sd models
-
-```
-git clone https://github.com/invoke-ai/InvokeAI.git
-cd InvokeAI
-python -m venv venv
-pip install --use-pep517 .
-invokeai-configure
-invokeai --web
-```
-
-Visit [http://localhost:9090](http://localhost:9090) to use the UI.
-
-InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI below. 
 
 ## M1 Deployment
 
