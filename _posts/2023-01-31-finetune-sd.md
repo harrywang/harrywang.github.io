@@ -78,7 +78,7 @@ Then, you need to log in to HuggingFace with your token and WandB (optional) wit
 huggingface-cli login
 wandb login
 ```
-Then, you can run the training scripts using my cat dataset as follows:
+Then, you can run the training scripts using my cat dataset as follows - NOTE: you should change the argument values to fit your need, such as learning rate, training steps, checkpoint steps, validation prompt, etc.
 
 - Conduct a Text2Image fine-tuning using LoRA:
 
@@ -218,6 +218,7 @@ By repeating the model merging steps, you can generate models with targeted effe
 - [https://huggingface.co/blog/lora](https://huggingface.co/blog/lora)
 - [https://huggingface.co/blog/dreambooth](https://huggingface.co/blog/dreambooth)
 - [https://tryolabs.com/blog/2022/10/25/the-guide-to-fine-tuning-stable-diffusion-with-your-own-images](https://tryolabs.com/blog/2022/10/25/the-guide-to-fine-tuning-stable-diffusion-with-your-own-images)
+- [https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora](https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora)
 - Various posts in the [unofficial Stable Diffusion subreddit](https://www.reddit.com/r/StableDiffusion/)
 
 PS. The first image for this post is generated via [Midjourney](https://www.midjourney.com/) using the prompt "experiment cooking with thousands of different receipts and flasks flying in the universe ".
