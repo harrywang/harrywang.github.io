@@ -194,7 +194,7 @@ python generate-lora.py --prompt "a sks cat standing on the great wall" --model_
 
 You can find other examples to run LoRA fine-tuning using other datasets [here](https://github.com/harrywang/finetune-sd) and examples to run DreamBooth without LoRA as well.
 
-However, I have not been able to train a good model on faces (Miss Dong dataset) yet. I also have not experimented with different settings on learning rates, prior preservation, schedulers, and text encoder found [here](https://huggingface.co/blog/dreambooth), which seem to be quite effective on face fine-tuning.
+I also have not experimented with different settings on learning rates, prior preservation, schedulers, and text encoder found [here](https://huggingface.co/blog/dreambooth), which seem to be quite effective on face fine-tuning.
 
 ## Convert Diffusers LoRA Weights for Automatic1111 WebUI
 
@@ -212,7 +212,7 @@ As seen below, the trained LoRA weights are stored in `custom_checkpoint_0.pkl` 
 
 Simply put this script in the same folder of the `.bin` or `.pkl` file and run `python convert-to-safetensors.py --file checkpoint_file`
 
-PS: if you want to convert Lora models from [civitai.com](civitai.com) to diffusers format so that you can use them using code, please check out this [PR](Lora models from [civitai.com](civitai.com))
+PS: if you want to convert Lora models from [civitai.com](civitai.com) to diffusers format so that you can use them using code, please check out this [PR](Lora models from [civitai.com](civitai.com)).
 
 
 ## Merge Models
@@ -239,7 +239,6 @@ By repeating the model merging steps, you can generate models with targeted effe
 - [https://huggingface.co/blog/lora](https://huggingface.co/blog/lora)
 - [https://huggingface.co/blog/dreambooth](https://huggingface.co/blog/dreambooth)
 - [https://tryolabs.com/blog/2022/10/25/the-guide-to-fine-tuning-stable-diffusion-with-your-own-images](https://tryolabs.com/blog/2022/10/25/the-guide-to-fine-tuning-stable-diffusion-with-your-own-images)
-- [https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora](https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora)
 - Various posts in the [unofficial Stable Diffusion subreddit](https://www.reddit.com/r/StableDiffusion/)
 
 PS. The first image for this post is generated via [Midjourney](https://www.midjourney.com/) using the prompt "experiment cooking with thousands of different receipts and flasks flying in the universe ".
