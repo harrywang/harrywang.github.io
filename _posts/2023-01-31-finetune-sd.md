@@ -7,7 +7,7 @@ permalink: sd
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219880541-ce36d12a-bc7a-476c-b831-09a8d130f61a.png">
 
-[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release last week, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G.
+[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release last week, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G (Lora models found on [civitai.com](civitai.com) are often ~100M-200M, which used a larger rank value such as 128, the default is 4 as explained [here](https://github.com/haofanwang/Lora-for-Diffusers)).
 
 There are many tutorials on fine-tuning Stable Diffusion using Colab notebooks and UI tools. But I did not find a good "self-contained" repo with environment setup, simple sample datasets, training scripts, and instructions so that people can just clone, customize, and run. 
 
@@ -178,9 +178,7 @@ If you use W&B, the validation results (4 generated images from the prompt "A ph
 
 In this case, choosing a checkpoint close to step 684 may generate better results. 
 
-Once the training is finished, the fine-tuned LoRA weights are stored in the output folder, which is `./models/dreambooth-lora/miles` for my cat example above. The folder includes the final weights and intermediate checkpoint weights:
-
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219909134-0e8aed54-0857-4e07-afdd-7395e212fe25.png">
+Once the training is finished, the fine-tuned LoRA weights are stored in the output folder, which is `./models/dreambooth-lora/miles` for my cat example above. The folder includes the final weights and intermediate checkpoint weights.
 
 Use `generate-lora.py` to generate images using the fine-tuned LoRA weights:
 
@@ -188,11 +186,26 @@ Use `generate-lora.py` to generate images using the fine-tuned LoRA weights:
 python generate-lora.py --prompt "a sks cat standing on the great wall" --model_path "./models/dreambooth-lora/miles" --output_folder "./outputs" --steps 50
 ```
 
-TODO: Follow this [tutorial](https://www.kombitz.com/2023/02/09/how-to-use-lora-models-with-automatic1111s-stable-diffusion-web-ui/) to use the LoRA models with Automatic1111 SD WebUI.
-
 You can find other examples to run LoRA fine-tuning using other datasets [here](https://github.com/harrywang/finetune-sd) and examples to run DreamBooth without LoRA as well.
 
 However, I have not been able to train a good model on faces (Miss Dong dataset) yet. I also have not experimented with different settings on learning rates, prior preservation, schedulers, and text encoder found [here](https://huggingface.co/blog/dreambooth), which seem to be quite effective on face fine-tuning.
+
+## Convert Diffusers LoRA Weights for Automatic1111 WebUI
+
+If you download Lora models from [civitai.com](civitai.com) then you can follow this [tutorial](https://www.kombitz.com/2023/02/09/how-to-use-lora-models-with-automatic1111s-stable-diffusion-web-ui/) to use the LoRA models with Automatic1111 SD WebUI.
+
+However, the LoRA weights trained using Diffusers are saved in `.bin` or `.pkl` format, which must be converted first in order to be used in Automatic1111 WebUI (see [here](https://github.com/huggingface/diffusers/issues/2326) for detailed discussions).
+
+As seen below, the trained LoRA weights are stored in `custom_checkpoint_0.pkl` or `pytorch_model.bin`:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/221718501-dc79a799-5fe5-4b9f-9b44-c19ac4103c06.png">
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/221718531-10fe4999-0ee0-4e6f-abf4-d9fc069ec540.png">
+
+[`convert-to-safetensors.py`](https://github.com/harrywang/finetune-sd/blob/main/convert-to-safetensors.py) can be used to convert `.bin` or `.pkl` files into `.safetensors` format, which can be used in WebUI (just put the converted the file in WebUI `models/Lora`). The script is adapted from the one written by [ignacfetser](https://github.com/ignacfetser). 
+
+Simply put this script in the same folder of the `.bin` or `.pkl` file and run `python convert-to-safetensors.py --file checkpoint_file`
+
 
 ## Merge Models
 
@@ -211,6 +224,7 @@ The following XY Plot shows the generated images using the prompt "cat" and seed
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219909605-15a05e93-03f7-4c0b-99c3-fa4e5cb85820.png">
 
 By repeating the model merging steps, you can generate models with targeted effects, and many popular models are merged models, such as [DreamShaper](https://civitai.com/models/4384/dreamshaper) mentioned above, [Photogen](https://civitai.com/models/3666/protogen-x34-photorealism-official-release), [PastelMix](https://civitai.com/models/5414/pastel-mix-stylized-anime-model) and many NSFW models.
+
 
 
 ## References
