@@ -23,6 +23,7 @@ Some of my lessons learned are:
 - Making good training datasets may be more important than training hyperparameter tuning.
 - Given the same dataset and base model, hyperparameter tuning is the key to fine-tuning quality, which is still largely an art (tricks and tips) than science.
 - Merging existing models and/or with your own custom ones may lead to the desired results.
+- Base model matters - same prompt and hyperparameters may render very different results using different base models - see a comparison page [here](https://daniel.von-appen.org/stable-diffusion-model-comparison/)
 
 The key topics are:
 
