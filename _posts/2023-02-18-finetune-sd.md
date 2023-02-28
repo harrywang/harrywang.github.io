@@ -7,7 +7,9 @@ permalink: sd
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219880541-ce36d12a-bc7a-476c-b831-09a8d130f61a.png">
 
-[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release last week, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G (Lora models found on [civitai.com](civitai.com) are often ~100M-200M, which used a larger rank value such as 128, the default is 4 as explained [here](https://github.com/haofanwang/Lora-for-Diffusers)).
+- Updated on 2/27/2023: added Convert Diffusers LoRA Weights for Automatic1111 WebUI section
+
+[LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release a few weeks ago, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G (Lora models found on [civitai.com](civitai.com) are often ~100M-200M, which used a larger rank value such as 128, the default is 4 as explained [here](https://github.com/haofanwang/Lora-for-Diffusers)).
 
 There are many tutorials on fine-tuning Stable Diffusion using Colab notebooks and UI tools. But I did not find a good "self-contained" repo with environment setup, simple sample datasets, training scripts, and instructions so that people can just clone, customize, and run. 
 
@@ -207,6 +209,8 @@ As seen below, the trained LoRA weights are stored in `custom_checkpoint_0.pkl` 
 
 Simply put this script in the same folder of the `.bin` or `.pkl` file and run `python convert-to-safetensors.py --file checkpoint_file`
 
+PS: if you want to convert Lora models from [civitai.com](civitai.com) to diffusers format so that you can use them using code, please check out this [PR](Lora models from [civitai.com](civitai.com))
+
 
 ## Merge Models
 
@@ -225,7 +229,6 @@ The following XY Plot shows the generated images using the prompt "cat" and seed
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219909605-15a05e93-03f7-4c0b-99c3-fa4e5cb85820.png">
 
 By repeating the model merging steps, you can generate models with targeted effects, and many popular models are merged models, such as [DreamShaper](https://civitai.com/models/4384/dreamshaper) mentioned above, [Photogen](https://civitai.com/models/3666/protogen-x34-photorealism-official-release), [PastelMix](https://civitai.com/models/5414/pastel-mix-stylized-anime-model) and many NSFW models.
-
 
 
 ## References
