@@ -192,7 +192,7 @@ However, I have not been able to train a good model on faces (Miss Dong dataset)
 
 ## Convert Diffusers LoRA Weights for Automatic1111 WebUI
 
-If you download Lora models from [civitai.com](civitai.com) then you can follow this [tutorial](https://www.kombitz.com/2023/02/09/how-to-use-lora-models-with-automatic1111s-stable-diffusion-web-ui/) to use the LoRA models with Automatic1111 SD WebUI.
+If you download Lora models from [civitai.com](civitai.com), you can follow this [tutorial](https://www.kombitz.com/2023/02/09/how-to-use-lora-models-with-automatic1111s-stable-diffusion-web-ui/) to use the LoRA models with Automatic1111 SD WebUI.
 
 However, the LoRA weights trained using Diffusers are saved in `.bin` or `.pkl` format, which must be converted first in order to be used in Automatic1111 WebUI (see [here](https://github.com/huggingface/diffusers/issues/2326) for detailed discussions).
 
