@@ -11,7 +11,7 @@ permalink: sd
 
 [LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffuser](https://huggingface.co/docs/diffusers/index) release a few weeks ago, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G (Lora models found on [civitai.com](civitai.com) are often ~100M-200M, which used a larger rank value such as 128, the default is 4 as explained [here](https://github.com/haofanwang/Lora-for-Diffusers)).
 
-There are many tutorials on fine-tuning Stable Diffusion using Colab notebooks and UI tools. But I did not find a good "self-contained" repo with environment setup, simple sample datasets, training scripts, and instructions so that people can just clone, customize, and run. 
+There are many tutorials on fine-tuning Stable Diffusion using Colab [[1](https://www.reddit.com/r/StableDiffusion/comments/110up3f/i_made_a_lora_training_guide_its_a_colab_version/)] and UI tools [[2](https://www.youtube.com/watch?v=70H03cv57-o)][[3](https://www.youtube.com/watch?v=7m522D01mh0)]. But I did not find a good "self-contained" repo with environment setup, simple sample datasets, training scripts, and instructions so that people can just clone, customize, and run. 
 
 In this tutorial, I want to share my experience in fine-tuning Stable Diffusion using HuggingFace training scripts with a few sample datasets. I am still learning about the tips and tricks on this and will report more findings as I go along.
 
