@@ -52,6 +52,7 @@ One thing to know when preparing the dataset is how the images are preprocessed 
 - **padded**: if the image is smaller than 512x512, paddings are added
 
 The following shows the results of my default resizing and cropping (left column) and my custom resizing and cropping (right column) - note the custom cropped images focus more on the subject, which is better for fine-tuning:
+
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/215897720-a34098ec-ff45-46f6-9dd0-84a48eefa6bc.jpg">
 
 In addition, the images should have variations about the subject, such as:
@@ -61,6 +62,8 @@ In addition, the images should have variations about the subject, such as:
 - pose
 - background
 - properties (clothing, haircut - not for Miles ^_^)
+
+[birme.net](https://www.birme.net/) is a great website for bulk image resizing, renaming, format changing.
 
 ## Run Training and Use the Fine-tuned Models
 
