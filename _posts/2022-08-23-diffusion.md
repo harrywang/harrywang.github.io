@@ -12,7 +12,7 @@ permalink: diffusion
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
 - Updated on 12/6/2022: add M1 deployment notes
 
-Stable Diffusion WebUI is my current go-to UI.
+Stable Diffusion WebUI is my current go-to UI - it's quite useful to go over the [feature showcase page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features).
 
 ## Setup InvokeAI
 
