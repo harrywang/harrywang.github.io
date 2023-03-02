@@ -31,6 +31,7 @@ The key topics are:
 
 - how to prepare datasets
 - how to run the training and generation scripts
+- how to convert Diffusers trained weights for use in Automatic1111 WebUI
 - how to merge models and test results
 
 ## Prepare Custom Datasets
