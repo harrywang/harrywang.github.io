@@ -68,7 +68,7 @@ In addition, the images should have variations about the subject, such as:
 
 ## Run Training and Use the Fine-tuned Models
 
-To try the examples, you can simply clone the repo and set up the environment as follows (Note that the Python version matters - the code was tested with Python 3.9.x and 3.10.x and 3.8.x may have issues like [[1](https://github.com/d8ahazard/sd_dreambooth_extension/issues/40)])
+To try the examples, you can simply clone the repo and set up the environment as follows (Note that the Python version matters - the code was tested with Python 3.9.11. 3.10.x and 3.8.x may have issues like [[1](https://github.com/d8ahazard/sd_dreambooth_extension/issues/40)])
 
 ```
 git clone https://github.com/harrywang/finetune-sd.git
