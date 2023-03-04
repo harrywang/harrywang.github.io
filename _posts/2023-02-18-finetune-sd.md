@@ -234,7 +234,6 @@ The following XY Plot shows the generated images using the prompt "cat" and seed
 
 By repeating the model merging steps, you can generate models with targeted effects, and many popular models are merged models, such as [DreamShaper](https://civitai.com/models/4384/dreamshaper) mentioned above, [Photogen](https://civitai.com/models/3666/protogen-x34-photorealism-official-release), [PastelMix](https://civitai.com/models/5414/pastel-mix-stylized-anime-model) and many NSFW models.
 
-
 ## References
 
 - [https://huggingface.co/blog/lora](https://huggingface.co/blog/lora)

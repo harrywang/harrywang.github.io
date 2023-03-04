@@ -124,21 +124,21 @@ I want to record the issues I ran into below in case I need to refer to them lat
 
 ### Ubuntu WebUI Setup
 
-Tested on Ubuntu 20.04.5 LTS, it's as simple as the following two lines, then 
+Tested on Ubuntu 20.04.5 LTS, it's as simple as the following two lines:
 
 ```
 sudo apt install wget git python3 python3-venv
 bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
 ```
 
-install xformers by editing `webui-user.sh` (see [discussions](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303)):
+Install xformers by editing `webui-user.sh` (see [discussions](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303)), then start WebUI using `./webui.sh` and xformers will be installed:
 
 ```
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
 export COMMANDLINE_ARGS="--reinstall-xformers"
 ```
 
-Then, start WebUI using `./webui.sh`, xformers will be installed. Then, change `webui-user.sh` to remove the installation argument (you only need to install it once) and enable xformers:
+Next, change `webui-user.sh` to remove the installation argument above (you only need to install it once) and enable xformers:
 
 ```
 export COMMANDLINE_ARGS="--xformers"
