@@ -140,15 +140,13 @@ export COMMANDLINE_ARGS="--reinstall-xformers"
 Then, start WebUI using `./webui.sh`, xformers will be installed. Then, change `webui-user.sh` to remove the installation argument (you only need to install it once) and enable xformers:
 
 ```
-# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
 export COMMANDLINE_ARGS="--xformers"
 ```
 
-To enable a public Gradio link, change `webui-user.sh` with `--share` argument:
+To enable a public Gradio link with authentication, change `webui-user.sh` with arguments:
 
 ```
-# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--xformers --share"
+export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-password"
 ```
 
 
