@@ -7,6 +7,7 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/217112364-0ad39757-8468-4f40-9d89-90bd6578ea90.png">
 
+- Updated on 3/4/2023: added WebUI Ubuntu Setup Note
 - Updated on 2/4/2023: added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
 - Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
@@ -36,7 +37,7 @@ InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI 
 
 ## Setup Stable Diffusion WebUI
 
-I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work.
+I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work (Ubuntu setup is actually much easier - see below).
 
 The most important lesson learned: **the Python version matters!**
 
@@ -120,6 +121,36 @@ I want to record the issues I ran into below in case I need to refer to them lat
   ```
   RuntimeError: "LayerNormKernelImpl" not implemented for 'Half'
   ```
+### Ubuntu WebUI Setup
+
+Tested on Ubuntu 20.04.5 LTS, it's as simple as the following two lines, then 
+
+```
+sudo apt install wget git python3 python3-venv
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+```
+
+install xformers by editing `webui-user.sh` (see [discussions](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303)):
+
+```
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--reinstall-xformers"
+```
+
+Then, start WebUI using `./webui.sh`, xformers will be installed. Then, change `webui-user.sh` to remove the installation argument (you only need to install it once) and enable xformers:
+
+```
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers"
+```
+
+To enable a public Gradio link, change `webui-user.sh` with `--share` argument:
+
+```
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers --share"
+```
+
 
 ## M1 Deployment
 
