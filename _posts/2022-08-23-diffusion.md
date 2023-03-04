@@ -150,6 +150,16 @@ To enable a public Gradio link with authentication, change `webui-user.sh` with 
 export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-password"
 ```
 
+To download a model:
+
+- find the checkpoint on Huggingface, such as [DreamShaper](https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper_3.3_pruned.safetensors)
+
+- Get the download link (see below)
+
+- go to `/stable-diffusion-webui/models/Stable-diffusion` on the server and `wget https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_3.3_pruned.safetensors`
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/222912893-6bfa9afc-d334-496c-ba46-f80f1f3c4c05.png">
+
 
 ## M1 Deployment
 
