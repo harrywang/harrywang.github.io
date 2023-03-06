@@ -7,7 +7,7 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/217112364-0ad39757-8468-4f40-9d89-90bd6578ea90.png">
 
-- Updated on 3/4/2023: added WebUI Ubuntu Setup Note
+- Updated on 3/4/2023: added WebUI Ubuntu setup note and link to WebUI Colab
 - Updated on 2/4/2023: added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
 - Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
 - Updated on 1/16/2023: start to use the awesome offline stable diffusion app: [DiffusionBee](https://diffusionbee.com/)
@@ -150,6 +150,13 @@ To enable a public Gradio link with authentication, change `webui-user.sh` with 
 export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-password"
 ```
 
+To enable extension installation with `--share`, change `webui-user.sh` with arguments (otherwise this [error](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/4215)):
+
+```
+export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-password --enable-insecure-extension-access"
+```
+
+
 To download a model:
 
 - find the checkpoint on Huggingface, such as [DreamShaper](https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper_3.3_pruned.safetensors)
@@ -158,7 +165,23 @@ To download a model:
 
 - go to `/stable-diffusion-webui/models/Stable-diffusion` on the server and `wget https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_3.3_pruned.safetensors`
 
+- after `wget` civitai.com models, they need to be renamed.
+
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/222912893-6bfa9afc-d334-496c-ba46-f80f1f3c4c05.png">
+
+### Install Dreambooth Extension
+
+Note for installing https://github.com/d8ahazard/sd_dreambooth_extension
+
+**NOTE**: "Once installed, you must restart the Stable-Diffusion WebUI completely. Reloading the UI will not install the necessary requirements."
+
+Install [https://github.com/kohya-ss/sd-webui-additional-networks](https://github.com/kohya-ss/sd-webui-additional-networks) to use the Lora Weights.
+
+Check out my [tutorial](https://harrywang.me/sd) on how to use this extension.
+
+### WebUI Colab
+
+You can use [https://github.com/camenduru/stable-diffusion-webui-colab](https://github.com/camenduru/stable-diffusion-webui-colab) if you just want to use WebUI via Colab - Just run the chosen Colab Notebook (find the model you want to use) and you will get a URL to use WebUI - the speed is OK.
 
 
 ## M1 Deployment

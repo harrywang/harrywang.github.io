@@ -215,6 +215,31 @@ Simply put this script in the same folder of the `.bin` or `.pkl` file and run `
 
 PS: if you want to convert Lora models from [civitai.com](civitai.com) to diffusers format so that you can use them using code, please check out this [PR](Lora models from [civitai.com](civitai.com)).
 
+## Fine-tune using WebUI
+
+You need to install Automatic1111 WebUI and two extensions [d8ahazard/sd_dreambooth_extension](https://github.com/d8ahazard/sd_dreambooth_extension) and [kohya-ss/sd-webui-additional-networks](https://github.com/kohya-ss/sd-webui-additional-networks) - check out [my installation instructions](https://harrywang.me/diffusion) and then follow the [Youtube tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc) to train.
+
+I run into many issues and finally trained a model successfully using 12G 2080Ti:
+
+<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/223163890-668143e5-2bed-48b0-9208-64a73d4f8e36.png">
+
+I record the issues and solutions below in case you need them:
+
+- when you use Performance Wizard, some training parameters might be wrong, which causes issues, such as [Step Ratio of Text Encoder Training value empty](https://github.com/d8ahazard/sd_dreambooth_extension/issues/996), batch size set to non-integer, etc.
+
+- [Fresh new model with Lora model list empty](https://github.com/d8ahazard/sd_dreambooth_extension/issues/802) - make sure to reload setting after changing the json file.
+
+- Dataset and class image folders must be separate (don't put reg images inside training images - recursive reg image generation)
+
+  ```
+  /home/hjwang/finetune-sd/data/dreambooth/david-beckham
+  /home/hjwang/finetune-sd/data/dreambooth/david-beckham-reg
+  ```
+
+- Uncheck Cache Latents to save GPU - I need to uncheck this to avoid CUDA out of memory error on 2080Ti
+
+- Lora Weights not compatible with [kohya-ss/sd-webui-additional-networks](https://github.com/kohya-ss/sd-webui-additional-networks) - solved by [pulling from the `dev` branch](https://github.com/d8ahazard/sd_dreambooth_extension/issues/1020) (3/6/2023) 
+
 
 ## Merge Models
 
