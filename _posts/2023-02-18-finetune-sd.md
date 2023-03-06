@@ -7,6 +7,7 @@ permalink: sd
 
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/219880541-ce36d12a-bc7a-476c-b831-09a8d130f61a.png">
 
+- Updated on 3/6/2023: added How to fine-tune using WebUI section using [d8ahazard/sd_dreambooth_extension](https://github.com/d8ahazard/sd_dreambooth_extension)
 - Updated on 2/27/2023: added Convert Diffusers LoRA Weights for Automatic1111 WebUI section
 
 [LoRA (Low-Rank Adaptation) of Large Language Models](https://arxiv.org/abs/2106.09685) was included in the [Diffusers](https://huggingface.co/docs/diffusers/index) release a few weeks ago, which enables fine-tuning Stable Diffusion (SD) model with much lower GPU requirements so that I can finally try it on my old RTX 2080 Ti (I now use Tesla V100 most of the time). In addition, LoRA fine-tuning is much faster and the trained weights are much smaller, e.g., ~3M vs. ~5G (Lora models found on [civitai.com](civitai.com) are often ~100M-200M, which used a larger rank value such as 128, the default is 4 as explained [here](https://github.com/haofanwang/Lora-for-Diffusers)).
