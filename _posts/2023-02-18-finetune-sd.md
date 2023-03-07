@@ -240,7 +240,9 @@ I record the issues and solutions below in case you need them:
 
 - Uncheck Cache Latents to save GPU - I need to uncheck this to avoid CUDA out of memory error on 2080Ti
 
-- Lora Weights not compatible with [kohya-ss/sd-webui-additional-networks](https://github.com/kohya-ss/sd-webui-additional-networks) - solved by [pulling from the `dev` branch](https://github.com/d8ahazard/sd_dreambooth_extension/issues/1020) (3/6/2023) 
+- Lora Weights not compatible with [kohya-ss/sd-webui-additional-networks](https://github.com/kohya-ss/sd-webui-additional-networks) - solved by [pulling from the `dev` branch](https://github.com/d8ahazard/sd_dreambooth_extension/issues/1020) (3/6/2023)
+
+- no need to use special tokens such as sks, ohwx, just use a common word, e.g., david-beckham, 3d-avatar
 
 
 ## Merge Models
