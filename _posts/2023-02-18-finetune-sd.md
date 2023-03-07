@@ -33,6 +33,7 @@ The key topics are:
 - how to prepare datasets
 - how to run the training and generation scripts
 - how to convert Diffusers trained weights for use in Automatic1111 WebUI
+- how to fine-tune using WebUI
 - how to merge models and test results
 
 ## Prepare Custom Datasets
@@ -226,7 +227,7 @@ I run into many issues and finally trained a model successfully using 12G 2080Ti
 
 I record the issues and solutions below in case you need them:
 
-- when you use Performance Wizard, some training parameters might be wrong, which causes issues, such as [Step Ratio of Text Encoder Training value empty](https://github.com/d8ahazard/sd_dreambooth_extension/issues/996), batch size set to non-integer, etc.
+- when you use Performance Wizard, some training parameters might be wrong, which can cause issues, such as [Step Ratio of Text Encoder Training value empty](https://github.com/d8ahazard/sd_dreambooth_extension/issues/996), batch size set to non-integer, etc.
 
 - [Fresh new model with Lora model list empty](https://github.com/d8ahazard/sd_dreambooth_extension/issues/802) - make sure to reload setting after changing the json file.
 
