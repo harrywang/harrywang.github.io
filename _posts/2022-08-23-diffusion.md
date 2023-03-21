@@ -131,7 +131,7 @@ sudo apt install wget git python3 python3-venv
 bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
 ```
 
-Install xformers by editing `webui-user.sh` (see [discussions](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303)), then start WebUI using `./webui.sh` and xformers will be installed:
+Install xformers by editing `webui-user.sh` (see [discussions](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5303)), then start WebUI using `./webui.sh` and xformers will be installed (for my new 4090, this did not work, adding `--xformers` worked):
 
 ```
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
