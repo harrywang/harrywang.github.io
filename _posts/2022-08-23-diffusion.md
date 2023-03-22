@@ -156,6 +156,8 @@ To enable extension installation with `--share`, change `webui-user.sh` with arg
 export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-password --enable-insecure-extension-access"
 ```
 
+If you have a server with a fixed IP address, say x.x.x.x, then you can use `--share` to run WebUI at `x.x.x.x:7860`.
+
 
 To download a model:
 
