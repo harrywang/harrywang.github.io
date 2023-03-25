@@ -83,6 +83,22 @@ accelerate config default
 
 Then, you need to log in to HuggingFace with your token and WandB (optional) with your API key:
 
+NOTE: on Ubuntu, if you run into `huggingface-cli login` command not found error, you may need to add the path of `huggingface_hub` package to `$PATH`
+
+```
+pip show huggingface_hub | grep Location
+/home/hjwang/.local/lib/python3.8/site-packages
+```
+Then, edit `vim ~/.profile` for bash shell and add the following to `$PATH`:
+
+```
+if [ -d "/home/hjwang/.local/lib/python3.8/site-packages" ] ; then
+    PATH="/home/hjwang/.local/lib/python3.8/site-packages:$PATH"
+fi
+```
+
+`source ~/.profile` then restart the terminal to proceed.
+
 ```
 huggingface-cli login
 wandb login
