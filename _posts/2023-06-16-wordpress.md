@@ -5,7 +5,7 @@ tags: tutorial coding
 permalink: wp
 ---
 
-<img class="mx-auto" src="https://github.com/harrywang/harrywang.github.io/assets/595772/c3fbe3d1-6563-44ef-b06c-6ba9f0f0c275">
+<img class="mx-auto" src="https://github.com/harrywang/harrywang.github.io/assets/595772/9247e59a-49e6-4c90-a2d9-423670a63405">
 
 This past May 27th marks the [20th Anniversary of Wordpress](https://wp20.wordpress.net/). I have been using Wordpress for more than 15 years, e.g., I adopted Wordpress for [CSWIM](https://cswimworkshop.org/) in 2012 as a conference co-chair and Wordpress has been powering many websites I built. 
 
@@ -26,4 +26,4 @@ I list some references we used:
 - [Using Headless WordPress with Next.js and Vercel](https://vercel.com/guides/wordpress-with-vercel)
 - [How to get related post by category in headless wordpress?(GraphQL)](https://stackoverflow.com/questions/73687998/how-to-get-related-post-by-category-in-headless-wordpressgraphql)
 
-PS. The first image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/64301d2e38888d0da5220944).
+PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/647b4d91414f1bb93778ab94).
