@@ -5,7 +5,7 @@ tags: tutorial coding
 permalink: diffusion
 ---
 
-<img class="mx-auto" src="https://user-images.githubusercontent.com/595772/217112364-0ad39757-8468-4f40-9d89-90bd6578ea90.png">
+<img class="mx-auto" src="https://github.com/harrywang/harrywang.github.io/assets/595772/0c08596a-1aef-479c-9755-aab42c137a91">
 
 - Updated on 3/4/2023: added WebUI Ubuntu setup note and link to WebUI Colab
 - Updated on 2/4/2023: added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
@@ -157,6 +157,12 @@ export COMMANDLINE_ARGS="--xformers --share --gradio-auth your-user-name:your-pa
 ```
 
 If you have a server with a fixed IP address, say x.x.x.x, then you can use `--share` to run WebUI at `x.x.x.x:7860`.
+
+You can also install [webui tunnels plugin](https://github.com/Bing-su/sd-webui-tunnels) to have a Cloudflare URL by running:
+
+```
+./webui.sh --gradio-auth username:password --cloudflared
+```
 
 
 To download a model:
@@ -332,4 +338,4 @@ Anyway, out of the 20 generated images from the prompt above, the following are 
 
 <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/186077544-756a378a-5cb4-4dba-89b1-3898aceb6427.png">
 
-PS. The first image for this post is generated via [Midjourney](https://www.midjourney.com/) using the prompt "A car in 2050 designed by Antoni Gaudi".
+PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/649054390a85d5e5ca42afce).
