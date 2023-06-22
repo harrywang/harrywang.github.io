@@ -15,27 +15,9 @@ permalink: diffusion
 
 Stable Diffusion WebUI is my current go-to UI - it's quite useful to go over the [feature showcase page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features).
 
-## Setup InvokeAI
-
-This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
-
-- `pip install .` installs packages using `pyproject.toml`.
-- `invokeai-configure` asks you to download sd models
-
-```
-git clone https://github.com/invoke-ai/InvokeAI.git
-cd InvokeAI
-python -m venv venv
-pip install --use-pep517 .
-invokeai-configure
-invokeai --web
-```
-
-Visit [http://localhost:9090](http://localhost:9090) to use the UI.
-
-InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI below. 
-
 ## Setup Stable Diffusion WebUI
+
+### Mac WebUI Setup
 
 I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work (Ubuntu setup is actually much easier - see below).
 
@@ -191,8 +173,28 @@ Check out my [tutorial](https://harrywang.me/sd) on how to use this extension.
 
 You can use [https://github.com/camenduru/stable-diffusion-webui-colab](https://github.com/camenduru/stable-diffusion-webui-colab) if you just want to use WebUI via Colab - Just run the chosen Colab Notebook (find the model you want to use) and you will get a URL to use WebUI - the speed is OK.
 
+## Setup InvokeAI
 
-## M1 Deployment
+This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
+
+- `pip install .` installs packages using `pyproject.toml`.
+- `invokeai-configure` asks you to download sd models
+
+```
+git clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+python -m venv venv
+pip install --use-pep517 .
+invokeai-configure
+invokeai --web
+```
+
+Visit [http://localhost:9090](http://localhost:9090) to use the UI.
+
+InvokeAI seems to take more resources than AUTOMATIC1111 Stable Diffusion WebUI below. 
+
+
+## M1 Stable Diffusion Deployment
 
 I just followed the instructions [here](https://github.com/apple/ml-stable-diffusion). 
 
