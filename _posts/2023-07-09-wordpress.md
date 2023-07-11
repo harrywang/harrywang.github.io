@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Headless Wordpress + Next.js + ElasticSearch
-tags: tutorial coding 
+tags: tutorial website
 permalink: wp
 ---
 
