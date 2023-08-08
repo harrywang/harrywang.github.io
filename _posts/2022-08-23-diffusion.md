@@ -340,4 +340,4 @@ Anyway, out of the 20 generated images from the prompt above, the following are 
 
 <img class="mx-auto" width='500' src="https://user-images.githubusercontent.com/595772/186077544-756a378a-5cb4-4dba-89b1-3898aceb6427.png">
 
-PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/649054390a85d5e5ca42afce).
+PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Takin.AI](https://takin.ai/asset/649054390a85d5e5ca42afce).

@@ -59,4 +59,4 @@ The current Wordpress website is at `2022.yourwebsite.com`, which you want to cl
 <img width="1840" src="https://github.com/harrywang/harrywang.github.io/assets/595772/29f647a5-6f8e-4b3a-aa7d-efc08d92cbc1">
 
 
-PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/649b149dd1038ebe1e22af2b).
+PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Takin.AI](https://takin.ai/asset/649b149dd1038ebe1e22af2b).
