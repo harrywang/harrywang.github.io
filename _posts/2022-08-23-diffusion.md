@@ -7,6 +7,7 @@ permalink: diffusion
 
 <img class="mx-auto" src="https://github.com/harrywang/harrywang.github.io/assets/595772/0c08596a-1aef-479c-9755-aab42c137a91">
 
+- Updated on 8/10/2023: added [ComfyUI](https://github.com/comfyanonymous/ComfyUI) Mac M1 setup note
 - Updated on 3/4/2023: added WebUI Ubuntu setup note and link to WebUI Colab
 - Updated on 2/4/2023: added [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction
 - Updated on 1/30/2023: use [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon) instead given that DiffusionBee has issues loading custom models - check out my setup notes below - it may save you lots of time and trouble!
@@ -14,6 +15,24 @@ permalink: diffusion
 - Updated on 12/6/2022: add M1 deployment notes
 
 Stable Diffusion WebUI is my current go-to UI - it's quite useful to go over the [feature showcase page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features).
+
+## Setup ComfyUI
+
+```
+git clone https://github.com/comfyanonymous/ComfyUI.git
+cd ComfyUI
+python -m venv venv
+source venv/bin/activate
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118 xformers
+pip install -r requirements.txt
+python main.py
+```
+Put your SD checkpoints (the huge ckpt/safetensors files) in: models/checkpoints
+
+Then, visit http://127.0.0.1:8188
+
+<img class="mx-auto" src="https://github.com/harrywang/harrywang.github.io/assets/595772/585ec6f0-386f-4dcd-8dc7-de80dc0c0776">
+
 
 ## Setup Stable Diffusion WebUI
 
