@@ -33,6 +33,12 @@ ns2.siteground.net
 
 <img width="283" src="https://github.com/harrywang/harrywang.github.io/assets/595772/86ce1639-450d-4a07-a02c-11c6c0544963">
 
+## Setup a new Wordpress Website
+
+- Create a new Wordpress installation
+- Install a professional theme, such as https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+- Find a demo site and load the content
+- Customize the content
 
 ## Clone/Migrate a Wordpress Website
 
