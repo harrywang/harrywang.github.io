@@ -518,10 +518,10 @@ You can derive new columns from existing ones:
 ```python
 # calculate GDP per capita (GDP divided by population)
 # a trillion has 12 zeros, a million has 6 zeros
-df['gdp per capita'] = df.gdp * 1000000 / df.population
+df['gdp_per_capita'] = df.gdp * 1000000 / df.population
 df
 
-          country    gdp  population  area          capital  gdp per capita
+          country    gdp  population  area          capital  gdp_per_capita
 0   United States  20.49      331.00  9.53  WASHINGTON D.C.    61903.323263
 1           China  13.40     1439.32  9.60          Beijing     9309.951922
 2           Japan   4.97      126.48  0.38            Tokyo    39294.750158
