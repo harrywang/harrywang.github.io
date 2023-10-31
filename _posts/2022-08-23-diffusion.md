@@ -36,6 +36,74 @@ Then, visit http://127.0.0.1:8188
 
 ## Setup Stable Diffusion WebUI
 
+### Ubuntu WebUI Setup
+
+Here are the notes for me to setup A1111 on my server:
+
+```
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git a1111
+cd a1111
+./webui.sh
+```
+
+Install extensions:
+
+```
+cd a1111/extensions
+git clone https://github.com/Mikubill/sd-webui-controlnet.git
+git clone https://github.com/zanllp/sd-webui-infinite-image-browsing.git
+git clone https://github.com/Bing-su/sd-webui-tunnels.git
+git clone https://github.com/etherealxx/batchlinks-webui
+```
+
+Change startup script in `webui-user.sh` and add:
+
+```
+export COMMANDLINE_ARGS="--xformers --cloudflared --gradio-auth username:password"
+```
+
+Start A1111: `./webui.sh` and find the cloudflare link to login.
+
+Use Batchlinks Downloader to download models:
+
+```
+#controlnet
+https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth
+#model
+https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
+https://civitai.com/api/download/models/8958
+https://civitai.com/api/download/models/113299
+https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor&size=full&fp=fp16
+https://civitai.com/api/download/models/5213?type=Model&format=SafeTensor&size=full&fp=fp16
+https://civitai.com/api/download/models/94640?type=Model&format=SafeTensor&size=pruned&fp=fp16
+https://civitai.com/api/download/models/40248
+https://civitai.com/api/download/models/15236?type=Model&format=SafeTensor&size=full&fp=fp16
+https://civitai.com/api/download/models/57618
+https://civitai.com/api/download/models/106289
+#lora
+https://civitai.com/api/download/models/14856
+https://civitai.com/api/download/models/32988
+https://civitai.com/api/download/models/21173
+https://civitai.com/api/download/models/31284
+https://civitai.com/api/download/models/30384
+```
+
 ### Mac WebUI Setup
 
 I ran into so many issues trying to set it up on my MacBook Pro M1 and finally made it work (Ubuntu setup is actually much easier - see below).
