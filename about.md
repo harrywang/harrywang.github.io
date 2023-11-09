@@ -29,6 +29,12 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([
 
 ## Selected Publications
 
+- "**Towards an Automatic Prompt Optimization Framework for AI Image Generation**", with Ling Fan, Kunpeng Zhang, Zilong Pei, and Anjun Li, HCI International 2023 Conference, Copenhagen, Denmark, 2023.
+- "**Revamping Interior Design Workflow Through Generative Artificial Intelligence**", with Ziming He, Xiaomei Li, and Ling Fan, HCI International 2023 Conference, Copenhagen, Denmark, 2023.
+- "**The Impact of AI-based Diagnosis System on Medical Aesthetic Service Purchases**", with Wenli Zou, Mengxin Li, Cheng Yi, 2022 Symposium on Statistical Challenges in Electronic Commerce Research, Madrid, Spain, 2022
+- "**The Impacts of Community Composition Diversity on Non-fungible Token Project Success**", with Ainong Duan, Daning Hu, Tao Lu, Michael Chau, 2022 SIGBIT Workshop on Web3 Technologies and Applications, Copenhagen, Denmark, 2022
+- "**Semantically Enriched Music Visualization via Multimodal Color Generation**", with Yufan Li, Jinggang Zhuo, and Ling Fan, New Interfaces for Musical Expression Conference, 2021.
+- "**Culture-inspired Multi-modal Color Palette Generation and Colorization: A Chinese Youth Subculture Case**", with Yufan Li, Jinggang Zhuo, and Ling Fan, IEEE 4th International Conference on Multimedia Information Processing and Retrieval, 2021.
 - "**Enhanced Seq2Seq Autoencoder via Contrastive Learning for Abstractive Text Summarization**" (with Rachel Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), IEEE Big Data 2021 [(arXiv link)](https://arxiv.org/abs/2108.11992).
 - "**Topic-Guided Abstractive Text Summarization: a Joint Learning Approach**" (with Chujie Zheng, Kunpeng Zhang, Ling Fan, and Zhe Wang), 2021 
 [(arXiv link)](https://arxiv.org/abs/2010.10323).
