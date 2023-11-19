@@ -10,7 +10,7 @@ I am the Founder and CEO of [Takin.AI](https://takin.ai/) and was the Chief Scie
 
 I also served as the Founding Director of [OneConnect](https://www.ocft.com/) (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members of the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/) at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. I also founded [Conferency](https://www.conferency.com/) in 2015 to provide SaaS solutions for academic conferences.
 
-In my spare time, I enjoy coding, sports, music, design, art, and woodworking ([check out some of my hobby projects](http://harrywang.me/tag#hobby)).
+In my spare time, I enjoy coding, sports, music, design, art, and woodworking. I created a brand 'KU' (which means warehouse in Chinese) for my woodworking projects for fun: [KuWarehouse.com](http://kuwarehouse.com).
 
 ## Recent Projects and Tutorials
 
