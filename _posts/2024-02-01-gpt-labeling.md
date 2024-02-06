@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Labeling using OpenAI GPT APIs
+title: Data Labeling using GPT APIs
 tags: tutorial teaching research
 permalink: gpt-labeling
 ---
