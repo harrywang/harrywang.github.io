@@ -9,11 +9,11 @@ permalink: gpt-labeling
 
 ### TL;DR
 
-Data labeling stands as a significant application for Large Language Models (LLMs). In this post, I will be sharing my insights and knowledge gained from using ChatGPT (API versions 3.5 and 4) for an Aspect-Based Sentiment Analysis (ABSA) task. I selected ABSA as the example because it is a challenging task, and I have prior experience handling similar tasks in both research and industry projects without relying on Large Language Models (LLMs). For example, my team had trained and made available a BERT-based ABSA model, which can be accessed [here](https://huggingface.co/tezign/BERT-LSTM-based-ABSA).
+Data labeling stands as a significant application for Large Language Models (LLMs). In this post, I will be sharing my insights and knowledge gained from using ChatGPT (API versions 3.5 and 4) for an Aspect-Based Sentiment Analysis (ABSA) task. I selected ABSA as the example because it is a challenging task, and I have prior experience handling similar tasks in both research and industry projects without relying on LLMs. For example, my team had trained and made available a BERT-based ABSA model, which can be accessed [here](https://huggingface.co/tezign/BERT-LSTM-based-ABSA).
 
 Key takeaways: 
 
-- Large Language Models (LLMs) can effectively perform data labeling tasks at a level similar to human performance, leading to potential time and cost savings.
+- Large Language Models (LLMs) can effectively perform data labeling tasks at a level similar to human performance without human data labeling and model training, leading to potential time and cost savings.
 - Use GPT4 to label 2 million reviews with long few-shot prompt can cost about $30K
 - Supervised Fine-tuning (SFT) is cheaper and faster but the performance is much worse than GPT4 (NOTE: this may due to the fine-tuning data issue - I did not spend much time tweaking the fine-tuning dataset.)
 
@@ -41,7 +41,7 @@ We created a hotel review ABSA dataset for a research project, which has about 2
 - Service robot service
 - Human-robot interaction
 
-We hired human data labellers to manually label about 30K reviews and trained a model to label the rest of the dataset.
+We hired human data labellers to manually label about 25K reviews and trained a model to label the rest of the dataset.
 
 ### Traditional Process
 
@@ -51,7 +51,7 @@ An ABSA task typically includes the following steps:
 - Train a model using the labeled data and check the performance (label more data if needed)
 - Predict the rest of the data using the trained model
 
-This process is very labor intensive and costly.
+This process is very labor intensive and costly, e.g, **we manually labeled about 25K reviews, which took several labelers a few weeks to complete**.
 
 ### LLM-based Process
 
