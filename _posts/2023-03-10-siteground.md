@@ -44,7 +44,7 @@ ns2.siteground.net
 
 The current Wordpress website is at `2022.yourwebsite.com`, which you want to clone to `2023.yourwebsite.com`.
 
-- Go to SiteGround and create the subdomain name `2023.yourwebsite.com`:
+- Go to SiteGround and create the subdomain name `2023.yourwebsite.com` (DO NOT install wordpress to this subdomain):
 
 <img width="289" src="https://github.com/harrywang/harrywang.github.io/assets/595772/3dba7120-e42d-47ea-9c37-37e8fbc0abe4">
 
