@@ -13,8 +13,8 @@ Data labeling stands as a significant application for Large Language Models (LLM
 
 Key takeaways: 
 
-- Large Language Models (LLMs) can effectively perform data labeling tasks at a level similar to human performance, leading to significant time and cost savings.
-- Use GPT4 to label 2 million reviews can cost about $30K
+- Large Language Models (LLMs) can effectively perform data labeling tasks at a level similar to human performance, leading to potential time and cost savings.
+- Use GPT4 to label 2 million reviews with long few-shot prompt can cost about $30K
 - Supervised Fine-tuning (SFT) is cheaper and faster but the performance is much worse than GPT4 (NOTE: this may due to the fine-tuning data issue - I did not spend much time tweaking the fine-tuning dataset.)
 
 Key topics include:
