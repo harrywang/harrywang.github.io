@@ -11,7 +11,7 @@ permalink: gpt-labeling
 
 Data labeling stands as a significant application for Large Language Models (LLMs). In this post, I will be sharing my insights and knowledge gained from using ChatGPT (API versions 3.5 and 4) for an Aspect-Based Sentiment Analysis (ABSA) task. I selected ABSA as the example because it is a challenging task, and I have prior experience handling similar tasks in both research and industry projects without relying on Large Language Models (LLMs). For example, my team had trained and made available a BERT-based ABSA model, which can be accessed [here](https://huggingface.co/tezign/BERT-LSTM-based-ABSA).
 
-Key takeaway: 
+Key takeaways: 
 
 - Large Language Models (LLMs) can effectively perform data labeling tasks at a level similar to human performance, leading to significant time and cost savings.
 - Use GPT4 to label 2 million reviews can cost about $30K
