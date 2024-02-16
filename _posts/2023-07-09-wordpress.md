@@ -57,4 +57,4 @@ Follow the steps below to add search using ElasticPress Plugin and ElasticSearch
 - [How to get related post by category in headless wordpress?(GraphQL)](https://stackoverflow.com/questions/73687998/how-to-get-related-post-by-category-in-headless-wordpressgraphql)
 - [Use ElasticPress](https://github.com/10up/ElasticPress/issues/3141)
 
-PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Takin.AI](https://takin.ai/asset/647b4d91414f1bb93778ab94).
+PS. The featured image for this post is generated using Stable Diffusion, whose full parameters with model link can be found at [Replicable.Art](https://replicable.art/asset/647b4d91414f1bb93778ab94).
