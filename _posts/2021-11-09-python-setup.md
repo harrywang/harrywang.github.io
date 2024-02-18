@@ -108,6 +108,14 @@ $ git config --global user.email
 harryjwang@gmail.com
 ```
 
+Clone a sub-folder from a Github repo: https://github.com/harrywang/python-docs-samples/ is too big, I only want to clone a sub-folder `enterpriseknowledgegraph`:
+
+```
+git clone -n --depth=1 --filter=tree:0 https://github.com/harrywang/python-docs-samples
+git sparse-checkout set --no-cone enterpriseknowledgegraph
+git checkout
+```
+
 Caching your GitHub password in Git: https://help.github.com/articles/caching-your-github-password-in-git/
 
 ### Virtual Environment
