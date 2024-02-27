@@ -260,6 +260,21 @@ Check out my [tutorial](https://harrywang.me/sd) on how to use this extension.
 
 You can use [https://github.com/camenduru/stable-diffusion-webui-colab](https://github.com/camenduru/stable-diffusion-webui-colab) if you just want to use WebUI via Colab - Just run the chosen Colab Notebook (find the model you want to use) and you will get a URL to use WebUI - the speed is OK.
 
+### Configure WebUI Server Behind Firewall
+
+- Setup ngrok: get a paid account for https://ngrok.com/ and setup a subdomain name (a CNAME need to be added in DNS - just follow the instruction)
+
+<img width="600" src="https://github.com/harrywang/harrywang.github.io/assets/595772/c2c47da3-f9a5-4b2b-8e31-9ea242bcd544">
+
+then start webui using the following command
+
+```
+./webui.sh --medvram --xformers --ngrok 2Xu0wxxx --ngrok-options '{"domain":"webui.yourdomain.com"}' --api --gradio-auth username:pwd --api-auth username:pwd --cors-allow-origins-regex '(.*?)'
+```
+
+then `webui.takin.ai` can be used as backend.
+
+
 ## Setup InvokeAI
 
 This is the my notes of installing [InvokeAI](https://github.com/invoke-ai/InvokeAI) instruction on MacBook Pro M1. Tested with Python 3.10.6. 
