@@ -15,13 +15,13 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking. I
 Please check my [blog](http://harrywang.me/blog) for more tutorials and projects.
 
 - [Data Labeling using GPT APIs](http://harrywang.me/gpt-labeling): what I learned about labeling data using OpenAI API.
+- [MVP (large language Model + Vector database + Prompt engineering)](http://harrywang.me/mvp): how to create a chatbot using OpenAI and your own data. MVP is another name I created for RAG.
 - [A Practical Guide to Quasi-Experimental Methods (PSM and DID)](http://harrywang.me/psm-did): PSM and DID explained using simple datasets in Python and R.
+- [When Data Science Meets NFT](http://harrywang.me/nft): a Kaggle NFT dataset I created for teaching data analysis.
 - [Tailpages (Tailwind + Github Pages)](http://harrywang.me/tailpages-intro): a Jekyll website template based on TailwindCSS, which can be hosted by Github for free.
 - [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/ml): a set of notebooks covering key basic components of real-world machine learning projects
-- [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
 - [Color + Culture + AI](http://harrywang.me/color): culture-inspired multi-modal color palette generation and colorization
 - [Calligraphy + AI](http://harrywang.me/calligraphy): abstract art generation based on Chinese calligraphy
-- [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
 - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >130K views since posted in September 2019.
 
 ## Selected Teaching
