@@ -27,13 +27,14 @@ Key topics include:
 
 Aspect-Based Sentiment Analysis (ABSA) is a NLP task that aims to identify and extract the sentiment of specific aspects of a product or service. There has been many papers, datasets, and competitions in this area (see [https://paperswithcode.com/task/aspect-based-sentiment-analysis](https://paperswithcode.com/task/aspect-based-sentiment-analysis)).
 
-For example, the following is a restaurant review with sentiments for three aspects:
+For example, the following is a restaurant review with sentiments for four aspects (See this [repo](https://github.com/harrywang/openai-api-starter) for a simple code example for doing this):
 
 > This place is pretty cool with awesome decor. The drinks are decent but a bit on the pricey side.
 
 - Ambience: Positive
 - Food: Neutral
 - Price: Negative
+- Service: Not Mentioned
 
 We created a hotel review ABSA dataset for a research project, which has about 2 millions' hotel reviews with three aspects: 
 
