@@ -10,8 +10,12 @@ I am the Founder and CEO of [Takin.AI](https://takin.ai/) and [HiddenArt.AI](htt
 
 In my spare time, I enjoy coding, sports, music, design, art, and woodworking. I created a brand `KU` (which means warehouse in Chinese) for my woodworking projects for fun: [KuWarehouse.com](http://kuwarehouse.com).
 
-## Recent Projects and Tutorials
+## Selected Tutorials and Projects
 
+Please check my [blog](http://harrywang.me/blog) for more tutorials and projects.
+
+- [Data Labeling using GPT APIs](http://harrywang.me/gpt-labeling): what I learned about labeling data using OpenAI API.
+- [A Practical Guide to Quasi-Experimental Methods (PSM and DID)](http://harrywang.me/psm-did): PSM and DID explained using simple datasets in Python and R.
 - [Tailpages (Tailwind + Github Pages)](http://harrywang.me/tailpages-intro): a Jekyll website template based on TailwindCSS, which can be hosted by Github for free.
 - [A Minimalist End-to-End Machine Learning Tutorial](http://harrywang.me/ml): a set of notebooks covering key basic components of real-world machine learning projects
 - [Generative Art via Python](http://harrywang.me/generative): how to make generative art using Python and AxiDraw Pen Plotter
@@ -20,10 +24,10 @@ In my spare time, I enjoy coding, sports, music, design, art, and woodworking. I
 - [FRED (Flask + REact + Docker)](http://harrywang.me/fred): an end-to-end boilerplate for full stack development
 - [A Minimalist End-to-End Scrapy Tutorial](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-i-11e350bcdec0?source=friends_link&sk=c9f8e32f28a88c61987ec60f93b93e6d): my most popular tutorial on web scraping with >130K views since posted in September 2019.
 
-## Recent Teaching
+## Selected Teaching
 
- - [Machine Learning for Business](http://harrywang.me/misy331/)
- - [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
+- [Machine Learning for Business](http://harrywang.me/misy331/)
+- [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
 
 ## Selected Publications
 
