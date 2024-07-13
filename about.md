@@ -6,7 +6,7 @@ permalink: about
 
 Hi, my name is Harry Wang (Chinese: 王建楠). I am a Full Professor of Management Information Systems at the [University of Delaware](https://lerner.udel.edu/) with more than 18 years' research, teaching, and management experience in AI, Data Science, Business Process Management, and Enterprise Systems. I am also an affiliated faculty at the [Data Science Institute](https://dsi.udel.edu/) and the [Institute for Financial Services Analytics](https://lerner.udel.edu/centers/institute-for-financial-services-analytics/).
 
-I am the Founder and CEO of [Takin.AI](https://takin.ai/) and [HiddenArt.AI](https://hiddenart.ai/). I was the Chief Scientist of Tezign Inc. (a unicorn startup based in Shanghai) and an Independent Director for So-Young International Inc. (NASDAQ: SY). I also served as the Founding Director of OneConnect (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members of the Institute for Financial Services Analytics at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. I also founded Conferency in 2015 to provide SaaS solutions for academic conferences.
+I currently serve as the Founder and CEO of [Takin.AI](https://takin.ai/), a platform dedicated to supporting the teaching and learning of Generative AI. I was the Chief Scientist of Tezign Inc. (a unicorn startup based in Shanghai) and an Independent Director for So-Young International Inc. (NASDAQ: SY). I also served as the Founding Director of OneConnect (NYSE: OCFT) US Research Institute based in New York City from 2018 to 2019 and the VP of Technology for the [Association for Information Systems](https://aisnet.org/) from 2015 to 2018. I was one of the founding members of the Institute for Financial Services Analytics at the University of Delaware and a JPMorgan Chase Fellow from 2014 to 2018. I also founded Conferency in 2015 to provide SaaS solutions for academic conferences.
 
 My recent research interests include Artificial Intelligence, Data Science, Social Computing, and Human-Computer Interaction. My research has been published in academic journals, such as Management Information Systems Quarterly, Information Systems Research, INFORMS Journal on Computing, and Decision Support Systems.
 
@@ -28,11 +28,13 @@ Please check my [blog](http://harrywang.me/blog) for more tutorials and projects
 
 ## Selected Teaching
 
+- Introduction to Generative AI, Spring 2024
 - [Machine Learning for Business](http://harrywang.me/misy331/)
 - [Full-Stack Development](https://github.com/harrywang/intro-to-fullstack-course)
 
 ## Selected Publications
 
+- "**Generating Architectural Floor Plans through Conditional Large Diffusion Model**", with Ziming He, Xiaomei Li, Pengfei Wu, Ling Fan, Ning Wang, Li Mingxuan, and Youquan Chen, HCI International 2024 Conference, Washington DC, USA, 2024.
 - "**Towards an Automatic Prompt Optimization Framework for AI Image Generation**", with Ling Fan, Kunpeng Zhang, Zilong Pei, and Anjun Li, HCI International 2023 Conference, Copenhagen, Denmark, 2023.
 - "**Revamping Interior Design Workflow Through Generative Artificial Intelligence**", with Ziming He, Xiaomei Li, and Ling Fan, HCI International 2023 Conference, Copenhagen, Denmark, 2023.
 - "**The Impact of AI-based Diagnosis System on Medical Aesthetic Service Purchases**", with Wenli Zou, Mengxin Li, Cheng Yi, 2022 Symposium on Statistical Challenges in Electronic Commerce Research, Madrid, Spain, 2022
