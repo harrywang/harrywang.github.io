@@ -29,6 +29,8 @@ We collected 138,499 images of Chinese calligraphy characters written by 19 call
 
 You can access the source code for this project [here](https://github.com/harrywang/CalligraphyGAN). We built our system based on many other open source projects - many thanks to those authors. We have also included the docker scripts and Streamlit demo code to make this project more accessible. 
 
+Here is a [screencast of the Streamlit demo](https://github.com/user-attachments/assets/d0685801-b6eb-4ae0-a0f1-d04457db648c).
+
 ## Team
 
 This is a collaborative project with the Design AI Lab directed by Dr. [Ling Fan](https://www.linkedin.com/in/fatflatfloat/) at the College of Design and Innovation, Tongji University.
