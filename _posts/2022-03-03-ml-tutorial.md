@@ -4,6 +4,7 @@ title: A Minimalist End-to-End Machine Learning Tutorial
 tags: tutorial open-source coding
 permalink: ml
 ---
+<img class="mx-auto" src="https://github.com/user-attachments/assets/c7a49e3d-6b79-4fe0-a6b7-8be995271ace">
 
 This tutorial is developed based on teaching materials from my courses at the University of Delaware and my professional training workshops for industry practitioners. Many of the tools have been/are being used by data scientists and machine learning engineers in my teams. My goal is to have a minimalistic coverage of key concepts and steps in a typical end-to-end machine learning project with open-source/free tools, simple datasets, and well-documented coding examples.
 
@@ -161,3 +162,5 @@ Click the run button to finish the training process and the resulting decision t
 <img class="mx-auto" src="https://user-images.githubusercontent.com/595772/156890008-595ea792-c697-4e24-b0a6-21e627355ccc.png">
 
 [Back to Top](#title)
+
+PS. The featured image for this post is generated using [HiddenArt](https://app.takin.ai/tools/hiddenart) tool from [Takin.ai](https://takin.ai/).

@@ -24,16 +24,16 @@ nav-menu:
   permalink: blog
 
 # use false to turn off any social media links
-twitter: https://twitter.com/harryjwang
+twitter: false
 eth: https://opensea.io/harryjwang.eth
 facebook: false
 instagram: false
 github: https://github.com/harrywang
 linkedin: https://www.linkedin.com/in/harryjwang/
-medium: false
+medium: https://medium.com/@harrywang
 rss: /feed.xml
 google-scholar: false
-email: false
+email: "mailto:hjwang@udel.edu"
 
 # footer information
 footer-msg: "Powered by Tailpages"
