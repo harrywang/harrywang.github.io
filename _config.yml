@@ -27,10 +27,10 @@ nav-menu:
 twitter: false
 eth: https://opensea.io/harryjwang.eth
 facebook: false
-instagram: false
+instagram: https://www.instagram.com/ku_warehouse/
 github: https://github.com/harrywang
 linkedin: https://www.linkedin.com/in/harryjwang/
-medium: https://medium.com/@harrywang
+#medium: https://medium.com/@harrywang
 rss: /feed.xml
 google-scholar: false
 email: "mailto:hjwang@udel.edu"
