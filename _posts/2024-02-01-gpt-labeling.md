@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Labeling using GPT APIs
-tags: tutorial teaching research
+tags: tutorial teaching research ai
 permalink: gpt-labeling
 ---
 
