@@ -13,9 +13,9 @@ One of my goals is to demonstrate my understanding of LLM chatbots, agents, and 
 
 I came up with the analogy between animal/human/nexus and chatbot/agent/workflow while reading Nexus last year, which I think is a clear and simple way to understand these concepts:
 
-<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/animal-human-nexus.jpg">
+<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/animal-human-nexus.jpeg">
 
-<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/chatbot-agent-workflow.jpg">
+<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/chatbot-agent-workflow.jpeg">
 
 The demos I showed in the webinar are shared below:
 
