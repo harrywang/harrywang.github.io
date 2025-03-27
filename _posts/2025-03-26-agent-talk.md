@@ -9,13 +9,19 @@ permalink: agent
 
 **TL;DR:** Here’s the full [PDF](/assets/files/ai-agent-harrywang.pdf) of my webinar presentation on AI agents and agentic workflows at the [UD FinTech Innovation Hub](https://www.udel.edu/research-innovation/star/fintech/) on March 12, 2025.
 
-One of my goals is to demonstrate my understanding of LLM chatbots, agents, and agentic workflows through demos I developed, rather than using abstract definitions. I came up with the analogy between animal/human/nexus and chatbot/agent/workflow while reading the book *Nexus* last year, which I think is a clear and simple way to think about these concepts:
+One of my goals is to present my understanding of LLM chatbots, agents, and agentic workflows through demos I developed, rather than using abstract definitions. I came up with the analogy between animal/human/nexus and chatbot/agent/workflow while reading the book *Nexus* last year, which I think is a clear and simple way to think about these concepts:
 
 <img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/animal-human-nexus.jpeg">
 
 <img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/chatbot-agent-workflow.jpeg">
 
-The demos I showed in the webinar are shared below:
+I also discuss how no-code and low-code AI agent tools are empowering business professionals to tackle many tasks once reserved to technical experts, and why a three-tiered approach to AI training is essential for organizations to build true AI readiness.
+
+<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/innovation-shift.jpeg">
+
+<img class="mx-auto" src="/assets/img/posts/2025-03-12-agent-talk/ai-training.jpeg">
+
+The following are the demos I shared in the webinar:
 
 Page 10 on agents with tools (Dify Agent):
 <video class="mx-auto" controls width="100%">
