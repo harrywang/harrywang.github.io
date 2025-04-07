@@ -9,7 +9,7 @@ permalink: private-repo
 
 Sometimes you want to build on top of a public GitHub repo—but keep your changes private. GitHub doesn’t allow you to fork a public repo and then make that fork private. 
 
-For example, we open sourced [Tumo](https://github.com/datamonet/tumo) but we still need to build on top of it to add new features for Takin.ai integration.
+For example, we open sourced [Tumo](https://github.com/datamonet/tumo) but we still need to build on top of it to add new features for [Takin.ai](https://takin.ai) integration.
 
 In this post, I demonstrate a clean, best-practice way to develop privately based on a public repo without forking.
 
