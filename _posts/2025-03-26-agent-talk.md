@@ -1,7 +1,10 @@
 ---
 layout: post
 title: My Talk on AI Agents and Agentic Workflows
-tags:  ai agent workflow
+tags:
+  - ai
+  - agent
+  - workflow
 permalink: agent
 featured: true
 image: /assets/img/posts/2025-03-12-agent-talk/agent-talk.jpeg
